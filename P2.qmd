@@ -3,7 +3,7 @@ title: "PROBABILIDAD"
 date: today
 date-format: "DD MMMM, YYYY"
 author: 
-  Mathias Mangino
+  Mathias
 abstract:
     Métodos Estadísticos para la Regresión y la Clasificación
 abstractspacing: double
@@ -25,3 +25,4 @@ format:
       number-sections: true
       colorlinks: true
 ---
+
