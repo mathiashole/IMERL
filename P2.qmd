@@ -1,0 +1,27 @@
+---
+title: "PROBABILIDAD"
+date: today
+date-format: "DD MMMM, YYYY"
+author: 
+  Mathias Mangino
+abstract:
+    Métodos Estadísticos para la Regresión y la Clasificación
+abstractspacing: double
+appendix: false
+fontfamily: libertine
+monofont: inconsolata
+monofontoptions: scaled=.95
+fontsize: 12pt
+geometry: 
+  - top=2cm
+  - bottom=2cm
+  - left=2cm
+  - right=2cm
+urlcolor: darkblue
+highlight-style: arrow
+format: 
+    pdf:
+      toc: true
+      number-sections: true
+      colorlinks: true
+---
