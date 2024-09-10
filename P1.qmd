@@ -159,23 +159,26 @@ $$
 s = \sqrt{\frac{1}{14} \times 858.47} = \sqrt{61.32}
 $$
 
-Ejercicio 3: Resumen Numérico
+# Ejercicio 3: Resumen Numérico
 
-    Temas: Análisis de distribuciones de datos, comparación de resúmenes numéricos con diagramas de tallo y hojas.
+Correspondencia de conjuntos con el resumen numérico (R):
 
-    Correspondencia de conjuntos con el resumen numérico (R):
-        El resumen numérico dado tiene un mínimo de 39, un cuartil inferior de 45, una mediana de 49, un cuartil superior de 55 y un máximo de 59.
-        El conjunto de datos que mejor corresponde con este resumen es (D2), ya que presenta una estructura cercana a estos valores con su distribución de hojas.
+| min| qi | m  | qs |max |
+|:---|:---|:---|:---|:---|
+| 39 | 45 | 49 | 55 | 59 |
 
-Ejercicio 4: Alturas
+El conjunto de datos que mejor corresponde con este resumen es (D2), ya que presenta una estructura cercana a estos valores con su distribución de hojas.
 
-    Temas: Promedio, efectos de un nuevo dato sobre el promedio.
+# Ejercicio 4: Alturas
 
-    Altura necesaria para elevar el promedio:
-        La altura promedio de las 20 personas es 170 cm. Si se agrega una persona más y se quiere que el nuevo promedio sea 171 cm, utilizamos la fórmula del promedio:
-    Nueva altura=(171×21)−(170×20)=191 cm
-    Nueva altura=(171×21)−(170×20)=191 cm
-        La persona debe medir 191 cm para que el promedio aumente en 1 cm.
+## Altura necesaria para elevar el promedio
+
+La altura promedio de las 20 personas es 170 cm. Si se agrega una persona más y se quiere que el nuevo promedio sea 171 cm, utilizamos:
+$$
+\text{Nueva altura} = (171 \times 21) - (170 \times 20) = 191 \text{ cm}
+$$
+
+La persona debe medir 191 cm para que el promedio aumente en 1 cm.
 
 Ejercicio 5: Estudio farmacéutico
 
