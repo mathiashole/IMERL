@@ -150,6 +150,14 @@ $$
 s = \sqrt{\frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2}
 $$
 
+Donde xi son los valores indivifuales de las observaciones, el promedio de 63.53 y el n el numero de observaciones (15).
+
+$$
+s = \sqrt{\frac{1}{14} \left[ (60 - 63.53)^2 + (52 - 63.53)^2 + \dots + (70 - 63.53)^2 \right]}
+$$
+$$
+s = \sqrt{\frac{1}{14} \times 858.47} = \sqrt{61.32}
+$$
 
 Ejercicio 3: Resumen Numérico
 
