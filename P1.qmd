@@ -3,7 +3,7 @@ title: "ESTADISTICA DESCRIPTIVA"
 date: today
 date-format: "DD MMMM, YYYY"
 author: 
-  Mathias Mangino
+  Mathias
 abstract:
     Métodos Estadísticos para la Regresión y la Clasificación
 abstractspacing: double
