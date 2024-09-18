@@ -1,0 +1,44 @@
+---
+title: "ENTREGA 1"
+date: today
+date-format: "DD MMMM, YYYY"
+author: 
+  Mathias
+abstract:
+    Métodos Estadísticos para la Regresión y la Clasificación
+abstractspacing: double
+appendix: false
+fontfamily: libertine
+monofont: inconsolata
+monofontoptions: scaled=.95
+fontsize: 12pt
+geometry: 
+  - top=2cm
+  - bottom=2cm
+  - left=2cm
+  - right=2cm
+urlcolor: darkblue
+highlight-style: arrow
+format: 
+    pdf:
+      toc: true
+      number-sections: true
+      colorlinks: true
+---
+
+Ejercicio 4: Descomposición de la varianza II
+
+    Esperanza condicional E(X3∣Y)E(X3∣Y):
+        Usando la densidad conjunta f(x,y)=2f(x,y)=2 para 0<x<y<10<x<y<1, se calcula:
+        E(X3∣Y=y)=∫0y2x3 dx=y42
+        E(X3∣Y=y)=∫0y​2x3dx=2y4​
+    Descomposición de la varianza de YY:
+        Similar al ejercicio anterior, se descompone la varianza de YY usando la fórmula de la varianza total.
+
+Ejercicio 7: Normal multivariada
+
+    Distribución de Y=X1+2X2−3X3Y=X1​+2X2​−3X3​:
+        Se trata de una combinación lineal de normales, por lo que Y∼N(μY,σY2)Y∼N(μY​,σY2​), donde μYμY​ y σY2σY2​ se calculan en función de la media y covarianza de XX.
+
+    Independencia de X1X1​ y otra variable:
+        Se encuentra un vector u=(u1,u2)u=(u1​,u2​) tal que X1X1​ y X1−(u1X1+u2X2)X1​−(u1​X1​+u2​X2​) sean independientes.
