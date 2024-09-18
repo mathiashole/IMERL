@@ -26,6 +26,51 @@ format:
       colorlinks: true
 ---
 
+Ejercicio 5: Estudio farmaceutico
+
+1.5.1. Construir un diagrama de tallos y hojas (extendido) para estos tiempos.
+
+```{r}
+# Cargar los datos
+tiempos <- c(15, 18, 19, 21, 23, 26, 17, 18, 24, 20, 13, 10, 16, 11, 9,
+             12, 14, 10, 19, 13, 20, 15, 11, 18, 15, 21, 12, 19, 18, 22)
+
+# Ordenar los datos
+tiempos_ordenados <- sort(tiempos)
+
+# Crear la tabla de tallos y hojas manualmente
+tallos <- tiempos_ordenados %/% 10  # Tallo es la parte entera del número dividido por 10
+hojas <- tiempos_ordenados %% 10    # Hoja es el resto de la división por 10
+
+# Crear una lista para almacenar las hojas agrupadas por tallos
+tabla_tallos_hojas <- split(hojas, tallos)
+
+# Crear la tabla en formato RMarkdown
+cat("| Stem | Leaf |\n")
+cat("|------|------|\n")
+for (tallo in names(tabla_tallos_hojas)) {
+  hojas_asociadas <- paste(tabla_tallos_hojas[[tallo]], collapse = " ")
+  cat(paste0("| ", tallo, " | ", hojas_asociadas, " |\n"))
+}
+
+# tabla_contenido <- c("| Stem | Leaf |",
+#                      "|------|------|")
+
+# for (i in 1:nrow(stem_table)) {
+#   linea <- paste0("| ", stem_table$Stem[i], " | ", stem_table$Leaf[i], " |")
+#   tabla_contenido <- c(tabla_contenido, linea)
+# }
+
+```
+
+1.5.2. Construir una tabla de frecuencias y densidades para estos tiempos.
+
+
+
+1.5.3. Dibujar un histograma para estos tiempos dividiendo el intervalo [0, 30] en 6 interva-
+los de longitud 5 en escala frecuencia y en escala densidad.
+
+
 Ejercicio 4: Descomposición de la varianza II
 
     Esperanza condicional E(X3∣Y)E(X3∣Y):
