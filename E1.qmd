@@ -112,6 +112,8 @@ test_chi2
 
 ```
 
+No hay suficiente evidencia para rechazar la $H_0$.
+
 ## Cálculo de las frecuencias esperadas:
 
 Para calcular las frecuencias esperadas, usamos la fórmula:
@@ -182,6 +184,45 @@ $$
 E_{23} = \frac{100 \cdot 35}{200} = 17.5
 $$
 
+## Cálculo del estadístico \(\chi^2\):
+
+El estadístico de prueba \(\chi^2\) se calcula usando la fórmula:
+
+$$
+\chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
+$$
+
+Donde \(O_{ij}\) son las frecuencias observadas y \(E_{ij}\) son las frecuencias esperadas.
+
+$$
+\chi^2 = \frac{(50 - 45)^2}{45} + \frac{(30 - 37.5)^2}{37.5} + \frac{(20 - 17.5)^2}{17.5} + \frac{(40 - 45)^2}{45} + \frac{(45 - 37.5)^2}{37.5} + \frac{(15 - 17.5)^2}{17.5}
+$$
+
+Calculamos cada término:
+
+$$
+\chi^2 = \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} + \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5}
+$$
+
+Simplificamos:
+
+$$
+\chi^2 = \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} + \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} = 0.556 + 1.5 + 0.357 + 0.556 + 1.5 + 0.357 = 4.826
+$$
+
+### Grados de libertad:
+
+Los grados de libertad se calculan como:
+
+$$
+\text{gl} = (r - 1)(c - 1) = (2 - 1)(3 - 1) = 2
+$$
+
+### Comparación con el valor crítico:
+
+El valor crítico de \(\chi^2\) para un nivel de significancia \(\alpha = 0.05\) y 2 grados de libertad es aproximadamente 5.99.
+
+Como el estadístico calculado \(\chi^2 = 4.826\) es menor que 5.99, no rechazamos la hipótesis nula.
 
 
 Ejercicio 4: Descomposición de la varianza II
