@@ -26,9 +26,9 @@ format:
       colorlinks: true
 ---
 
-Ejercicio 5: Estudio farmaceutico
+## Ejercicio 5: Estudio farmaceutico
 
-1.5.1. Construir un diagrama de tallos y hojas (extendido) para estos tiempos.
+### 1.5.1. Construir un diagrama de tallos y hojas (extendido) para estos tiempos.
 
 | Stem | Leaf |
 |------|------|
@@ -36,7 +36,7 @@ Ejercicio 5: Estudio farmaceutico
 | 1    | 0 0 1 1 2 2 3 3 4 5 5 5 6 7 8 8 8 9 9 9 |
 | 2    | 0 0 1 1 2 3 4 6 |
 
-1.5.2. Construir una tabla de frecuencias y densidades para estos tiempos.
+### 1.5.2. Construir una tabla de frecuencias y densidades para estos tiempos.
 
 ```{r}
 # Cargar los datos
@@ -62,8 +62,32 @@ print(tabla_resultado)
 ```
 
 
-1.5.3. Dibujar un histograma para estos tiempos dividiendo el intervalo [0, 30] en 6 interva-
+### 1.5.3. Dibujar un histograma para estos tiempos dividiendo el intervalo [0, 30] en 6 interva-
 los de longitud 5 en escala frecuencia y en escala densidad.
+
+```{r}
+
+library(ggplot2)
+
+# Crear el dataframe para ggplot
+df_tiempos <- data.frame(tiempos)
+
+# Histograma en escala de frecuencia
+ggplot(df_tiempos, aes(x = tiempos)) +
+  geom_histogram(breaks = intervalos, fill = "lightblue", color = "black", closed = "left") +
+  labs(title = "Histograma de Frecuencia", x = "Tiempos", y = "Frecuencia") +
+  theme_minimal()
+
+# Histograma en escala de densidad
+ggplot(df_tiempos, aes(x = tiempos)) +
+  geom_histogram(aes(y = ..density..), breaks = intervalos, fill = "lightgreen", color = "black", closed = "left") +
+  labs(title = "Histograma de Densidad", x = "Tiempos", y = "Densidad") +
+  theme_minimal()
+
+```
+
+## Ejercicio 7: Tablas de contingencia II
+
 
 
 Ejercicio 4: Descomposición de la varianza II
