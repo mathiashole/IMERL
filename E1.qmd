@@ -97,8 +97,8 @@ Tabla 1: Tabla de contingencia de preferencias de bebidas por género.
 
 La hipótesis a probar es la siguiente:
 
-Hipótesis nula $H_0$: `No existe dependencia entre el género y la preferencia de bebida.`
-Hipótesis alternativa $H_1$: `Existe dependencia entre el género y la preferencia de bebida.`
+Hipótesis nula $H_0$: No existe dependencia entre el género y la preferencia de bebida.
+Hipótesis alternativa $H_1$: Existe dependencia entre el género y la preferencia de bebida.
 
 
 Ejercicio 4: Descomposición de la varianza II
