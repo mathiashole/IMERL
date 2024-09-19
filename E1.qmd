@@ -88,7 +88,11 @@ ggplot(df_tiempos, aes(x = tiempos)) +
 
 ## Ejercicio 7: Tablas de contingencia II
 
-
+|         | Café | Té | Refresco |
+|---------|------|----|----------|
+| Hombres | 50 | 30 | 20 |
+| Mujeres | 40 | 45 | 15 |
+ 
 
 Ejercicio 4: Descomposición de la varianza II
 
