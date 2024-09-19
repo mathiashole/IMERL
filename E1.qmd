@@ -100,6 +100,89 @@ La hipótesis a probar es la siguiente:
 Hipótesis nula $H_0$: No existe dependencia entre el género y la preferencia de bebida.
 Hipótesis alternativa $H_1$: Existe dependencia entre el género y la preferencia de bebida.
 
+```{r}
+# Datos observados
+observados <- matrix(c(50, 30, 20, 40, 45, 15), nrow = 2, byrow = TRUE)
+
+# Realizar el test chi-cuadrado
+test_chi2 <- chisq.test(observados)
+
+# Resultado del test
+test_chi2
+
+```
+
+## Cálculo de las frecuencias esperadas:
+
+Para calcular las frecuencias esperadas, usamos la fórmula:
+
+$$
+E_{ij} = \frac{F_{i\cdot} \cdot F_{\cdot j}}{N}
+$$
+
+Donde:
+
+- $( E_{ij} )$ es la frecuencia esperada para la celda $( i,j )$.
+- $( F_{i\cdot} )$ es la suma de la fila $( i )$.
+- $( F_{\cdot j} )$ es la suma de la columna $( j )$.
+- $( N )$ es el total de observaciones.
+
+### Sumas de filas:
+
+- Hombres: \( 50 + 30 + 20 = 100 \)
+- Mujeres: \( 40 + 45 + 15 = 100 \)
+
+### Sumas de columnas:
+
+- Café: $( 50 + 40 = 90 )$
+- Té: $( 30 + 45 = 75 )$
+- Refresco: $( 20 + 15 = 35 )$
+
+### Total de observaciones:
+
+$$
+N = 100 + 100 = 200
+$$
+
+### Cálculo de las frecuencias esperadas:
+
+- Para los hombres y café:
+
+$$
+E_{11} = \frac{100 \cdot 90}{200} = 45
+$$
+
+- Para los hombres y té:
+
+$$
+E_{12} = \frac{100 \cdot 75}{200} = 37.5
+$$
+
+- Para los hombres y refresco:
+
+$$
+E_{13} = \frac{100 \cdot 35}{200} = 17.5
+$$
+
+- Para las mujeres y café:
+
+$$
+E_{21} = \frac{100 \cdot 90}{200} = 45
+$$
+
+- Para las mujeres y té:
+
+$$
+E_{22} = \frac{100 \cdot 75}{200} = 37.5
+$$
+
+- Para las mujeres y refresco:
+
+$$
+E_{23} = \frac{100 \cdot 35}{200} = 17.5
+$$
+
+
 
 Ejercicio 4: Descomposición de la varianza II
 
