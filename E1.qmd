@@ -54,7 +54,9 @@ frecuencia <- table(tabla_frecuencias)
 densidad <- prop.table(frecuencia) / 5
 
 # Mostrar la tabla de frecuencias y densidades
-tabla_resultado <- data.frame(Intervalo = names(frecuencia), Frecuencia = as.vector(frecuencia), Densidad = as.vector(densidad))
+tabla_resultado <- data.frame(Intervalo = names(frecuencia),
+    Frecuencia = as.vector(frecuencia),
+    Densidad = as.vector(densidad))
 print(tabla_resultado)
 
 ```
