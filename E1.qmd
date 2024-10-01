@@ -192,9 +192,9 @@ $$
 E_{23} = \frac{100 \cdot 35}{200} = 17.5
 $$
 
-## Cálculo del estadístico \(\chi^2\):
+## Cálculo del estadístico $\chi^2$:
 
-El estadístico de prueba \(\chi^2\) se calcula usando la fórmula:
+El estadístico de prueba ($\chi^2$) se calcula usando la fórmula:
 
 $$
 \chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
