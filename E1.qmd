@@ -94,7 +94,7 @@ ggplot(df_tiempos, aes(x = tiempos)) +
 
 ```
 
-## Ejercicio 7: Tablas de contingencia II
+# Ejercicio 7: Tablas de contingencia II
 
 |         | Café | Té | Refresco |
 |---------|------|----|----------|
