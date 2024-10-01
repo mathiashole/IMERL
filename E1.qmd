@@ -162,12 +162,90 @@ Como el estadístico calculado ($\chi^2 = 4.826$) es menor que 5.99, no rechazam
 
 # Ejercicio 4 Descomposición de la varianza II
 
-Sea \((X,Y)\) un vector aleatorio con función de densidad 
+Sea (X,Y) un vector aleatorio con función de densidad 
 
 $$
 f(x, y) = 2, \quad 0 < x < y < 1.
 $$
 
-### Calcular \(E(X^3 | Y)\)
+## Calcular $E(X^3 | Y)$
 
-Primero, necesitamos encontrar la función de densidad condicional \(f_{X|Y}(x|y)\). La densidad conjunta se puede escribir como:
+Primero, necesitamos encontrar la función de densidad condicional $f_{X|Y}(x|y)$. La densidad conjunta se puede escribir como:
+
+$$
+f(x, y) = f_Y(y) \cdot f_{X|Y}(x|y).
+$$
+
+Calculamos primero $f_Y(y)$. La marginal de $Y$ se obtiene integrando sobre $x$:
+
+$$
+f_Y(y) = \int_0^y f(x, y) \, dx = \int_0^y 2 \, dx = 2y.
+$$
+
+Entonces, tenemos la función de densidad marginal:
+
+$$
+f_Y(y) = 2y, \quad 0 < y < 1.
+$$
+
+Para encontrar la densidad condicional $f_{X|Y}(x|y)$, usamos la relación:
+
+$$
+f_{X|Y}(x|y) = \frac{f(x, y)}{f_Y(y)}.
+$$
+
+Por lo tanto, tenemos:
+
+$$
+f_{X|Y}(x|y) = \frac{2}{2y} = \frac{1}{y}, \quad 0 < x < y < 1.
+$$
+
+Ahora, para calcular $E(X^3 | Y = y)$, usamos la definición de la esperanza:
+
+$$
+E(X^3 | Y = y) = \int_0^y x^3 f_{X|Y}(x|y) \, dx = \int_0^y x^3 \cdot \frac{1}{y} \, dx.
+$$
+
+Calculamos la integral:
+
+$$
+E(X^3 | Y = y) = \frac{1}{y} \int_0^y x^3 \, dx.
+$$
+
+La integral de $x^3$ es:
+
+$$
+\int_0^y x^3 \, dx = \left[ \frac{x^4}{4} \right]_0^y = \frac{y^4}{4}.
+$$
+
+Por lo tanto:
+
+$$
+E(X^3 | Y = y) = \frac{1}{y} \cdot \frac{y^4}{4} = \frac{y^3}{4}.
+$$
+
+## Descomponer la varianza de la variable \(Y\)
+
+La varianza de $Y$ se puede descomponer como:
+
+$$
+\text{Var}(Y) = E(Y^2) - (E(Y))^2.
+$$
+
+Primero, calculamos $E(Y)$:
+
+$$
+E(Y) = \int_0^1 y \cdot f_Y(y) \, dy = \int_0^1 y \cdot 2y \, dy = \int_0^1 2y^2 \, dy = \left[ \frac{2y^3}{3} \right]_0^1 = \frac{2}{3}.
+$$
+
+Luego, calculamos $E(Y^2)$:
+
+$$
+E(Y^2) = \int_0^1 y^2 \cdot f_Y(y) \, dy = \int_0^1 y^2 \cdot 2y \, dy = \int_0^1 2y^3 \, dy = \left[ \frac{2y^4}{4} \right]_0^1 = \frac{1}{2}.
+$$
+
+Finalmente, calculamos la varianza:
+
+$$
+\text{Var}(Y) = E(Y^2) - (E(Y))^2 = \frac{1}{2} - \left(\frac{2}{3}\right)^2 = \frac{1}{2} - \frac{4}{9} = \frac{1}{18}.
+$$
