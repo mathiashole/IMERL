@@ -76,14 +76,20 @@ df_tiempos <- data.frame(tiempos) # vector a dataframe
 
 # Histograma en escala de frecuencia
 ggplot(df_tiempos, aes(x = tiempos)) +
-  geom_histogram(breaks = intervalos, fill = "lightblue", color = "black", closed = "left") +
+  geom_histogram(breaks = intervalos, # intervalos para separar
+                  fill = "lightblue", # relleno
+                  color = "black") + # borde
   labs(title = "Histograma de Frecuencia", x = "Tiempos", y = "Frecuencia") +
   theme_minimal()
 
 # Histograma en escala de densidad
 ggplot(df_tiempos, aes(x = tiempos)) +
-  geom_histogram(aes(y = ..density..), breaks = intervalos, fill = "lightgreen", color = "black", closed = "left") +
-  labs(title = "Histograma de Densidad", x = "Tiempos", y = "Densidad") + # Se calcula la densidad automáticamente
+  geom_histogram(aes(y = ..density..),
+   breaks = intervalos,
+   fill = "lightgreen", # relleno
+   color = "black") + # borde
+  geom_density() + # agrega capa de densidad
+  labs(title = "Histograma de Densidad", x = "Tiempos", y = "Densidad") + # Se calcula la densidad
   theme_minimal()
 
 ```
