@@ -160,7 +160,7 @@ El valor de la tabla ($\chi^2$) para un nivel de significancia ($\alpha = 0.05$)
 Como el estadístico calculado ($\chi^2 = 4.826$) es menor que 5.99, no rechazamos la hipótesis nula.
 
 
-Ejercicio 4: Descomposición de la varianza II
+# Ejercicio 4: Descomposición de la varianza II
 
     Esperanza condicional E(X3∣Y)E(X3∣Y):
         Usando la densidad conjunta f(x,y)=2f(x,y)=2 para 0<x<y<10<x<y<1, se calcula:
