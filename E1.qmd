@@ -65,15 +65,14 @@ print(tabla_resultado)
 ```
 
 
-### 1.5.3. Dibujar un histograma para estos tiempos dividiendo el intervalo [0, 30] en 6 interva-
-los de longitud 5 en escala frecuencia y en escala densidad.
+## Dibujar un histograma para estos tiempos dividiendo el intervalo [0, 30] en 6 intervalos de longitud 5 en escala frecuencia y en escala densidad.
 
 ```{r}
 
 library(ggplot2)
 
 # Crear el dataframe para ggplot
-df_tiempos <- data.frame(tiempos)
+df_tiempos <- data.frame(tiempos) # vector a dataframe
 
 # Histograma en escala de frecuencia
 ggplot(df_tiempos, aes(x = tiempos)) +
