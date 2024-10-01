@@ -225,3 +225,104 @@ $$
 $$
 
 # Ejercicio 7 Normal multivariada
+
+## 1. Hallar la distribución de $Y = X_1 + 2X_2 - 3X_3$
+
+Para encontrar la distribución de $Y$, utilizamos las propiedades de la normalidad, dado que $Y$ es una combinación lineal de las variables aleatorias normales.
+
+### Calcular la media de $Y$
+
+La media de $Y$ se calcula como:
+
+$$
+E[Y] = E[X_1] + 2E[X_2] - 3E[X_3]
+$$
+
+Sustituyendo con $\mu = (−1, 1, 0)$:
+
+$$
+E[Y] = -1 + 2(1) - 3(0) = -1 + 2 = 1
+$$
+
+### Calcular la varianza de $Y$
+
+La varianza de $Y$ se calcula usando la matriz de covarianzas:
+
+$$
+\text{Var}(Y) = \text{Var}(X_1) + 2^2\text{Var}(X_2) + (-3)^2\text{Var}(X_3) + 2(1)(2)\text{Cov}(X_1, X_3) + 2(-3)(1)\text{Cov}(X_2, X_3)
+$$
+
+De la matriz de covarianzas $\Sigma$, extraemos los elementos necesarios:
+
+- $\text{Var}(X_1) = 1$
+- $\text{Var}(X_2) = 3$
+- $\text{Var}(X_3) = 2$
+- $\text{Cov}(X_1, X_2) = 0$
+- $\text{Cov}(X_1, X_3) = 1$
+- $\text{Cov}(X_2, X_3) = 1$
+
+Sustituyendo en la fórmula de varianza:
+
+$$
+\text{Var}(Y) = 1 + 2^2(3) + (-3)^2(2) + 2(1)(2)(1) + 2(-3)(1)(1)
+$$
+
+Calculamos:
+
+$$
+\text{Var}(Y) = 1 + 4(3) + 9(2) + 2(1)(2) + 2(-3)(1)
+$$
+
+$$
+= 1 + 12 + 18 + 4 - 6 = 29
+$$
+
+### Escribir la distribución de $Y$
+
+Entonces, $Y$ tiene una distribución normal:
+
+$$
+Y \sim N(1, 29)
+$$
+
+## 2. Hallar un vector $u = (u_1, u_2)$ tal que las variables aleatorias $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes.
+
+Para que $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes, debemos asegurarnos de que la covarianza entre $X_1$ y $u_1 X_1 + u_2 X_2$ sea cero:
+
+$$
+\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = 0
+$$
+
+### Paso 1: Calcular la covarianza
+
+Usamos la propiedad de la covarianza:
+
+$$
+\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1 \text{Var}(X_1) + u_2 \text{Cov}(X_1, X_2)
+$$
+
+Sustituyendo los valores:
+
+$$
+\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1(1) + u_2(0) = u_1
+$$
+
+### Paso 2: Igualar a cero
+
+Para que las variables sean independientes, tenemos:
+
+$$
+u_1 = 0
+$$
+
+### Paso 3: Hallar $u_2$
+
+El valor de $u_2$ puede ser cualquier número real. Sin embargo, para simplificar el problema, podemos elegir $u_2 = 1$.
+
+### Resultado Final
+
+Por lo tanto, podemos elegir el vector $u$ como:
+
+$$
+u = (0, 1)
+$$
