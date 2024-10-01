@@ -89,7 +89,7 @@ ggplot(df_tiempos, aes(x = tiempos)) +
    fill = "lightgreen", # relleno
    color = "black") + # borde
   geom_density() + # agrega capa de densidad
-  labs(title = "Histograma de Densidad", x = "Tiempos", y = "Densidad") + # Se calcula la densidad
+  labs(title = "Histograma de Densidad", x = "Tiempos", y = "Densidad") +
   theme_minimal()
 
 ```
