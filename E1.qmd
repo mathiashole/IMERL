@@ -84,7 +84,7 @@ ggplot(df_tiempos, aes(x = tiempos)) +
 
 # Histograma en escala de densidad
 ggplot(df_tiempos, aes(x = tiempos)) +
-  geom_histogram(aes(y = ..density..),
+  geom_histogram(aes(y = after_stat(density)),
    breaks = intervalos,
    fill = "lightgreen", # relleno
    color = "black") + # borde
