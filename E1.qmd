@@ -123,9 +123,9 @@ test_chi2
 No hay suficiente evidencia para rechazar la $H_0$.
 
 
-## Cálculo del estadístico $\chi^2$:
+## Cálculo del estadístico $\chi^2$ sin usar funcion de R:
 
-El estadístico de prueba ($\chi^2$) que da el valor de `X-squared`, se calcula usando la fórmula:
+El estadístico de prueba ($\chi^2$) que da el valor de X-squared, se calcula usando la fórmula:
 
 $$
 \chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
@@ -157,7 +157,7 @@ $$
 
 El valor de la tabla ($\chi^2$) para un nivel de significancia ($\alpha = 0.05$) y 2 grados de libertad es aproximadamente 5.99. Ver tabla $\chi^2$
 
-Como el estadístico calculado \(\chi^2 = 4.826\) es menor que 5.99, no rechazamos la hipótesis nula.
+Como el estadístico calculado ($\chi^2 = 4.826$) es menor que 5.99, no rechazamos la hipótesis nula.
 
 
 Ejercicio 4: Descomposición de la varianza II
