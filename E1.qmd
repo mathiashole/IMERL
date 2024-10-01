@@ -223,3 +223,5 @@ Finalmente, calculamos la varianza:
 $$
 \text{Var}(Y) = E(Y^2) - (E(Y))^2 = \frac{1}{2} - \left(\frac{2}{3}\right)^2 = \frac{1}{2} - \frac{4}{9} = \frac{1}{18}.
 $$
+
+# Ejercicio 7 Normal multivariada
