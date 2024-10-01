@@ -47,11 +47,14 @@ tiempos <- c(15, 18, 19, 21, 23, 26, 17, 18, 24, 20, 13, 10, 16, 11, 9,
 intervalos <- seq(0, 30, by = 5) # avanza de 5 en 5 de 0 a 30
 
 # Tabla de frecuencias
-tabla_frecuencias <- cut(tiempos, breaks = intervalos, right = FALSE) # Divide los datos en intervalos ("bins"), para eso se usa cut
-frecuencia <- table(tabla_frecuencias) # Crea una tabla que tiene el conteo de cada categoria, en este caso intervalos
+tabla_frecuencias <- cut(tiempos, breaks = intervalos, right = FALSE) # Divide los 
+# datos en intervalos ("bins"), para eso se usa cut
+frecuencia <- table(tabla_frecuencias) # Crea una tabla que tiene el conteo de cada
+# categoria, en este caso intervalos
 
 # Densidades (frecuencia / tamaño del intervalo)
-densidad <- prop.table(frecuencia) # Partiendo de la tabla de frecuencias esta funcion se usa para calcular la densidad de frecuencias
+densidad <- prop.table(frecuencia) # Partiendo de la tabla de frecuencias esta 
+# funcion se usa para calcular la densidad de frecuencias
 
 # Mostrar la tabla de frecuencias y densidades
 tabla_resultado <- data.frame(Intervalo = names(frecuencia),
