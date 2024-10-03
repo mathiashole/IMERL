@@ -346,3 +346,66 @@ $$
 $$
 
 Parte 1: Probar que si un estimador $T(x)$ satisface la condición $(C)$, entonces $I(\theta)$ es la información de Fisher de $\theta$.
+
+La **información de Fisher**, $I(\theta)$, se define como:
+
+$$
+I(\theta) = - \mathbb{E}\left[\frac{\partial^2}{\partial \theta^2} \ell(\theta, x)\right]
+$$
+
+También puede expresarse en términos de la varianza de la derivada de la log-verosimilitud:
+
+$$
+I(\theta) = \text{Var}\left(\frac{\partial}{\partial \theta} \ell(\theta, x)\right)
+$$
+
+Dado que la condición $(C)$ establece:
+
+$$
+\frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
+$$
+
+Tomamos el valor esperado de ambos lados:
+
+$$
+\mathbb{E}\left[\frac{\partial}{\partial \theta} \ell(\theta, x)\right] = I(\theta) \mathbb{E}[T(x) - \theta]
+$$
+
+Sabemos que el valor esperado de la derivada de la log-verosimilitud es cero:
+
+$$
+0 = I(\theta)(\mathbb{E}[T(x)] - \theta)
+$$
+
+Dado que $\mathbb{E}[T(x)] = \theta$, esto muestra que $I(\theta)$ es la información de Fisher.
+
+### Parte 2: Probar que si $\hat{\theta}_{MLE}$ es el estimador de máxima verosimilitud de $\theta$ y $T(x)$ cumple con la condición $(C)$, entonces $T(x) = \hat{\theta}_{MLE}$.
+
+El estimador de máxima verosimilitud satisface:
+
+$$
+\frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = 0
+$$
+
+De la condición $(C)$:
+
+$$
+\frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
+$$
+
+En el punto $\theta = \hat{\theta}_{MLE}$, esto se convierte en:
+
+$$
+0 = I(\hat{\theta}_{MLE})(T(x) - \hat{\theta}_{MLE})
+$$
+
+Dado que $I(\hat{\theta}_{MLE}) > 0$, esto implica:
+
+$$
+T(x) = \hat{\theta}_{MLE}
+$$
+
+### Conclusión
+
+1. Si un estimador $T(x)$ satisface la condición $(C)$, entonces $I(\theta)$ es la información de Fisher.
+2. Si $\hat{\theta}_{MLE}$ es el estimador de máxima verosimilitud de $\theta$ y $T(x)$ satisface la condición $(C)$, entonces $T(x) = \hat{\theta}_{MLE}$.
