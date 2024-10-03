@@ -275,18 +275,10 @@ $$
 \text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1​⋅\text{Cov}(X_1​,X_1​)+u_2​⋅\text{Cov}(X_1​,X_2​)
 $$
 
-Sustituyendo los valores:
+Donde $\text{Cov}(X_1​,X_1​) = \text{Var}(X_1) = 1$ y $\text{Cov}(X_1​,X_2​) = 0$ para el caso que $X_1$ y $X_2$ esten incorrelacionadas. Entonces:
 
 $$
-\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1(1) + u_2(0) = u_1
-$$
-
-### Paso 2: Igualar a cero
-
-Para que las variables sean independientes, tenemos:
-
-$$
-u_1 = 0
+\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1(1) + u_2(0) = u_1 = 0
 $$
 
 ### Paso 3: Hallar $u_2$
