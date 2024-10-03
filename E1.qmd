@@ -288,21 +288,11 @@ $$
 u = (0, 1)
 $$
 
-## Ejercicio 4: Sesgo de un Estimador
+# Ejercicio 4: Sesgo de un Estimador
 
-Un estimador $\hat{\theta}$ de un parámetro $\theta$ tiene distribución normal. Se sabe que el **error cuadrático medio (ECM)** de $\hat{\theta}$ es 8, es decir:
+## Hallar el sesgo de $\hat{\theta}$.
 
-$$
-\text{ECM}(\hat{\theta}) = 8
-$$
-
-Además, se conoce que:
-
-$$
-P(\hat{\theta} \leq \theta) = 0.8413
-$$
-
-Nuestro objetivo es hallar el sesgo del estimador $\hat{\theta}$.
+Se sabe que el **error cuadrático medio (ECM)** es $\text{ECM}(\hat{\theta}) = 8$, y se sabe que $P(\hat{\theta} \leq \theta) = 0.8413$
 
 Fórmula del ECM
 
