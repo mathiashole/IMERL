@@ -300,32 +300,13 @@ $$
 P\left(\frac{\hat{\theta} - \mu_{\hat{\theta}}}{\sigma_{\hat{\theta}}} \leq \frac{\theta - \mu_{\hat{\theta}}}{\sigma_{\hat{\theta}}}\right) = P(Z \leq 1)
 $$
 
-donde:
-- $\text{Var}(\hat{\theta})$ es la varianza del estimador.
-- $\text{Sesgo}(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$ es el sesgo del estimador.
-
-Interpretar la probabilidad dada
-
-La probabilidad $P(\hat{\theta} \leq \theta) = 0.8413$ corresponde al cuantil 0.8413 de una distribución normal estándar, lo que significa que:
-
-$$
-P(Z \leq 1) = 0.8413
-$$
-
-Entonces, se cumple que:
+Por lo que podemos obtener la media del estimador a partir de la siguiente igualdad:
 
 $$
 \frac{\theta - \mu_{\hat{\theta}}}{\sigma_{\hat{\theta}}} = 1
 $$
 
-Despejamos para la media $\mu_{\hat{\theta}}$:
-
-$$
-\theta - \mu_{\hat{\theta}} = \sigma_{\hat{\theta}}
-$$
-
-Por lo tanto, la media del estimador es:
-
+Despejamos la media $\mu_{\hat{\theta}}$:
 $$
 \mu_{\hat{\theta}} = \theta - \sigma_{\hat{\theta}}
 $$
