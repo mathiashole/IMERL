@@ -349,13 +349,7 @@ $$
 I(\theta) = - \mathbb{E}\left[\frac{\partial^2}{\partial \theta^2} \ell(\theta, x)\right] = \text{Var}\left(\frac{\partial}{\partial \theta} \ell(\theta, x)\right)
 $$
 
-Dado que la condición $(C)$ establece:
-
-$$
-\frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
-$$
-
-Tomamos el valor esperado de ambos lados:
+Dado que la condición $(C)$ que se plantea, le aplicamos la esperanza a ambos lados de la ecuacion. Siendo que $I(\theta)$ es una constante, podemos sacarla fuera de la esperanza
 
 $$
 \mathbb{E}\left[\frac{\partial}{\partial \theta} \ell(\theta, x)\right] = I(\theta) \mathbb{E}[T(x) - \theta]
@@ -377,7 +371,7 @@ $$
 \frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = 0
 $$
 
-De la condición $(C)$:
+De la condición $(C)$ 
 
 $$
 \frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
