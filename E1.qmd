@@ -131,7 +131,7 @@ $$
 \chi^2 = \sum_{i=1}^{r} \sum_{j=1}^{c} \frac{(O_{ij} - E_{ij})^2}{E_{ij}}
 $$
 
-Donde \(O_{ij}\) son las frecuencias observadas y \(E_{ij}\) son las frecuencias esperadas.
+Donde $O_{ij}$ son las frecuencias observadas y $E_{ij}$ son las frecuencias esperadas.
 
 $$
 \chi^2 = \frac{(50 - 45)^2}{45} + \frac{(30 - 37.5)^2}{37.5} + \frac{(20 - 17.5)^2}{17.5} + \frac{(40 - 45)^2}{45} + \frac{(45 - 37.5)^2}{37.5} + \frac{(15 - 17.5)^2}{17.5}
@@ -198,7 +198,7 @@ $$
 E(X^3 | Y = y) = \frac{1}{y} \cdot \frac{y^4}{4} = \frac{y^3}{4}.
 $$
 
-## Descomponer la varianza de la variable \(Y\)
+## Descomponer la varianza de la variable $Y$
 
 La varianza de $Y$ se puede descomponer como:
 
@@ -334,4 +334,13 @@ Entonces $8 = 2\sigma_{\hat{\theta}}^2$, despejando el sesgo del estimador es 2
 
 $$
 \sigma_{\hat{\theta}}^2 = \frac{8}{2} = 4 = \sigma_{\hat{\theta}} = \sqrt{4}
+$$
+
+
+# Ejercicio 6: Estimador de mínima varianza
+
+Se considera la condición $(C)$:
+
+$$
+\frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
 $$
