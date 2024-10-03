@@ -226,7 +226,7 @@ $$
 
 # Ejercicio 7 Normal multivariada
 
-## 1. Hallar la distribución de $Y = X_1 + 2X_2 - 3X_3$
+## Hallar la distribución de $Y = X_1 + 2X_2 - 3X_3$
 
 Dado que $Y$ es una combinación lineal de otras variables aleatorias normales, si combinamos variables normales el resultado sera una variable normal. Donde $E[X]$ representa la esperanza, la formula que usamos deriva de las propiedades de la esperanza: La esperanza de una suma es la suma de las esperanzas.
 
@@ -261,7 +261,7 @@ $$
 Y \sim N(1, 29)
 $$
 
-## 2. Hallar un vector $u = (u_1, u_2)$ tal que las variables aleatorias $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes.
+## Hallar un vector $u = (u_1, u_2)$ tal que las variables aleatorias $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes.
 
 Para que $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes, su covarianza debe ser cero. La covarianza mide la relación lineal entre dos variables. Si es cero, significa que no existe una relación lineal entre estas.
 
