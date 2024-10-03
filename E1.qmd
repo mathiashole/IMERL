@@ -294,8 +294,11 @@ $$
 
 Se sabe que el **error cuadrático medio (ECM)** es $\text{ECM}(\hat{\theta}) = 8$, y se sabe que $P(\hat{\theta} \leq \theta) = 0.8413$. La fórmula del ECM de un estimador es $\text{ECM}(\hat{\theta}) = \text{Var}(\hat{\theta}) + \text{Sesgo}(\hat{\theta})^2$, donde $\text{Sesgo}(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$
 
-Por otro lado, $P(\hat{\theta} \leq \theta) = 0.8413$ corresponde a un cuantil de la distribucion normal. Buscando en la tabla de distribucion normal con $\text{mu} = 0$ y la probabilidad acumulada $P(Z \leq z) = 0.8413$, entonces $z = 1$
+Por otro lado, $P(\hat{\theta} \leq \theta) = 0.8413$ corresponde a un cuantil de la distribucion normal. Buscando en la tabla de distribucion normal con $\text{mu} = 0$ y la probabilidad acumulada $P(Z \leq z) = 0.8413$, entonces $z = 1$.
 
+$$
+P\left(\frac{\hat{\theta} - \mu_{\hat{\theta}}}{\sigma_{\hat{\theta}}} \leq \frac{\theta - \mu_{\hat{\theta}}}{\sigma_{\hat{\theta}}}\right) = P(Z \leq 1)
+$$
 
 donde:
 - $\text{Var}(\hat{\theta})$ es la varianza del estimador.
