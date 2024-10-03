@@ -281,14 +281,9 @@ $$
 \text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1(1) + u_2(0) = u_1 = 0
 $$
 
-### Paso 3: Hallar $u_2$
+Dado que $u_1 = 0$ esto asegura que las variables $X_1​$ y $X_1−(u_1X_1 + u_2X_2)$ sean independientes. El valor de $u_2$ no afecta la independencia de las variables, por lo que puede tomar cualquier número real. Para simplificar tomamos que $u_2 = 1$.
 
-El valor de $u_2$ puede ser cualquier número real. Sin embargo, para simplificar el problema, podemos elegir $u_2 = 1$.
-
-### Resultado Final
-
-Por lo tanto, podemos elegir el vector $u$ como:
-
+Siendo el vector:
 $$
 u = (0, 1)
 $$
