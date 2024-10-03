@@ -256,10 +256,7 @@ $$
 $$
 
 
-### Escribir la distribución de $Y$
-
-Entonces, $Y$ tiene una distribución normal:
-
+Siendo la distribución normal de $Y$:
 $$
 Y \sim N(1, 29)
 $$
