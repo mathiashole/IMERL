@@ -344,3 +344,5 @@ Se considera la condición $(C)$:
 $$
 \frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
 $$
+
+Parte 1: Probar que si un estimador $T(x)$ satisface la condición $(C)$, entonces $I(\theta)$ es la información de Fisher de $\theta$.
