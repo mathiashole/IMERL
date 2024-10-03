@@ -339,24 +339,14 @@ $$
 
 # Ejercicio 6: Estimador de mínima varianza
 
-Se considera la condición $(C)$:
+Se considera la condición $(C):\frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)$
+
+## Probar que si un estimador $T(x)$ satisface la condición $(C)$, entonces $I(\theta)$ es la información de Fisher de $\theta$.
+
+La **información de Fisher**, $I(\theta)$, tambien puede expresarse como la varianza de la derivada de la log-verosimilitud
 
 $$
-\frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
-$$
-
-Parte 1: Probar que si un estimador $T(x)$ satisface la condición $(C)$, entonces $I(\theta)$ es la información de Fisher de $\theta$.
-
-La **información de Fisher**, $I(\theta)$, se define como:
-
-$$
-I(\theta) = - \mathbb{E}\left[\frac{\partial^2}{\partial \theta^2} \ell(\theta, x)\right]
-$$
-
-También puede expresarse en términos de la varianza de la derivada de la log-verosimilitud:
-
-$$
-I(\theta) = \text{Var}\left(\frac{\partial}{\partial \theta} \ell(\theta, x)\right)
+I(\theta) = - \mathbb{E}\left[\frac{\partial^2}{\partial \theta^2} \ell(\theta, x)\right] = \text{Var}\left(\frac{\partial}{\partial \theta} \ell(\theta, x)\right)
 $$
 
 Dado que la condición $(C)$ establece:
