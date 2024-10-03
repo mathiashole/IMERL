@@ -355,13 +355,8 @@ $$
 \mathbb{E}\left[\frac{\partial}{\partial \theta} \ell(\theta, x)\right] = I(\theta) \mathbb{E}[T(x) - \theta]
 $$
 
-Sabemos que el valor esperado de la derivada de la log-verosimilitud es cero:
+Sabemos que el valor esperado de la derivada de la log-verosimilitud es cero $\mathbb{E}\left[\frac{\partial}{\partial \theta} \ell(\theta, x)\right] = 0$, por lo que $0 = I(\theta)(\mathbb{E}[T(x)] - \theta)$. Entonces si $\mathbb{E}[T(x)] = \theta$, esto muestra que $I(\theta)$ es la información de Fisher.
 
-$$
-0 = I(\theta)(\mathbb{E}[T(x)] - \theta)
-$$
-
-Dado que $\mathbb{E}[T(x)] = \theta$, esto muestra que $I(\theta)$ es la información de Fisher.
 
 ### Parte 2: Probar que si $\hat{\theta}_{MLE}$ es el estimador de máxima verosimilitud de $\theta$ y $T(x)$ cumple con la condición $(C)$, entonces $T(x) = \hat{\theta}_{MLE}$.
 
