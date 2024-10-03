@@ -263,7 +263,7 @@ $$
 
 ## 2. Hallar un vector $u = (u_1, u_2)$ tal que las variables aleatorias $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes.
 
-Para que $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes, debemos asegurarnos de que la covarianza entre $X_1$ y $u_1 X_1 + u_2 X_2$ sea cero:
+Para que $X_1$ y $X_1 - (u_1 X_1 + u_2 X_2)$ sean independientes, su covarianza debe ser cero. La covarianza mide la relación lineal entre dos variables. Si es cero, significa que no existe una relación lineal entre estas.
 
 $$
 \text{Cov}(X_1, u_1 X_1 + u_2 X_2) = 0
