@@ -252,18 +252,9 @@ Sustituyendo en la fórmula de varianza con los valores de la matriz de covarian
 - $\text{Cov}(X_2, X_3) = 1$
 
 $$
-\text{Var}(Y) = 1 + 2^2(3) + (-3)^2(2) + 2(1)(2)(1) + 2(-3)(1)(1)
+\text{Var}(Y) = 1 + 2^2(3) + (-3)^2(2) + 2(1)(2)(1) + 2(-3)(1)(1) = 1 + 12 + 18 + 4 - 6 = 29
 $$
 
-Calculamos:
-
-$$
-\text{Var}(Y) = 1 + 4(3) + 9(2) + 2(1)(2) + 2(-3)(1)
-$$
-
-$$
-= 1 + 12 + 18 + 4 - 6 = 29
-$$
 
 ### Escribir la distribución de $Y$
 
