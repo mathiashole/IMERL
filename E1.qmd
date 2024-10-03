@@ -242,7 +242,7 @@ $$
 \text{Var}(Y) = \text{Var}(X_1) + 2^2\text{Var}(X_2) + (-3)^2\text{Var}(X_3) + 2(1)(2)\text{Cov}(X_1, X_3) + 2(-3)(1)\text{Cov}(X_2, X_3)
 $$
 
-De la matriz de covarianzas $\Sigma$, extraemos los elementos necesarios:
+Sustituyendo en la fórmula de varianza con los valores de la matriz de covarianzas $\Sigma$:
 
 - $\text{Var}(X_1) = 1$
 - $\text{Var}(X_2) = 3$
@@ -250,8 +250,6 @@ De la matriz de covarianzas $\Sigma$, extraemos los elementos necesarios:
 - $\text{Cov}(X_1, X_2) = 0$
 - $\text{Cov}(X_1, X_3) = 1$
 - $\text{Cov}(X_2, X_3) = 1$
-
-Sustituyendo en la fórmula de varianza:
 
 $$
 \text{Var}(Y) = 1 + 2^2(3) + (-3)^2(2) + 2(1)(2)(1) + 2(-3)(1)(1)
