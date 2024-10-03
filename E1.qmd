@@ -287,3 +287,99 @@ Siendo el vector:
 $$
 u = (0, 1)
 $$
+
+## Ejercicio 4: Sesgo de un Estimador
+
+Un estimador \(\hat{\theta}\) de un parámetro \(\theta\) tiene distribución normal. Se sabe que el **error cuadrático medio (ECM)** de \(\hat{\theta}\) es 8, es decir:
+
+$$
+\text{ECM}(\hat{\theta}) = 8
+$$
+
+Además, se conoce que:
+
+$$
+P(\hat{\theta} \leq \theta) = 0.8413
+$$
+
+Nuestro objetivo es hallar el sesgo del estimador $\hat{\theta}$.
+
+Fórmula del ECM
+
+Sabemos que el error cuadrático medio de un estimador se calcula como:
+
+$$
+\text{ECM}(\hat{\theta}) = \text{Var}(\hat{\theta}) + \text{Sesgo}(\hat{\theta})^2
+$$
+
+donde:
+- $\text{Var}(\hat{\theta})$ es la varianza del estimador.
+- $\text{Sesgo}(\hat{\theta}) = \mathbb{E}[\hat{\theta}] - \theta$ es el sesgo del estimador.
+
+Interpretar la probabilidad dada
+
+La probabilidad $P(\hat{\theta} \leq \theta) = 0.8413$ corresponde al cuantil 0.8413 de una distribución normal estándar, lo que significa que:
+
+$$
+P(Z \leq 1) = 0.8413
+$$
+
+Entonces, se cumple que:
+
+$$
+\frac{\theta - \mu_{\hat{\theta}}}{\sigma_{\hat{\theta}}} = 1
+$$
+
+Despejamos para la media $\mu_{\hat{\theta}}$:
+
+$$
+\theta - \mu_{\hat{\theta}} = \sigma_{\hat{\theta}}
+$$
+
+Por lo tanto, la media del estimador es:
+
+$$
+\mu_{\hat{\theta}} = \theta - \sigma_{\hat{\theta}}
+$$
+
+Cálculo del Sesgo
+
+El sesgo del estimador es la diferencia entre la media del estimador y el valor verdadero del parámetro \(\theta\):
+
+$$
+\text{Sesgo}(\hat{\theta}) = \mu_{\hat{\theta}} - \theta = (\theta - \sigma_{\hat{\theta}}) - \theta = -\sigma_{\hat{\theta}}
+$$
+
+### Paso 4: Utilizar el ECM para hallar $\sigma_{\hat{\theta}}$
+
+Sabemos que el ECM es 8, y también que:
+
+$$
+\text{ECM}(\hat{\theta}) = \sigma_{\hat{\theta}}^2 + (-\sigma_{\hat{\theta}})^2
+$$
+
+Entonces:
+
+$$
+8 = 2\sigma_{\hat{\theta}}^2
+$$
+
+Despejando $\sigma_{\hat{\theta}}^2$:
+
+$$
+\sigma_{\hat{\theta}}^2 = \frac{8}{2} = 4
+$$
+
+Por lo tanto, la desviación estándar del estimador es:
+
+$$
+\sigma_{\hat{\theta}} = 2
+$$
+
+Finalmente, el sesgo del estimador es:
+
+$$
+\text{Sesgo}(\hat{\theta}) = -\sigma_{\hat{\theta}} = -2
+$$
+
+El sesgo del estimador $\hat{\theta}\) es \(-2$.
