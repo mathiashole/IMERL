@@ -269,12 +269,10 @@ $$
 \text{Cov}(X_1, u_1 X_1 + u_2 X_2) = 0
 $$
 
-### Paso 1: Calcular la covarianza
-
-Usamos la propiedad de la covarianza:
+Por las propiedades de la covarianza $Cov(X1​,aY+bZ)=a⋅Cov(X1​,Y)+b⋅Cov(X1​,Z)$ siendo $a, b$ constantes, y $Y$ y $Z$ variables aleatorias. 
 
 $$
-\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1 \text{Var}(X_1) + u_2 \text{Cov}(X_1, X_2)
+\text{Cov}(X_1, u_1 X_1 + u_2 X_2) = u_1​⋅\text{Cov}(X_1​,X_1​)+u_2​⋅\text{Cov}(X_1​,X_2​)
 $$
 
 Sustituyendo los valores:
