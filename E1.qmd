@@ -368,19 +368,7 @@ $$
 \frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = I(\hat{\theta}_{MLE})(T(x) - \hat{\theta}_{MLE}) = 0
 $$
 
-En el punto $\theta = \hat{\theta}_{MLE}$, esto se convierte en:
-
-$$
-0 = I(\hat{\theta}_{MLE})(T(x) - \hat{\theta}_{MLE})
-$$
-
-Dado que $I(\hat{\theta}_{MLE}) > 0$, esto implica:
-
+Para estimadores regulares la informacion de Fisher es positva, es decir, $I(\hat{\theta}_{MLE}) > 0$, lo que implica: 
 $$
 T(x) = \hat{\theta}_{MLE}
 $$
-
-### Conclusión
-
-1. Si un estimador $T(x)$ satisface la condición $(C)$, entonces $I(\theta)$ es la información de Fisher.
-2. Si $\hat{\theta}_{MLE}$ es el estimador de máxima verosimilitud de $\theta$ y $T(x)$ satisface la condición $(C)$, entonces $T(x) = \hat{\theta}_{MLE}$.
