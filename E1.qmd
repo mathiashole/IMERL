@@ -432,7 +432,7 @@ $$
 \mu = E(Y) = \frac{1}{a + 1}
 $$
 
-## Verificar que $\hat{a} = g Y_n$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
+## Verificar que $\hat{a} = g(\bar{Y}_n)$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
 
 Sabemos que $g(y) = \frac{1}{y} - 1$. Entonces:
 $$
