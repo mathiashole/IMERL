@@ -365,7 +365,7 @@ El estimador de máxima verosimilitud, denotado como $\hat{\theta}_{MLE}$, maxim
 Aplicar la condición $(C)$ en el punto $\hat{\theta}_{MLE}$​, que es donde la derivada de la log-verosimilitud es cero.
 
 $$
-\frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = I(\hat{\theta}_{MLE})(T(x) - \hat{\theta}_{MLE})
+\frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = I(\hat{\theta}_{MLE})(T(x) - \hat{\theta}_{MLE}) = 0
 $$
 
 En el punto $\theta = \hat{\theta}_{MLE}$, esto se convierte en:
