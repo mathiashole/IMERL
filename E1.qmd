@@ -420,6 +420,18 @@ hat_a
 
 ## Hallar la densidad de Y = − ln(X) y calcular $\text{mu} = \mathbb{E}(Y)$ en función de $a$.
 
+Sabemos que $Y = -\ln(X)$. Usamos la transformación para hallar la densidad de $Y$:
+$$
+f_Y(y) = (a + 1)(e^{-y})^a \cdot e^{-y} = (a + 1)e^{-(a + 1)y}
+$$
+
+Es decir, $Y$ sigue una distribución exponencial con parámetro $a + 1$.
+
+El valor esperado de $Y$ es:
+$$
+\mu = E(Y) = \frac{1}{a + 1}
+$$
+
 ## Verificar que $\hat{a} = g Y_n$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
 
 ## Usando el desarrollo ˆa − a = g Y n − g(μ) ≈ g′(μ) Y n − μ para n grande
