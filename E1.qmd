@@ -362,7 +362,7 @@ Sabemos que el valor esperado de la derivada de la log-verosimilitud es cero $\m
 
 El estimador de máxima verosimilitud, denotado como $\hat{\theta}_{MLE}$, maximiza el valor de $\hat{\theta}$ que hace que la derivada de la log-verosimilitud respecto de $\hat{\theta}$ sea cero $\frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = 0$
 
-Al aplicar la condición $(C)$, donde $I(\theta)$ es la informacion de Fisher y $T(x)$ es el estimador de $\theta$
+Aplicar la condición $(C)$ en el punto $\hat{\theta}_{MLE}$​, que es donde la derivada de la log-verosimilitud es cero.
 
 $$
 \frac{\partial}{\partial \theta} \ell(\theta, x) = I(\theta)(T(x) - \theta)
