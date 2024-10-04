@@ -372,3 +372,16 @@ Para estimadores regulares la informacion de Fisher es positva, es decir, $I(\ha
 $$
 T(x) = \hat{\theta}_{MLE}
 $$
+
+
+# Ejercicio 7 El método delta
+
+## Hallar el estimador de máxima verosimilitud $\hat{a}$ de $a$.
+
+## Hallar la densidad de Y = − ln(X) y calcular $\text{mu} = \mathbb{E}(Y)$ en función de $a$.
+
+## Verificar que $\hat{a} = g Y_n$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
+
+## Usando el desarrollo ˆa − a = g Y n − g(μ) ≈ g′(μ) Y n − μ para n grande
+
+## Se dispone de la siguiente muestra de X
