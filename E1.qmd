@@ -407,6 +407,17 @@ $$
 \hat{a} = \frac{-n}{\sum_{i=1}^{n} \ln(x_i)} - 1
 $$
 
+```{r}
+# Datos de la muestra
+muestra <- c(0.56, 0.82, 0.71, 0.87, 0.33, 0.36, 0.93, 0.94, 0.89, 0.42)
+
+# Cálculo del estimador MLE para a
+n <- length(muestra)
+hat_a <- -n / sum(log(muestra)) - 1
+hat_a
+
+```
+
 ## Hallar la densidad de Y = − ln(X) y calcular $\text{mu} = \mathbb{E}(Y)$ en función de $a$.
 
 ## Verificar que $\hat{a} = g Y_n$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
