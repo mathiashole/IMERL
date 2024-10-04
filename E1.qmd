@@ -378,6 +378,35 @@ $$
 
 ## Hallar el estimador de máxima verosimilitud $\hat{a}$ de $a$.
 
+Dada la densidad de probabilidad de $X$:
+$$
+p(x; a) =
+\begin{cases}
+(a + 1)x^a & \text{si } 0 < x < 1, \\
+0 & \text{si no.}
+\end{cases}
+$$
+
+La función de verosimilitud es:
+$$
+L(a; x_1, x_2, \dots, x_n) = \prod_{i=1}^{n} (a + 1) x_i^a = (a + 1)^n \prod_{i=1}^{n} x_i^a
+$$
+
+La función de log-verosimilitud es:
+$$
+\ell(a; x_1, x_2, \dots, x_n) = n \ln(a + 1) + a \sum_{i=1}^{n} \ln(x_i)
+$$
+
+Derivamos la log-verosimilitud respecto a $a$ y la igualamos a cero para encontrar el estimador de máxima verosimilitud (MLE):
+$$
+\frac{\partial}{\partial a} \ell(a; x_1, \dots, x_n) = \frac{n}{a + 1} + \sum_{i=1}^{n} \ln(x_i) = 0
+$$
+
+Despejando $a$:
+$$
+\hat{a} = \frac{-n}{\sum_{i=1}^{n} \ln(x_i)} - 1
+$$
+
 ## Hallar la densidad de Y = − ln(X) y calcular $\text{mu} = \mathbb{E}(Y)$ en función de $a$.
 
 ## Verificar que $\hat{a} = g Y_n$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
