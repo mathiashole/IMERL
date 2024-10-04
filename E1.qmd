@@ -360,11 +360,7 @@ Sabemos que el valor esperado de la derivada de la log-verosimilitud es cero $\m
 
 ## Probar que si $\hat{\theta}_{MLE}$ es el estimador de máxima verosimilitud de $\theta$ y $T(x)$ cumple con la condición $(C)$, entonces $T(x) = \hat{\theta}_{MLE}$.
 
-El estimador de máxima verosimilitud satisface:
-
-$$
-\frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = 0
-$$
+El estimador de máxima verosimilitud, denotado como $\hat{\theta}_{MLE}$, maximiza el valor de $\hat{\theta}$ que hace que la derivada de la log-verosimilitud respecto de $\hat{\theta}$ sea cero $\frac{\partial}{\partial \theta} \ell(\hat{\theta}_{MLE}, x) = 0$
 
 De la condición $(C)$ 
 
