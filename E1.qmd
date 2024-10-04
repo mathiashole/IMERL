@@ -434,6 +434,13 @@ $$
 
 ## Verificar que $\hat{a} = g Y_n$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
 
+Sabemos que $g(y) = \frac{1}{y} - 1$. Entonces:
+$$
+\hat{a} = g(\bar{Y}_n) = \frac{1}{\bar{Y}_n} - 1
+$$
+
+Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
+
 ## Usando el desarrollo ˆa − a = g Y n − g(μ) ≈ g′(μ) Y n − μ para n grande
 
 ## Se dispone de la siguiente muestra de X
