@@ -443,7 +443,7 @@ Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
 
 A continuación, se calculará la información de Fisher para distintas distribuciones de probabilidad.
 
-## Caso (a): Distribución Bernoulli \( X \sim \text{Ber}(p) \)
+## Caso (a): Distribución Bernoulli $X \sim \text{Ber}(p)$
 
 La función de probabilidad de una distribución Bernoulli es:
 
@@ -457,13 +457,13 @@ $$
 \log f(x; p) = x \log(p) + (1 - x) \log(1 - p)
 $$
 
-La derivada con respecto a \( p \) es:
+La derivada con respecto a  $p$ es:
 
 $$
 \frac{\partial}{\partial p} \log f(x; p) = \frac{x}{p} - \frac{1 - x}{1 - p}
 $$
 
-La segunda derivada con respecto a \( p \) es:
+La segunda derivada con respecto a $p$ es:
 
 $$
 \frac{\partial^2}{\partial p^2} \log f(x; p) = -\frac{x}{p^2} - \frac{1 - x}{(1 - p)^2}
@@ -475,7 +475,7 @@ $$
 \mathcal{I}(p) = -\mathbb{E}\left[ \frac{\partial^2}{\partial p^2} \log f(X; p) \right] = \frac{1}{p(1-p)}
 $$
 
-## Caso (b): Distribución Exponencial \( X \sim \exp(\lambda) \)
+## Caso (b): Distribución Exponencial $X \sim \exp(\lambda)$
 
 La función de densidad de una distribución exponencial es:
 
@@ -489,13 +489,13 @@ $$
 \log f(x; \lambda) = \log(\lambda) - \lambda x
 $$
 
-La derivada con respecto a \( \lambda \) es:
+La derivada con respecto a $\lambda$ es:
 
 $$
 \frac{\partial}{\partial \lambda} \log f(x; \lambda) = \frac{1}{\lambda} - x
 $$
 
-La segunda derivada con respecto a \( \lambda \) es:
+La segunda derivada con respecto a $\lambda$ es:
 
 $$
 \frac{\partial^2}{\partial \lambda^2} \log f(x; \lambda) = -\frac{1}{\lambda^2}
@@ -507,7 +507,7 @@ $$
 \mathcal{I}(\lambda) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \lambda^2} \log f(X; \lambda) \right] = \frac{1}{\lambda^2}
 $$
 
-## Caso (c): Distribución Normal \( X \sim N(\mu, 4) \)
+## Caso (c): Distribución Normal $X \sim N(\mu, 4)$
 
 La función de densidad de una distribución normal es:
 
@@ -515,7 +515,7 @@ $$
 f(x; \mu) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 $$
 
-Como \( \sigma^2 = 4 \), reescribimos la función de densidad como:
+Como $\sigma^2 = 4$, reescribimos la función de densidad como:
 
 $$
 f(x; \mu) = \frac{1}{\sqrt{8\pi}} e^{-\frac{(x-\mu)^2}{8}}
@@ -527,13 +527,13 @@ $$
 \log f(x; \mu) = -\frac{(x-\mu)^2}{8} - \log(\sqrt{8\pi})
 $$
 
-La derivada con respecto a \( \mu \) es:
+La derivada con respecto a $\mu$ es:
 
 $$
 \frac{\partial}{\partial \mu} \log f(x; \mu) = \frac{x - \mu}{4}
 $$
 
-La segunda derivada con respecto a \( \mu \) es:
+La segunda derivada con respecto a $\mu$ es:
 
 $$
 \frac{\partial^2}{\partial \mu^2} \log f(x; \mu) = -\frac{1}{4}
