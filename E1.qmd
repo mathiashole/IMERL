@@ -447,7 +447,7 @@ $$
 I(\theta) = -\mathbb{E}\left[\frac{\partial^2}{\partial \theta^2} \log f(X; \theta)\right]
 $$
 
-A continuación, se calculará la información de Fisher para distintas distribuciones de probabilidad.
+Calcularemos la información de Fisher para distintas distribuciones de propuestas.
 
 ## Caso (a): Distribución Bernoulli $X \sim \text{Ber}(p)$
 
