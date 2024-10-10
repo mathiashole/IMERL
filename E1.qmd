@@ -134,7 +134,8 @@ $$
 Donde $O_{ij}$ son las frecuencias observadas y $E_{ij}$ son las frecuencias esperadas.
 
 $$
-\chi^2 = \frac{(50 - 45)^2}{45} + \frac{(30 - 37.5)^2}{37.5} + \frac{(20 - 17.5)^2}{17.5} + \frac{(40 - 45)^2}{45} + \frac{(45 - 37.5)^2}{37.5} + \frac{(15 - 17.5)^2}{17.5}
+\chi^2 = \frac{(50 - 45)^2}{45} + \frac{(30 - 37.5)^2}{37.5} + \frac{(20 - 17.5)^2}{17.5} + \frac{(40 - 45)^2}{45} + \frac{(45 - 37.5)^2}{37.5} + \frac{(15 - 17.5)^2}{17.5} = \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} + \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5}
+$$
 $$
 
 Calculamos cada término:
