@@ -438,3 +438,109 @@ Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
 ## Usando el desarrollo ˆa − a = g Y n − g(μ) ≈ g′(μ) Y n − μ para n grande
 
 ## Se dispone de la siguiente muestra de X
+
+# Ejercicio 10 Información de Fisher
+
+A continuación, se calculará la información de Fisher para distintas distribuciones de probabilidad.
+
+## Caso (a): Distribución Bernoulli \( X \sim \text{Ber}(p) \)
+
+La función de probabilidad de una distribución Bernoulli es:
+
+$$
+f(x; p) = p^x (1-p)^{1-x}, \quad x \in \{0, 1\}
+$$
+
+El logaritmo de la función de verosimilitud es:
+
+$$
+\log f(x; p) = x \log(p) + (1 - x) \log(1 - p)
+$$
+
+La derivada con respecto a \( p \) es:
+
+$$
+\frac{\partial}{\partial p} \log f(x; p) = \frac{x}{p} - \frac{1 - x}{1 - p}
+$$
+
+La segunda derivada con respecto a \( p \) es:
+
+$$
+\frac{\partial^2}{\partial p^2} \log f(x; p) = -\frac{x}{p^2} - \frac{1 - x}{(1 - p)^2}
+$$
+
+La Información de Fisher es:
+
+$$
+\mathcal{I}(p) = -\mathbb{E}\left[ \frac{\partial^2}{\partial p^2} \log f(X; p) \right] = \frac{1}{p(1-p)}
+$$
+
+## Caso (b): Distribución Exponencial \( X \sim \exp(\lambda) \)
+
+La función de densidad de una distribución exponencial es:
+
+$$
+f(x; \lambda) = \lambda e^{-\lambda x}, \quad x \geq 0
+$$
+
+El logaritmo de la función de verosimilitud es:
+
+$$
+\log f(x; \lambda) = \log(\lambda) - \lambda x
+$$
+
+La derivada con respecto a \( \lambda \) es:
+
+$$
+\frac{\partial}{\partial \lambda} \log f(x; \lambda) = \frac{1}{\lambda} - x
+$$
+
+La segunda derivada con respecto a \( \lambda \) es:
+
+$$
+\frac{\partial^2}{\partial \lambda^2} \log f(x; \lambda) = -\frac{1}{\lambda^2}
+$$
+
+La Información de Fisher es:
+
+$$
+\mathcal{I}(\lambda) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \lambda^2} \log f(X; \lambda) \right] = \frac{1}{\lambda^2}
+$$
+
+## Caso (c): Distribución Normal \( X \sim N(\mu, 4) \)
+
+La función de densidad de una distribución normal es:
+
+$$
+f(x; \mu) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+$$
+
+Como \( \sigma^2 = 4 \), reescribimos la función de densidad como:
+
+$$
+f(x; \mu) = \frac{1}{\sqrt{8\pi}} e^{-\frac{(x-\mu)^2}{8}}
+$$
+
+El logaritmo de la función de verosimilitud es:
+
+$$
+\log f(x; \mu) = -\frac{(x-\mu)^2}{8} - \log(\sqrt{8\pi})
+$$
+
+La derivada con respecto a \( \mu \) es:
+
+$$
+\frac{\partial}{\partial \mu} \log f(x; \mu) = \frac{x - \mu}{4}
+$$
+
+La segunda derivada con respecto a \( \mu \) es:
+
+$$
+\frac{\partial^2}{\partial \mu^2} \log f(x; \mu) = -\frac{1}{4}
+$$
+
+La Información de Fisher es:
+
+$$
+\mathcal{I}(\mu) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \mu^2} \log f(X; \mu) \right] = \frac{1}{4}
+$$
