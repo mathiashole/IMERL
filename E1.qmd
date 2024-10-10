@@ -143,12 +143,6 @@ $$
 \chi^2 = \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} + \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} = 0.556 + 1.5 + 0.357 + 0.556 + 1.5 + 0.357 = 4.826
 $$
 
-Simplificamos:
-
-$$
-\chi^2 = \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} + \frac{25}{45} + \frac{56.25}{37.5} + \frac{6.25}{17.5} = 0.556 + 1.5 + 0.357 + 0.556 + 1.5 + 0.357 = 4.826
-$$
-
 Los grados de libertad se calculan segun los numeros de r = row (fila) y c = column (columna):
 
 $$
