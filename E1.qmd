@@ -680,3 +680,15 @@ Donde:
 - $\beta_0$ es la intersección,
 - $\beta_1$ es la pendiente,
 - $\epsilon$ es el término de error.
+
+Usamos R para ajustar el modelo:
+
+```{r}
+# Datos
+t <- c(-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5)
+Y <- c(1, 5, 4, 7, 10, 8, 9, 13, 14, 13, 18)
+
+# Ajustar modelo de regresión
+modelo <- lm(Y ~ t)
+summary(modelo)
+```
