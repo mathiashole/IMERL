@@ -559,54 +559,54 @@ En este ejercicio, analizaremos la relación entre las alturas de madres e hijas
 
 ## 1. Hallar las ecuaciones de las rectas de regresión
 
-La ecuación de la recta de regresión de \( Y \) sobre \( X \) (altura de las hijas sobre altura de las madres) se puede expresar como:
+La ecuación de la recta de regresión de $Y$ sobre $X$ (altura de las hijas sobre altura de las madres) se puede expresar como:
 
-\[
+$$
 Y = a + bX
-\]
+$$
 
 Donde:
-- \( Y \) es la altura de las hijas,
-- \( X \) es la altura de las madres,
-- \( b \) es la pendiente de la recta de regresión, y
-- \( a \) es la intersección (ordenada al origen).
+- $Y$ es la altura de las hijas,
+- $X$ es la altura de las madres,
+- $b$ es la pendiente de la recta de regresión, y
+- $a$ es la ordenada al origen.
 
-### Cálculo de \( b \) y \( a \)
+### Cálculo de $b$ y $a$
 
-La pendiente \( b \) se calcula usando la fórmula:
+La pendiente $b$ se calcula usando la fórmula:
 
-\[
+$$
 b = r \frac{\sigma_Y}{\sigma_X}
-\]
+$$
 
 Donde:
-- \( r \) es la correlación (0.5),
-- \( \sigma_Y \) es la desviación estándar de \( Y \) (0.05),
-- \( \sigma_X \) es la desviación estándar de \( X \) (0.05).
+- $r$ es la correlación (0.5),
+- $\sigma_Y$ es la desviación estándar de $Y$ (0.05),
+- $\sigma_X$ es la desviación estándar de $X$ (0.05).
 
 Por lo tanto:
 
-\[
+$$
 b = 0.5 \cdot \frac{0.05}{0.05} = 0.5
-\]
+$$
 
-La intersección \( a \) se puede calcular usando la media:
+La intersección $a$ se puede calcular usando la media:
 
-\[
+$$
 a = \mu_Y - b\mu_X
-\]
+$$
 
 Dado que ambas medias son 1.63 m, tenemos:
 
-\[
+$$
 a = 1.63 - 0.5 \cdot 1.63 = 1.63 - 0.815 = 0.815
-\]
+$$
 
 Por lo tanto, la ecuación de la recta de regresión es:
 
-\[
+$$
 Y = 0.815 + 0.5X
-\]
+$$
 
 ## 2. Pronóstico para la diferencia de alturas de las madres
 
