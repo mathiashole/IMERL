@@ -710,3 +710,9 @@ Usaremos un nivel de significancia del $95 %$ $(\alpha = 0.05)$. Para probar la 
 Cálculo del valor $p$
 
 Si el valor $p$ es menor que $\alpha$, rechazamos $H_0$​:
+
+```{r}
+# Valor p de la pendiente
+valor_p <- summary(modelo)$coefficients[2, 4]
+valor_p
+```
