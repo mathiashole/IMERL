@@ -574,7 +574,7 @@ $a$ es la ordenada en el origen
 La pendiente $b$ se puede calcular usando la fórmula, sabiendo que $\text{Cov}(X, Y) = \rho.\sigma_X.\sigma_Y$
 
 $$
-\beta_X|_Y = \frac{\text{Cov}(X, Y)}{\sigma_X} = \rho \frac{\sigma_Y}{\sigma_X}
+\beta_X|_Y = \frac{\text{Cov}(X, Y)}{\sigma_X} = \frac{\rho.\sigma_X.\sigma_Y}{\sigma_x^2} = \rho \frac{\sigma_Y}{\sigma_X}
 $$
 
 Donde:
