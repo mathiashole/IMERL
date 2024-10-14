@@ -571,10 +571,10 @@ $a$ es la ordenada al origen.
 
 ### Cálculo de $b$ y $a$
 
-La pendiente $b$ se calcula usando la fórmula:
+La pendiente $b$ se puede calcular usando la fórmula, sabiendo que $\text{Cov}(X, Y) = \rho.\sigma_X.\sigma_Y$
 
 $$
-b = r \frac{\sigma_Y}{\sigma_X}
+\beta_X|_Y = \frac{\text{Cov}(X, Y)}{\sigma_X} = \rho \frac{\sigma_Y}{\sigma_X}
 $$
 
 Donde:
