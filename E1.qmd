@@ -563,11 +563,11 @@ $$
 Y = a + bX
 $$
 
-Donde:
+Donde 
 $Y$ es la altura de las hijas,
 $X$ es la altura de las madres,
-$b$ es la pendiente de la recta de regresión, y
-$a$ es la ordenada al origen.
+$b$ es la pendiente de la recta de regresión y
+$a$ es la ordenada en el origen
 
 ### Cálculo de $b$ y $a$
 
