@@ -557,7 +557,7 @@ $$
 
 En este ejercicio, analizaremos la relación entre las alturas de madres e hijas, que se distribuyen de manera normal bivariada. Se nos da una correlación, medias y desviaciones estándar para ambas variables.
 
-## 1. Hallar las ecuaciones de las rectas de regresión
+## Hallar las ecuaciones de las rectas de regresión
 
 La ecuación de la recta de regresión de $Y$ sobre $X$ (altura de las hijas sobre altura de las madres) se puede expresar como:
 
@@ -608,7 +608,7 @@ $$
 Y = 0.815 + 0.5X
 $$
 
-## 2. Pronóstico para la diferencia de alturas de las madres
+## Pronóstico para la diferencia de alturas de las madres
 
 La diferencia de altura entre dos amigas es de 5 cm (0.05 m). Usando la ecuación de la regresión, la diferencia pronosticada para las alturas de las madres es:
 
@@ -622,7 +622,7 @@ $$
 D = 0.5 \cdot 0.05 = 0.025 \text{ m (o 2.5 cm)}
 $$
 
-## 3. Porcentaje de hijas más bajas que sus madres
+## Porcentaje de hijas más bajas que sus madres
 
 Primero, necesitamos calcular la altura promedio de las hijas que son más altas que la media (1.63 m). Con la correlación, podemos encontrar que:
 
@@ -642,7 +642,7 @@ $$
 
 Esto significa que el 50% de las hijas que miden más que la media son más bajas que sus madres.
 
-## 4. Pronóstico para la altura de la hija de una madre que mide menos que la media
+## Pronóstico para la altura de la hija de una madre que mide menos que la media
 
 Si una madre mide menos que la media, digamos 1.58 m. Usamos la ecuación de la regresión:
 
@@ -666,7 +666,7 @@ En este ejercicio, analizaremos el efecto de la temperatura $t$ en la producció
 |------|----|----|----|----|----|----|----|----|----|----|----|
 | $Y$  | 1  | 5  | 4  | 7  | 10 | 8  | 9  | 13 | 14 | 13 | 18 |
 
-## 1. Ajustar un modelo de regresión lineal
+## Ajustar un modelo de regresión lineal
 
 Primero, ajustamos un modelo de regresión lineal simple:
 
@@ -693,7 +693,7 @@ modelo <- lm(Y ~ t)
 summary(modelo)
 ```
 
-## 2. Probar la hipótesis de que la pendiente es nula
+## Probar la hipótesis de que la pendiente es nula
 
 La hipótesis nula se establece como:
 $$
