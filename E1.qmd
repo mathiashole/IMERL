@@ -740,3 +740,19 @@ prediccion <- predict(modelo, nueva_dato, interval = "confidence", level = 0.95)
 prediccion
 
 ```
+
+## Intervalo de confianza para una futura $Y$
+
+El intervalo de confianza para una futura observación de $Y$ se calcula como:
+
+$$
+\hat{Y} \pm t_{\alpha/2, n-2} \cdot SE_{total}
+$$
+
+Donde:
+
+$$
+SE_{total} = \sqrt{SE(\hat{Y})^2 + \sigma^2}
+$$
+
+Aquí, $SE_{total}$ representa el error estándar total, y $\sigma$ es la desviación estándar del modelo.
