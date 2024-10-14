@@ -577,15 +577,10 @@ $$
 \beta_X|_Y = \frac{\text{Cov}(X, Y)}{\sigma_X} = \frac{\rho.\sigma_X.\sigma_Y}{\sigma_x^2} = \rho \frac{\sigma_Y}{\sigma_X}
 $$
 
-Donde:
-- $r$ es la correlación (0.5),
-- $\sigma_Y$ es la desviación estándar de $Y$ (0.05),
-- $\sigma_X$ es la desviación estándar de $X$ (0.05).
-
-Por lo tanto:
+Siendo que $r$ es la correlación (0.5), $\sigma_Y$ es la desviación estándar de $Y$ (0.05) y $\sigma_X$ es la desviación estándar de $X$ (0.05). Sustituimos y obtenemos
 
 $$
-b = 0.5 \cdot \frac{0.05}{0.05} = 0.5
+\beta = 0.5 \cdot \frac{0.05}{0.05} = 0.5
 $$
 
 La intersección $a$ se puede calcular usando la media:
