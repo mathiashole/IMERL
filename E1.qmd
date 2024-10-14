@@ -716,3 +716,5 @@ Si el valor $p$ es menor que $\alpha$, rechazamos $H_0$​:
 valor_p <- summary(modelo)$coefficients[2, 4]
 valor_p
 ```
+
+Rechazamos la hipótesis nula y concluimos que la pendiente no es nula.
