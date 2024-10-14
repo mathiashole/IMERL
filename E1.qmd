@@ -630,15 +630,15 @@ Primero, necesitamos calcular la altura promedio de las hijas que son más altas
 
 Usamos la siguiente relación para calcular el porcentaje:
 
-\[
+$$
 P(Z < z) \text{ donde } z = \frac{Y - \mu_Y}{\sigma_Y}
-\]
+$$
 
 Para hijas más altas que la media, evaluamos el porcentaje:
 
-\[
+$$
 P(Z < 0) = 0.5 \quad \text{(debido a la simetría)}
-\]
+$$
 
 Esto significa que el 50% de las hijas que miden más que la media son más bajas que sus madres.
 
