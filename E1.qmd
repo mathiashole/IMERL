@@ -555,8 +555,6 @@ $$
 
 # Ejercicio 2 ¿De tal palo tal astilla?
 
-En este ejercicio, analizaremos la relación entre las alturas de madres e hijas, que se distribuyen de manera normal bivariada. Se nos da una correlación, medias y desviaciones estándar para ambas variables.
-
 ## Hallar las ecuaciones de las rectas de regresión
 
 La ecuación de la recta de regresión de $Y$ sobre $X$ (altura de las hijas sobre altura de las madres) se puede expresar como:
