@@ -580,7 +580,7 @@ $$
 Siendo que $r$ es la correlación (0.5), $\sigma_Y$ es la desviación estándar de $Y$ (0.05) y $\sigma_X$ es la desviación estándar de $X$ (0.05). Sustituimos y obtenemos
 
 $$
-\beta = 0.5 \cdot \frac{0.05}{0.05} = 0.5
+\beta_X|_Y = 0.5 \cdot \frac{0.05}{0.05} = 0.5
 $$
 
 La intersección $a$ se puede calcular usando la media:
