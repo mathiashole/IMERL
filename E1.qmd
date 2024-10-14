@@ -646,12 +646,12 @@ Esto significa que el 50% de las hijas que miden más que la media son más baja
 
 Si una madre mide menos que la media, digamos 1.58 m. Usamos la ecuación de la regresión:
 
-\[
+$$
 Y = 0.815 + 0.5 \cdot 1.58
-\]
+$$
 
 Calculamos:
 
-\[
+$$
 Y = 0.815 + 0.79 = 1.605 \text{ m}
-\]
+$$
