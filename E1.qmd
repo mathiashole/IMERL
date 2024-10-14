@@ -696,14 +696,17 @@ summary(modelo)
 ## 2. Probar la hipótesis de que la pendiente es nula
 
 La hipótesis nula se establece como:
-H0:β1=0
-H0​:β1​=0
+$$
+H_0​:\beta_1​=0
+$$
 
 La hipótesis alternativa es:
-Ha:β1≠0
-Ha​:β1​=0
+$$
+H_1:\beta_1 \neq 0
+$$
 
-Usaremos un nivel de significancia del 95 % (α = 0.05). Para probar la hipótesis, calculamos el valor pp correspondiente a β1β1​:
-Cálculo del valor pp
+Usaremos un nivel de significancia del $95 %$ $(\alpha = 0.05)$. Para probar la hipótesis, calculamos el valor $p$ correspondiente a $\beta_1$​:
 
-Si el valor pp es menor que α, rechazamos H0H0​:
+Cálculo del valor $p$
+
+Si el valor $p$ es menor que $\alpha$, rechazamos $H_0$​:
