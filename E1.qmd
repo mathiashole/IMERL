@@ -550,3 +550,108 @@ La Información de Fisher es:
 $$
 \mathcal{I}(\mu) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \mu^2} \log f(X; \mu) \right] = \frac{1}{4}
 $$
+
+
+
+# Ejercicio 2 ¿De tal palo tal astilla?
+
+En este ejercicio, analizaremos la relación entre las alturas de madres e hijas, que se distribuyen de manera normal bivariada. Se nos da una correlación, medias y desviaciones estándar para ambas variables.
+
+## 1. Hallar las ecuaciones de las rectas de regresión
+
+La ecuación de la recta de regresión de \( Y \) sobre \( X \) (altura de las hijas sobre altura de las madres) se puede expresar como:
+
+\[
+Y = a + bX
+\]
+
+Donde:
+- \( Y \) es la altura de las hijas,
+- \( X \) es la altura de las madres,
+- \( b \) es la pendiente de la recta de regresión, y
+- \( a \) es la intersección (ordenada al origen).
+
+### Cálculo de \( b \) y \( a \)
+
+La pendiente \( b \) se calcula usando la fórmula:
+
+\[
+b = r \frac{\sigma_Y}{\sigma_X}
+\]
+
+Donde:
+- \( r \) es la correlación (0.5),
+- \( \sigma_Y \) es la desviación estándar de \( Y \) (0.05),
+- \( \sigma_X \) es la desviación estándar de \( X \) (0.05).
+
+Por lo tanto:
+
+\[
+b = 0.5 \cdot \frac{0.05}{0.05} = 0.5
+\]
+
+La intersección \( a \) se puede calcular usando la media:
+
+\[
+a = \mu_Y - b\mu_X
+\]
+
+Dado que ambas medias son 1.63 m, tenemos:
+
+\[
+a = 1.63 - 0.5 \cdot 1.63 = 1.63 - 0.815 = 0.815
+\]
+
+Por lo tanto, la ecuación de la recta de regresión es:
+
+\[
+Y = 0.815 + 0.5X
+\]
+
+## 2. Pronóstico para la diferencia de alturas de las madres
+
+La diferencia de altura entre dos amigas es de 5 cm (0.05 m). Usando la ecuación de la regresión, la diferencia pronosticada para las alturas de las madres es:
+
+\[
+D = b \cdot (X_2 - X_1)
+\]
+
+Donde \( D \) es la diferencia pronosticada, y \( (X_2 - X_1) \) es la diferencia en alturas. Por lo tanto:
+
+\[
+D = 0.5 \cdot 0.05 = 0.025 \text{ m (o 2.5 cm)}
+\]
+
+## 3. Porcentaje de hijas más bajas que sus madres
+
+Primero, necesitamos calcular la altura promedio de las hijas que son más altas que la media (1.63 m). Con la correlación, podemos encontrar que:
+
+- Las hijas que miden más que la media seguirán una distribución normal.
+
+Usamos la siguiente relación para calcular el porcentaje:
+
+\[
+P(Z < z) \text{ donde } z = \frac{Y - \mu_Y}{\sigma_Y}
+\]
+
+Para hijas más altas que la media, evaluamos el porcentaje:
+
+\[
+P(Z < 0) = 0.5 \quad \text{(debido a la simetría)}
+\]
+
+Esto significa que el 50% de las hijas que miden más que la media son más bajas que sus madres.
+
+## 4. Pronóstico para la altura de la hija de una madre que mide menos que la media
+
+Si una madre mide menos que la media, digamos 1.58 m. Usamos la ecuación de la regresión:
+
+\[
+Y = 0.815 + 0.5 \cdot 1.58
+\]
+
+Calculamos:
+
+\[
+Y = 0.815 + 0.79 = 1.605 \text{ m}
+\]
