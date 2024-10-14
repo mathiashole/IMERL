@@ -564,10 +564,10 @@ Y = a + bX
 $$
 
 Donde:
-- $Y$ es la altura de las hijas,
-- $X$ es la altura de las madres,
-- $b$ es la pendiente de la recta de regresión, y
-- $a$ es la ordenada al origen.
+$Y$ es la altura de las hijas,
+$X$ es la altura de las madres,
+$b$ es la pendiente de la recta de regresión, y
+$a$ es la ordenada al origen.
 
 ### Cálculo de $b$ y $a$
 
