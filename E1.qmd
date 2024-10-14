@@ -612,15 +612,15 @@ $$
 
 La diferencia de altura entre dos amigas es de 5 cm (0.05 m). Usando la ecuación de la regresión, la diferencia pronosticada para las alturas de las madres es:
 
-\[
+$$
 D = b \cdot (X_2 - X_1)
-\]
+$$
 
-Donde \( D \) es la diferencia pronosticada, y \( (X_2 - X_1) \) es la diferencia en alturas. Por lo tanto:
+Donde $D$ es la diferencia pronosticada, y $(X_2 - X_1)$ es la diferencia en alturas. Por lo tanto:
 
-\[
+$$
 D = 0.5 \cdot 0.05 = 0.025 \text{ m (o 2.5 cm)}
-\]
+$$
 
 ## 3. Porcentaje de hijas más bajas que sus madres
 
