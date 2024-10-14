@@ -557,7 +557,7 @@ $$
 
 ## Hallar las ecuaciones de las rectas de regresión
 
-La ecuación de la recta de regresión de $Y$ sobre $X$ (altura de las hijas sobre altura de las madres) se puede expresar como:
+La ecuación de la recta de regresión se puede expresar de la siguiente forma
 
 $$
 Y = a + bX
