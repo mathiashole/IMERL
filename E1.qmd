@@ -665,21 +665,21 @@ En este ejercicio, analizaremos el efecto de la temperatura (\(t\)) en la produc
 
 Los datos recopilados son los siguientes:
 
-| \(t\)  | -5 | -4 | -3 | -2 | -1 | 0  | 1  | 2  | 3  | 4  | 5  |
-|--------|----|----|----|----|----|----|----|----|----|----|----|
-| \(Y\)  | 1  | 5  | 4  | 7  | 10 | 8  | 9  | 13 | 14 | 13 | 18 |
+| $t$  | -5 | -4 | -3 | -2 | -1 | 0  | 1  | 2  | 3  | 4  | 5  |
+|------|----|----|----|----|----|----|----|----|----|----|----|
+| $Y$  | 1  | 5  | 4  | 7  | 10 | 8  | 9  | 13 | 14 | 13 | 18 |
 
 ## 1. Ajustar un modelo de regresión lineal
 
 Primero, ajustamos un modelo de regresión lineal simple:
 
-\[
+$$
 Y = \beta_0 + \beta_1 t + \epsilon
-\]
+$$
 
 Donde:
-- \(Y\) es la variable dependiente (cantidad producida),
-- \(t\) es la variable independiente (temperatura),
-- \(\beta_0\) es la intersección,
-- \(\beta_1\) es la pendiente,
-- \(\epsilon\) es el término de error.
+- $Y$ es la variable dependiente (cantidad producida),
+- $t$ es la variable independiente (temperatura),
+- $\beta_0$ es la intersección,
+- $\beta_1$ es la pendiente,
+- $\epsilon$ es el término de error.
