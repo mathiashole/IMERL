@@ -756,3 +756,10 @@ SE_{total} = \sqrt{SE(\hat{Y})^2 + \sigma^2}
 $$
 
 Aquí, $SE_{total}$ representa el error estándar total, y $\sigma$ es la desviación estándar del modelo.
+
+```{r}
+# Intervalo de predicción para una nueva observación
+prediccion_futura <- predict(modelo, nueva_dato, interval = "prediction", level = 0.95)
+prediccion_futura
+
+```
