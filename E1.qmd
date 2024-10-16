@@ -662,7 +662,7 @@ $b$ es la pendiente de la recta,
 $a$ es la ordenada en el origen y
 $\epsilon$ es el término de error.
 
-Usamos R para ajustar el modelo:
+Ajustar el modelo con el siguiente codigo en R
 
 ```{r}
 # Datos
