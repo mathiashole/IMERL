@@ -678,14 +678,14 @@ El resumen del modelo nos proporciona los coeficientes estimados (intercepto y p
 
 ## Probar la hipótesis de que la pendiente es nula con un nivel del $95\text{%}$
 
-La hipótesis nula se establece como:
+La hipótesis nula
 $$
 H_0​:b​=0
 $$
 
-La hipótesis alternativa es:
+La hipótesis alternativa
 $$
-H_1:\beta_1 \neq 0
+H_1:b \neq 0
 $$
 
 Usaremos un nivel de significancia del $95 %$ $(\alpha = 0.05)$. Para probar la hipótesis, calculamos el valor $p$ correspondiente a $\beta_1$​:
