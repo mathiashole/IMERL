@@ -612,7 +612,7 @@ $$
 D = 0.5 \cdot 0.05 = 0.025 \text{ m o 2.5 cm}
 $$
 
-## Porcentaje de hijas más bajas que sus madres
+## Entre las hijas que miden más que la media, ¿qué porcentaje son más bajas que sus madres?
 
 Primero, necesitamos calcular la altura promedio de las hijas que son más altas que la media (1.63 m). Con la correlación, podemos encontrar que:
 
