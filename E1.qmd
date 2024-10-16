@@ -592,10 +592,10 @@ $$
 a = \mu_Y - b\mu_X = 1.63 - 0.5 \cdot 1.63 = 1.63 - 0.815 = 0.815
 $$
 
-La ecuación de la recta de regresión 
+Por lo que la ecuación de la recta de regresión 
 
 $$
-Y = 0.815 + 0.5X
+Y = a + bX = 0.815 + 0.5X
 $$
 
 ## Pronóstico para la diferencia de alturas de las madres
