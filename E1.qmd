@@ -652,8 +652,18 @@ Analizaremos el efecto de la temperatura $t$ en la producción de un material $Y
 Primero, ajustamos un modelo de regresión lineal simple:
 
 $$
+Y = a + bX + \epsilon
+$$
+
+$$
 Y = \beta_0 + \beta_1 t + \epsilon
 $$
+
+Donde 
+$Y$ es la variable dependiente (la cantidad que se produce),
+$X$ es la variable independiente (temperatura),
+$b$ es la pendiente de la recta y
+$a$ es la ordenada en el origen
 
 Donde:
 - $Y$ es la variable dependiente (cantidad producida),
