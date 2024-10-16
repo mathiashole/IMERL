@@ -606,10 +606,10 @@ $$
 D = b \cdot (X_2 - X_1)
 $$
 
-Donde $D$ es la diferencia pronosticada, y $(X_2 - X_1)$ es la diferencia en alturas. Por lo tanto:
+Siendo $D$ la diferencia pronosticada, y $(X_2 - X_1)$ es la diferencia entre alturas. Obtenemos la siguiente ecuacion 
 
 $$
-D = 0.5 \cdot 0.05 = 0.025 \text{ m (o 2.5 cm)}
+D = 0.5 \cdot 0.05 = 0.025 \text{ m o 2.5 cm}
 $$
 
 ## Porcentaje de hijas más bajas que sus madres
