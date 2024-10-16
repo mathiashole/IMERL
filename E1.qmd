@@ -600,7 +600,7 @@ $$
 
 ## La altura de dos amigas difiere en 5cm. ¿Cuál es tu pronóstico para la diferencia de alturas de las madres?
 
-La diferencia de altura entre dos amigas es de 5 cm (0.05 m). Usando la ecuación de la regresión, la diferencia pronosticada para las alturas de las madres es:
+La diferencia de altura entre dos amigas es de 5 cm (0.05 m). Usando la ecuación de la regresión, la diferencia pronosticada para las alturas de madres es la siguiente
 
 $$
 D = b \cdot (X_2 - X_1)
