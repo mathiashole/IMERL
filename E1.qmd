@@ -680,7 +680,7 @@ El resumen del modelo nos proporciona los coeficientes estimados (intercepto y p
 
 La hipótesis nula se establece como:
 $$
-H_0​:\beta_1​=0
+H_0​:b​=0
 $$
 
 La hipótesis alternativa es:
