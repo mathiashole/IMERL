@@ -643,7 +643,6 @@ $$
 
 Analizaremos el efecto de la temperatura $t$ en la producción de un material $Y$, con los siguientes datos
 
-
 | $t$  | -5 | -4 | -3 | -2 | -1 | 0  | 1  | 2  | 3  | 4  | 5  |
 |------|----|----|----|----|----|----|----|----|----|----|----|
 | $Y$  | 1  | 5  | 4  | 7  | 10 | 8  | 9  | 13 | 14 | 13 | 18 |
