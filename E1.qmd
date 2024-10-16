@@ -569,7 +569,7 @@ $X$ es la altura de las madres,
 $b$ es la pendiente de la recta de regresión y
 $a$ es la ordenada en el origen
 
-### Cálculo de $b$ y $a$
+Cálculo de $b$ y $a$
 
 La pendiente $b$ se puede calcular usando la fórmula, sabiendo que $\text{Cov}(X, Y) = \rho.\sigma_X.\sigma_Y$
 
@@ -598,7 +598,7 @@ $$
 Y = a + bX = 0.815 + 0.5X
 $$
 
-## Pronóstico para la diferencia de alturas de las madres
+## La altura de dos amigas difiere en 5cm. ¿Cuál es tu pronóstico para la diferencia de alturas de las madres?
 
 La diferencia de altura entre dos amigas es de 5 cm (0.05 m). Usando la ecuación de la regresión, la diferencia pronosticada para las alturas de las madres es:
 
