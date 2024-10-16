@@ -662,8 +662,9 @@ $$
 Donde 
 $Y$ es la variable dependiente (la cantidad que se produce),
 $X$ es la variable independiente (temperatura),
-$b$ es la pendiente de la recta y
-$a$ es la ordenada en el origen
+$b$ es la pendiente de la recta,
+$a$ es la ordenada en el origen y
+$\epsilon$ es el término de error.
 
 Donde:
 - $Y$ es la variable dependiente (cantidad producida),
