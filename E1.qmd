@@ -614,11 +614,9 @@ $$
 
 ## Entre las hijas que miden más que la media, ¿qué porcentaje son más bajas que sus madres?
 
-Primero, necesitamos calcular la altura promedio de las hijas que son más altas que la media (1.63 m). Con la correlación, podemos encontrar que:
+Calcular la altura promedio de las hijas que son más altas que la media (1.63 m). Las hijas que miden más que la media siguen una distribución normal.
 
-- Las hijas que miden más que la media seguirán una distribución normal.
-
-Usamos la siguiente relación para calcular el porcentaje:
+Usamos el Z-score que nos proporciona el desvíos estándar, si este está en un valor específico por encima o por debajo de la media. El valor z nos permite comparar directamente una altura con la distribución normal estándar. 
 
 $$
 P(Z < z) \text{ donde } z = \frac{Y - \mu_Y}{\sigma_Y}
