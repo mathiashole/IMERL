@@ -648,7 +648,7 @@ En este ejercicio, analizaremos el efecto de la temperatura $t$ en la producció
 |------|----|----|----|----|----|----|----|----|----|----|----|
 | $Y$  | 1  | 5  | 4  | 7  | 10 | 8  | 9  | 13 | 14 | 13 | 18 |
 
-## Ajustar un modelo de regresión lineal
+## Ajustar un modelo de regresión lineal para predecir $Y$ en función de $t$.
 
 Primero, ajustamos un modelo de regresión lineal simple:
 
