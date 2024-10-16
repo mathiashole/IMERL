@@ -655,23 +655,12 @@ $$
 Y = a + bX + \epsilon
 $$
 
-$$
-Y = \beta_0 + \beta_1 t + \epsilon
-$$
-
 Donde 
 $Y$ es la variable dependiente (la cantidad que se produce),
 $X$ es la variable independiente (temperatura),
 $b$ es la pendiente de la recta,
 $a$ es la ordenada en el origen y
 $\epsilon$ es el término de error.
-
-Donde:
-- $Y$ es la variable dependiente (cantidad producida),
-- $t$ es la variable independiente (temperatura),
-- $\beta_0$ es la intersección,
-- $\beta_1$ es la pendiente,
-- $\epsilon$ es el término de error.
 
 Usamos R para ajustar el modelo:
 
