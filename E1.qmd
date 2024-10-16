@@ -676,7 +676,7 @@ summary(modelo) # Resumen del modelo
 
 El resumen del modelo nos proporciona los coeficientes estimados (intercepto y pendiente), el error estándar de los coeficientes, el valor t y el p-valor, $R^2$ ajustado y F-statistic.
 
-## Probar la hipótesis de que la pendiente es nula
+## Probar la hipótesis de que la pendiente es nula con un nivel del $95\text{%}$
 
 La hipótesis nula se establece como:
 $$
