@@ -689,7 +689,7 @@ H_1:b \neq 0
 $$
 
 A un nivel de significancia del $95\text{%}$, es decir $(\alpha = 0.05)$. Para probar la hipótesis, se calcula el valor de $p$ correspondiente a $b$​.
-Si $p < \alpha$, rechazamos $H_0$​. En el caso contrario que $p > \alpha$, no rechazaos $H_0$ por falta de evidencia.
+Si $p < \alpha$, rechazamos $H_0$​. En el caso contrario que $p > \alpha$, no rechazaos $H_0$ por falta de evidencia. El valor de $p$ se obtuvo a partir de la funcion summary().
 
 ```{r}
 # Valor p de la pendiente
