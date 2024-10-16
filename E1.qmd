@@ -632,16 +632,10 @@ Esto significa que el 50% de las hijas que miden más que la media seran mas baj
 
 ## Una madre mide menos que la media. ¿Cuál es tu pronóstico para la altura de su hija?
 
-Si una madre mide menos que la media, digamos 1.58 m. Usamos la ecuación de la regresión:
+Para pronosticar la altura de una hija para una madre que mide menos que la media, ejemplo 1.58 m. Usamos la ecuación de la regresión descripta anteriormente
 
 $$
-Y = 0.815 + 0.5 \cdot 1.58
-$$
-
-Calculamos:
-
-$$
-Y = 0.815 + 0.79 = 1.605 \text{ m}
+Y = 0.815 + 0.5 \cdot 1.58 = 0.815 + 0.79 = 1.605 \text{ m}
 $$
 
 
