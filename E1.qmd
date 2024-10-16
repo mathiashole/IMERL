@@ -630,7 +630,7 @@ $$
 
 Esto significa que el 50% de las hijas que miden más que la media seran mas bajas que sus madres.
 
-## Pronóstico para la altura de la hija de una madre que mide menos que la media
+## Una madre mide menos que la media. ¿Cuál es tu pronóstico para la altura de su hija?
 
 Si una madre mide menos que la media, digamos 1.58 m. Usamos la ecuación de la regresión:
 
