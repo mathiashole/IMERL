@@ -688,11 +688,8 @@ $$
 H_1:b \neq 0
 $$
 
-Usaremos un nivel de significancia del $95 %$ $(\alpha = 0.05)$. Para probar la hipótesis, calculamos el valor $p$ correspondiente a $\beta_1$​:
-
-Cálculo del valor $p$
-
-Si el valor $p$ es menor que $\alpha$, rechazamos $H_0$​:
+A un nivel de significancia del $95\text{%}$, es decir $(\alpha = 0.05)$. Para probar la hipótesis, se calcula el valor de $p$ correspondiente a $b$​.
+Si $p < \alpha$, rechazamos $H_0$​. En el caso contrario que $p > \alpha$, no rechazaos $H_0$ por falta de evidencia.
 
 ```{r}
 # Valor p de la pendiente
