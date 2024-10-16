@@ -641,7 +641,7 @@ $$
 
 # Ejercicio 8
 
-En este ejercicio, analizaremos el efecto de la temperatura $t$ en la producción de un material $Y$. Utilizaremos un modelo de regresión lineal para predecir $Y$ en función de $t$ y realizaremos varias pruebas estadísticas.
+Analizaremos el efecto de la temperatura $t$ en la producción de un material $Y$, con los siguientes datos
 
 
 | $t$  | -5 | -4 | -3 | -2 | -1 | 0  | 1  | 2  | 3  | 4  | 5  |
