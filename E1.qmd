@@ -676,7 +676,7 @@ summary(modelo) # Resumen del modelo
 
 El resumen del modelo nos proporciona los coeficientes estimados (intercepto y pendiente), el error estándar de los coeficientes, el valor t y el p-valor, $R^2$ ajustado y F-statistic.
 
-## Probar la hipótesis de que la pendiente es nula con un nivel del $95 %$
+## Probar la hipótesis de que la pendiente es nula con un nivel del $95\%$
 
 La hipótesis nula
 $$
@@ -699,7 +699,7 @@ valor_p
 
 Rechazamos la hipótesis nula y concluimos que la pendiente no es nula.
 
-## Hallar un intervalo de confianza para el valor esperado de $Y$ evaluado en $t = 3$ con un nivel del $95 %$
+## Hallar un intervalo de confianza para el valor esperado de $Y$ evaluado en $t = 3$ con un nivel del $95\%$
 
 El intervalo de confianza para el valor esperado de $Y$ en $X = t$
 $$
@@ -725,7 +725,7 @@ prediccion
 
 Siendo fit la predicción puntual para $t = 3$, lwr el límite inferior del intervalo de confianza y upr el límite superior del intervalo de confianza.
 
-## Hallar un intervalo de confianza para una futura $Y$ evaluado en $t = 3$ con un nivel del $95 %$
+## Hallar un intervalo de confianza para una futura $Y$ evaluado en $t = 3$ con un nivel del $95\%$
 
 El intervalo de confianza para una futura observación de $Y$ en $X = t$
 
