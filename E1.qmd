@@ -725,13 +725,13 @@ prediccion
 
 ## Hallar un intervalo de confianza para una futura $Y$ evaluado en $t = 3$ con un nivel del $95\text{%}$
 
-El intervalo de confianza para una futura observación de $Y$ se calcula como:
+El intervalo de confianza para una futura observación de $Y$ en $X = t$
 
 $$
 \hat{Y} \pm t_{\alpha/2, n-2} \cdot SE_{total}
 $$
 
-Donde:
+donde $SE_{total}$ es
 
 $$
 SE_{total} = \sqrt{SE(\hat{Y})^2 + \sigma^2}
