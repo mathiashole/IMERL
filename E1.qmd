@@ -723,7 +723,7 @@ prediccion
 
 ```
 
-## Intervalo de confianza para una futura $Y$
+## Hallar un intervalo de confianza para una futura $Y$ evaluado en $t = 3$ con un nivel del $95\text{%}$
 
 El intervalo de confianza para una futura observación de $Y$ se calcula como:
 
