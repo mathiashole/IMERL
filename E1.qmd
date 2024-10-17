@@ -742,6 +742,7 @@ Aquí, $SE_{total}$ representa el error estándar total, y $\sigma$ es la desvia
 ```{r}
 # Intervalo de predicción para una nueva observación
 prediccion_futura <- predict(modelo, nueva_dato, interval = "prediction", level = 0.95)
+# calcula el intervalo de confianza para el valor futuro de Y a nivel de 95 %
 prediccion_futura
 
 ```
