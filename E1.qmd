@@ -718,6 +718,7 @@ $\hat{Y}$ es el valor predicho para $Y$ en $t=3$, $t_{\alpha/2, n-2}$ es el valo
 # Predicción para t = 3
 nueva_dato <- data.frame(t = 3)
 prediccion <- predict(modelo, nueva_dato, interval = "confidence", level = 0.95)
+# calcula el intervalo de confianza para el valor esperado de Y a nivel de 95 %
 prediccion
 
 ```
