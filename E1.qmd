@@ -699,7 +699,7 @@ valor_p
 
 Rechazamos la hipótesis nula y concluimos que la pendiente no es nula.
 
-## Intervalo de confianza para el valor esperado de $Y$
+## Hallar un intervalo de confianza para el valor esperado de $Y$ evaluado en $t = 3$ con un nivel del $95\text{%}$
 
 El intervalo de confianza para el valor esperado de $Y$ se calcula como:
 
