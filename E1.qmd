@@ -712,11 +712,7 @@ $$
 SE(\hat{Y}(t)) = \hat{\sigma} \sqrt{ \frac{1}{n} + \frac{(X - \bar{X})^2}{\sum (X_i - \bar{X})^2} }
 $$
 
-Donde:
-
-- $\hat{Y}$ es el valor predicho para $Y$ en $t=3$,
-- $t_{\alpha/2, n-2}$ es el valor crítico de la distribución $t-Student$ con $n-2$ grados de libertad,
-- $SE(\hat{Y})$ es el error estándar de la predicción.
+$\hat{Y}$ es el valor predicho para $Y$ en $t=3$, $t_{\alpha/2, n-2}$ es el valor crítico de la distribución $t-Student$ con $n-2$ grados de libertad y $SE(\hat{Y})$ es el error estándar de la predicción.
 
 ```{r}
 # Predicción para t = 3
