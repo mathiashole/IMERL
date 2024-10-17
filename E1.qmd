@@ -441,7 +441,7 @@ Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
 
 # Ejercicio 10 Información de Fisher
 
-La información de Fisher es la cantidad de información que una variable aleatoria proporciona sobre un parámetro. Esta es la varianza del gradiente del logaritmo de verosimilitud respecto al parámetro, y se expresa como
+La información de Fisher es una forma de medir la cantidad de información que una variable aleatoria observable $X$ contiene sobre un parámetro desconocido $\theta$ de una distribución que modela $X$. Esta es definida por la varianza del score
 
 $$
 I(\theta) = -\mathbb{E}\left[\frac{\partial^2}{\partial \theta^2} \log f(X; \theta)\right]
