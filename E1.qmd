@@ -457,7 +457,7 @@ $$
 f(x; p) = p^x (1-p)^{1-x}, \quad x \in \{0, 1\}
 $$
 
-El logaritmo de la función de verosimilitud es:
+Siendo el logaritmo de la función de verosimilitud
 
 $$
 \log f(x; p) = x \log(p) + (1 - x) \log(1 - p)
