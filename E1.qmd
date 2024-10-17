@@ -702,6 +702,9 @@ Rechazamos la hipótesis nula y concluimos que la pendiente no es nula.
 ## Hallar un intervalo de confianza para el valor esperado de $Y$ evaluado en $t = 3$ con un nivel del $95\text{%}$
 
 El intervalo de confianza para el valor esperado de $Y$ se calcula como:
+$$
+SE(\hat{Y}(t)) = \hat{\sigma} \sqrt{ \frac{1}{n} + \frac{(X - \bar{X})^2}{\sum (X_i - \bar{X})^2} }
+$$
 
 $$
 \hat{Y} \pm t_{\alpha/2, n-2} \cdot SE(\hat{Y})
