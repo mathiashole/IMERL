@@ -463,7 +463,7 @@ $$
 \log f(x; p) = x \log(p) + (1 - x) \log(1 - p)
 $$
 
-La derivada con respecto a  $p$ es:
+Derivamos con respecto a $p$ obteniendo
 
 $$
 \frac{\partial}{\partial p} \log f(x; p) = \frac{x}{p} - \frac{1 - x}{1 - p}
@@ -473,6 +473,12 @@ La segunda derivada con respecto a $p$ es:
 
 $$
 \frac{\partial^2}{\partial p^2} \log f(x; p) = -\frac{x}{p^2} - \frac{1 - x}{(1 - p)^2}
+$$
+
+Calculamos la esperanza de la segunda derivada (Informacion de Fisher)
+
+$$
+I(p) = -\mathbb{E}\left[-\frac{x}{p^2}-\frac{1-x}{(1-p)^2}\right] = -\left(\frac{1}{p} + \frac{1}{1-p}\right) = \frac{1}{p(1-p)}
 $$
 
 La Información de Fisher es:
