@@ -481,11 +481,6 @@ $$
 I(p) = -\mathbb{E}\left[-\frac{x}{p^2}-\frac{1-x}{(1-p)^2}\right] = -\left(\frac{1}{p} + \frac{1}{1-p}\right) = \frac{1}{p(1-p)}
 $$
 
-La Información de Fisher es:
-
-$$
-\mathcal{I}(p) = -\mathbb{E}\left[ \frac{\partial^2}{\partial p^2} \log f(X; p) \right] = \frac{1}{p(1-p)}
-$$
 
 ## Distribución Exponencial $X \sim \exp(\lambda)$
 
