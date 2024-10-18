@@ -516,13 +516,13 @@ $$
 
 ## Distribución Normal $X \sim N(\mu, 4)$
 
-La función de densidad de una distribución normal es:
+La función de densidad de una distribución normal es
 
 $$
 f(x; \mu) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
 $$
 
-Como $\sigma^2 = 4$, reescribimos la función de densidad como:
+Siendo $\sigma^2 = 4$, por lo tanto nos queda que
 
 $$
 f(x; \mu) = \frac{1}{\sqrt{8\pi}} e^{-\frac{(x-\mu)^2}{8}}
