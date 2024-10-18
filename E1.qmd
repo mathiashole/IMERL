@@ -496,13 +496,13 @@ $$
 \log f(x; \lambda) = \log(\lambda) - \lambda x
 $$
 
-La derivada con respecto a $\lambda$ es:
+Derivamos respecto a $\lambda$ obteniendo
 
 $$
 \frac{\partial}{\partial \lambda} \log f(x; \lambda) = \frac{1}{\lambda} - x
 $$
 
-Derivamos respecto a $\lambda$ obteniendo
+La segunda derivada respecto a $\lambda$ es:
 
 $$
 \frac{\partial^2}{\partial \lambda^2} \log f(x; \lambda) = -\frac{1}{\lambda^2}
