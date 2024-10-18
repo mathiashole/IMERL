@@ -502,7 +502,7 @@ $$
 \frac{\partial}{\partial \lambda} \log f(x; \lambda) = \frac{1}{\lambda} - x
 $$
 
-La segunda derivada respecto a $\lambda$ es:
+Hacemos la segunda derivada respecto a $\lambda$ resultando en
 
 $$
 \frac{\partial^2}{\partial \lambda^2} \log f(x; \lambda) = -\frac{1}{\lambda^2}
