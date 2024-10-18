@@ -528,13 +528,13 @@ $$
 f(x; \mu) = \frac{1}{\sqrt{8\pi}} e^{-\frac{(x-\mu)^2}{8}}
 $$
 
-El logaritmo de la función de verosimilitud es:
+El logaritmo de la función de verosimilitud para la distribucion normal es
 
 $$
 \log f(x; \mu) = -\frac{(x-\mu)^2}{8} - \log(\sqrt{8\pi})
 $$
 
-La derivada con respecto a $\mu$ es:
+Derivamos respecto a $\mu$ que es
 
 $$
 \frac{\partial}{\partial \mu} \log f(x; \mu) = \frac{x - \mu}{4}
