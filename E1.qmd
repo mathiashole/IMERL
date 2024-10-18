@@ -508,7 +508,7 @@ $$
 \frac{\partial^2}{\partial \lambda^2} \log f(x; \lambda) = -\frac{1}{\lambda^2}
 $$
 
-La Información de Fisher es:
+En este caso la información de Fisher es
 
 $$
 I(\lambda) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \lambda^2} \log f(X; \lambda) \right] = -\mathbb{E}\left[-\frac{1}{\lambda^2}\right] = \frac{1}{\lambda^2}
