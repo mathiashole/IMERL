@@ -469,7 +469,7 @@ $$
 \frac{\partial}{\partial p} \log f(x; p) = \frac{x}{p} - \frac{1 - x}{1 - p}
 $$
 
-La segunda derivada con respecto a $p$ es:
+La segunda derivada con respecto a $p$ es
 
 $$
 \frac{\partial^2}{\partial p^2} \log f(x; p) = -\frac{x}{p^2} - \frac{1 - x}{(1 - p)^2}
