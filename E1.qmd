@@ -540,13 +540,13 @@ $$
 \frac{\partial}{\partial \mu} \log f(x; \mu) = \frac{x - \mu}{4}
 $$
 
-La segunda derivada con respecto a $\mu$ es:
+Siendo la segunda derivada respecto a $\mu$ de la siguiente manera
 
 $$
 \frac{\partial^2}{\partial \mu^2} \log f(x; \mu) = -\frac{1}{4}
 $$
 
-La Información de Fisher es:
+Por lo tanto la información de Fisher es la siguiente
 
 $$
 \mathcal{I}(\mu) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \mu^2} \log f(X; \mu) \right] = \frac{1}{4}
