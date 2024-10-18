@@ -381,14 +381,14 @@ p(x; a) =
 \end{cases}
 $$
 
-La función de verosimilitud es:
+La función de verosimilitud es
 $$
-L(a; x_1, x_2, \dots, x_n) = \prod_{i=1}^{n} (a + 1) x_i^a = (a + 1)^n \prod_{i=1}^{n} x_i^a
+L(a; x_1,\dots, x_n) = \prod_{i=1}^{n} (a + 1) x_i^a = (a + 1)^n \prod_{i=1}^{n} x_i^a
 $$
 
-La función de log-verosimilitud es:
+y la función de log-verosimilitud es la siguiente
 $$
-\ell(a; x_1, x_2, \dots, x_n) = n \ln(a + 1) + a \sum_{i=1}^{n} \ln(x_i)
+\ell(a; x_1,\dots, x_n) = n \ln(a + 1) + a \sum_{i=1}^{n} \ln(x_i)
 $$
 
 Derivamos la log-verosimilitud respecto a $a$ y la igualamos a cero para encontrar el estimador de máxima verosimilitud (MLE):
