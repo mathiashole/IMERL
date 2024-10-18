@@ -511,7 +511,7 @@ $$
 La Información de Fisher es:
 
 $$
-\mathcal{I}(\lambda) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \lambda^2} \log f(X; \lambda) \right] = \frac{1}{\lambda^2}
+I(\lambda) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \lambda^2} \log f(X; \lambda) \right] = -\mathbb{E}\left[-\frac{1}{\lambda^2}\right] = \frac{1}{\lambda^2}
 $$
 
 ## Distribución Normal $X \sim N(\mu, 4)$
