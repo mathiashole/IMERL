@@ -549,7 +549,7 @@ $$
 Por lo tanto la información de Fisher es la siguiente
 
 $$
-\mathcal{I}(\mu) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \mu^2} \log f(X; \mu) \right] = \frac{1}{4}
+I(\mu) = -\mathbb{E}\left[ \frac{\partial^2}{\partial \mu^2} \log f(X; \mu) \right] = \frac{1}{4}
 $$
 
 
