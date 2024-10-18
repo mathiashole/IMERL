@@ -484,13 +484,13 @@ $$
 
 ## Distribución Exponencial $X \sim \exp(\lambda)$
 
-La función de densidad de una distribución exponencial es:
+La función de densidad de una distribución exponencial es
 
 $$
 f(x; \lambda) = \lambda e^{-\lambda x}, \quad x \geq 0
 $$
 
-El logaritmo de la función de verosimilitud es:
+Siendo el logaritmo de la función de verosimilitud
 
 $$
 \log f(x; \lambda) = \log(\lambda) - \lambda x
