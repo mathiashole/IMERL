@@ -428,7 +428,14 @@ $$
 
 Un estimador es consistente cuando cumple con $\hat{a}_n \xrightarrow{p} a$ cuando $n \xrightarrow{} \infty$ y el sesgo del estimado tiende a $0$
 
-Sabemos que $g(y) = \frac{1}{y} - 1$. Entonces:
+Entonces $\bar{Y}_n$ tiende a su valor esperado $\mu$, por lo que $\mu = \mathbb{E}(Y) = \frac{1}{y} - 1$. Esto se da por la *ley de los grandes numeros*.
+
+Verificamos la consistencia del estimador $\hat{a}$
+
+$$
+\hat{a} = \frac{1}{\bar{Y}_n} - 1
+$$
+
 $$
 \hat{a} = g(\bar{Y}_n) = \frac{1}{\bar{Y}_n} - 1
 $$
