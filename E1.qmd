@@ -391,12 +391,12 @@ $$
 L(a; x_1,\dots, x_n) = n \ln(a + 1) + a \sum_{i=1}^{n} \ln(x_i)
 $$
 
-Derivamos la log-verosimilitud respecto a $a$ y la igualamos a cero para encontrar el estimador de máxima verosimilitud (MLE):
+Derivamos la funcion de log-verosimilitud respecto a $a$, igualandola a cero para encontrar el estimador de máxima verosimilitud (MLE)
 $$
-\frac{\partial}{\partial a} \ell(a; x_1, \dots, x_n) = \frac{n}{a + 1} + \sum_{i=1}^{n} \ln(x_i) = 0
+\frac{\partial}{\partial a} L(a; x_1, \dots, x_n) = \frac{n}{a + 1} + \sum_{i=1}^{n} \ln(x_i) = 0
 $$
 
-Despejando $a$:
+Despejamos $a$ de la funcion no queda
 $$
 \hat{a} = \frac{-n}{\sum_{i=1}^{n} \ln(x_i)} - 1
 $$
@@ -412,7 +412,7 @@ hat_a
 
 ```
 
-## Hallar la densidad de Y = − ln(X) y calcular $\text{mu} = \mathbb{E}(Y)$ en función de $a$.
+## Hallar la densidad de $Y = −\ln(X)$ y calcular $\mu = \mathbb{E}(Y)$ en función de $a$.
 
 Sabemos que $Y = -\ln(X)$. Usamos la transformación para hallar la densidad de $Y$:
 $$
