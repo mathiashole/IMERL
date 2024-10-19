@@ -433,14 +433,10 @@ Entonces $\bar{Y}_n$ tiende a su valor esperado $\mu$, por lo que $\mu = \mathbb
 Verificamos la consistencia del estimador $\hat{a}$
 
 $$
-\hat{a} = \frac{1}{\bar{Y}_n} - 1
+\hat{a} = \frac{1}{\bar{Y}_n} - 1 \xrightarrow{p} \frac{1}{\mu} - 1
 $$
 
-$$
-\hat{a} = g(\bar{Y}_n) = \frac{1}{\bar{Y}_n} - 1
-$$
-
-Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
+como $\mu = \frac{1}{a + 1}$, tenemos que $\frac{1}{\mu} = a + 1 \xrightarrow{} \frac{1}{\mu} - 1 = a$. Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
 
 ## Usando el desarrollo ˆa − a = g Y n − g(μ) ≈ g′(μ) Y n − μ para n grande
 
