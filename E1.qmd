@@ -414,7 +414,7 @@ hat_a
 
 ## Hallar la densidad de $Y = −\ln(X)$ y calcular $\mu = \mathbb{E}(Y)$ en función de $a$.
 
-Sabemos que $Y = -\ln(X)$. Usamos la transformación para hallar la densidad de $Y$:
+Sabemos que $Y = -\ln(X)$, esto implica $X = e^{-Y}$ para cada valor de Y podemos calcular el valor de X. Usamos el cambio de variable para transformar la densidad de X en Y.
 $$
 f_Y(y) = (a + 1)(e^{-y})^a \cdot e^{-y} = (a + 1)e^{-(a + 1)y}
 $$
