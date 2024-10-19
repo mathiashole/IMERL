@@ -419,14 +419,14 @@ $$
 f_Y(y) = (a + 1)(e^{-y})^a \cdot e^{-y} = (a + 1)e^{-(a + 1)y}
 $$
 
-Es decir, $Y$ sigue una distribución exponencial con parámetro $a + 1$.
-
-El valor esperado de $Y$ es:
+Siendo el valor esperado de $Y$ el siguiente
 $$
 \mu = E(Y) = \frac{1}{a + 1}
 $$
 
 ## Verificar que $\hat{a} = g(\bar{Y}_n)$, con $g(y) = \frac{1}{y} − 1$ probar que $\hat{a}$ es consistente.
+
+Un estimador es consistente cuando cumple con $\hat{a}_n \xrightarrow{p} a$ cuando $n \xrightarrow{} \infty$ y el sesgo del estimado tiende a $0$
 
 Sabemos que $g(y) = \frac{1}{y} - 1$. Entonces:
 $$
