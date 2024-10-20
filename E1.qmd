@@ -458,6 +458,11 @@ La varianza de $Var(\bar{Y}_n) = \frac{Var(Y)}{n}$, $Y$ tiene distribucion expon
 $$
 Var(\bar{Y}_n) = \frac{1}{n(a + 1)^2}
 $$
+Por lo tanto la varianza asintotica de $\hat{a}$
+
+$$
+Var(\hat{a}) \approx (g \prime (\mu))^2 Var(\bar{Y}_n​) = (a + 1)^4⋅ \frac{1}{n(a+1)^2} ​= \frac{(a+1)^2​}{n}
+$$
 
 ## Se dispone de la siguiente muestra de X
 
