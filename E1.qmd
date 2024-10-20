@@ -498,16 +498,14 @@ print(hat_a)  # Mostramos el valor estimado de a
 n <- length(muestra)  # n de la muestra
 var_asintotica <- (hat_a + 1)^2 / n
 
-# Intervalo de confianza al 90%:
-# Usamos la distribución normal estándar para calcular z_0.05 (z = 1.645).
-# Este valor corresponde al cuantil 0.95 porque queremos un intervalo al 90%.
+# Distribucion normal estándar para z_0.05 (z = 1.645).
+# Correspondiente al cuantil 0.95 para un intervalo al 90%
 z <- qnorm(0.95)  # Cuantil 0.95 de la normal estándar.
 
-# Calculamos los límites inferior y superior del intervalo de confianza.
-IC_lower <- hat_a - z * sqrt(var_asintotica)  # Límite inferior.
-IC_upper <- hat_a + z * sqrt(var_asintotica)  # Límite superior.
+IC_lower <- hat_a - z * sqrt(var_asintotica)  # Limite inferior
+IC_upper <- hat_a + z * sqrt(var_asintotica)  # Limite superior
 
-# Mostramos el intervalo de confianza al 90% para a.
+# Mostramos resultados
 cat("Intervalo de confianza al 90% para a: (", IC_lower, ", ", IC_upper, ")\n")
 
 ```
