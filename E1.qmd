@@ -464,6 +464,8 @@ $$
 Var(\hat{a}) \approx (g \prime (\mu))^2 Var(\bar{Y}_n​) = (a + 1)^4⋅ \frac{1}{n(a+1)^2} ​= \frac{(a+1)^2​}{n}
 $$
 
+### c) ¿Es $\hat{a}$ asintóticamente normal?
+
 ## Se dispone de la siguiente muestra de X
 
 # Ejercicio 10 Información de Fisher
