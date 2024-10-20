@@ -465,6 +465,18 @@ Var(\hat{a}) \approx (g \prime (\mu))^2 Var(\bar{Y}_n​) = (a + 1)^4⋅ \frac{1
 $$
 
 ### c) ¿Es $\hat{a}$ asintóticamente normal?
+Por el teorema central del limite $\bar{Y}_n$ es asintoticamente normal
+
+$$
+\bar{Y}_n \sim \mathcal{N} \left( \mu, \frac{1}{n(a+1)^2}\right)
+$$
+
+por lo que $\hat{a}$ sea asintoticamente normal
+
+$$
+\hat{a} \sim \mathcal{N} \left( a, \frac{(a+1)^2}{n}\right)
+$$
+
 
 ## Se dispone de la siguiente muestra de X
 
