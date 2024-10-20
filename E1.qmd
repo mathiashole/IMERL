@@ -478,7 +478,7 @@ $$
 $$
 
 
-## Se dispone de la siguiente muestra de X
+## Hallar un intervalo de confianza asintótico para $a$ al nivel $0.9$
 
 # Ejercicio 10 Información de Fisher
 
