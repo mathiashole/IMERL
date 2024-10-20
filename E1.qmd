@@ -439,6 +439,11 @@ $$
 como $\mu = \frac{1}{a + 1}$, tenemos que $\frac{1}{\mu} = a + 1 \xrightarrow{} \frac{1}{\mu} - 1 = a$. Dado que $\bar{Y}_n$ converge a $\mu$, el estimador es consistente.
 
 ## Usando el desarrollo $\hat{a} − a = g(\bar{Y}_n) − g(\mu) \approx g\prime(\mu)(\bar{Y}_n - \mu)$ para $n$ grande
+### a) Probar que $\hat{a}$ es asintóticamente insesgado
+Un estimador es asintoticamente insesgado cuando
+$$
+\lim_{n \to \infty}\mathbb{E}(\hat{a}) = a
+$$
 
 ## Se dispone de la siguiente muestra de X
 
