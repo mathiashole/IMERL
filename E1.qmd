@@ -453,6 +453,8 @@ $$
 
 implicando que $\mathbb{E}(\hat{a}) \approx a$ para un $n \rightarrow \infty$, por lo que $\hat{a}$ es asintotico insesgado.
 
+### b) Hallar la varianza asintótica de $\hat{a}$
+
 ## Se dispone de la siguiente muestra de X
 
 # Ejercicio 10 Información de Fisher
