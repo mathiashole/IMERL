@@ -454,6 +454,10 @@ $$
 implicando que $\mathbb{E}(\hat{a}) \approx a$ para un $n \rightarrow \infty$, por lo que $\hat{a}$ es asintotico insesgado.
 
 ### b) Hallar la varianza asintótica de $\hat{a}$
+La varianza de $Var(\bar{Y}_n) = \frac{Var(Y)}{n}$, $Y$ tiene distribucion exponencial con parametro $a+1$, la varianza queda en $Var(Y) = \frac{1}{(a + 1)^2}$, entonces
+$$
+Var(\bar{Y}_n) = \frac{1}{n(a + 1)^2}
+$$
 
 ## Se dispone de la siguiente muestra de X
 
