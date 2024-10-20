@@ -480,6 +480,43 @@ $$
 
 ## Hallar un intervalo de confianza asintótico para $a$ al nivel $0.9$
 
+```{r}
+# Datos:
+muestra <- c(0.56, 0.82, 0.71, 0.87, 0.33, 0.36, 0.93, 0.94, 0.89, 0.42)
+
+# Transformacion Y = -ln(X), dandonos un nuevo conjunto de valores Y
+Y <- -log(muestra)
+
+# La media de Y para estimar el parámetro a.
+Y_bar <- mean(Y)
+
+# Estimación de a:
+# Usamos la fórmula del estimador: hat_a = 1 / Y_bar - 1.
+# Esta estimación se basa en la media de los valores Y transformados.
+hat_a <- 1 / Y_bar - 1
+print(hat_a)  # Mostramos el valor estimado de a.
+
+# Varianza asintótica:
+# Calculamos la varianza asintótica del estimador. 
+# La fórmula es: var_asintotica = (hat_a + 1)^2 / n,
+# donde n es el tamaño de la muestra.
+n <- length(muestra)  # Tamaño de la muestra (n = 10 en este caso).
+var_asintotica <- (hat_a + 1)^2 / n  # Varianza asintótica.
+
+# Intervalo de confianza al 90%:
+# Usamos la distribución normal estándar para calcular z_0.05 (z = 1.645).
+# Este valor corresponde al cuantil 0.95 porque queremos un intervalo al 90%.
+z <- qnorm(0.95)  # Cuantil 0.95 de la normal estándar.
+
+# Calculamos los límites inferior y superior del intervalo de confianza.
+IC_lower <- hat_a - z * sqrt(var_asintotica)  # Límite inferior.
+IC_upper <- hat_a + z * sqrt(var_asintotica)  # Límite superior.
+
+# Mostramos el intervalo de confianza al 90% para a.
+cat("Intervalo de confianza al 90% para a: (", IC_lower, ", ", IC_upper, ")\n")
+
+```
+
 # Ejercicio 10 Información de Fisher
 
 La información de Fisher es una forma de medir la cantidad de información que una variable aleatoria observable $X$ contiene sobre un parámetro desconocido $\theta$ de una distribución que modela $X$. Esta es definida por la varianza del score
