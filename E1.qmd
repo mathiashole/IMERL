@@ -490,18 +490,13 @@ Y <- -log(muestra)
 # La media de Y para estimar el parámetro a.
 Y_bar <- mean(Y)
 
-# Estimación de a:
-# Usamos la fórmula del estimador: hat_a = 1 / Y_bar - 1.
-# Esta estimación se basa en la media de los valores Y transformados.
+# Ecucion del estimador: hat_a = 1 / Y_bar - 1
 hat_a <- 1 / Y_bar - 1
-print(hat_a)  # Mostramos el valor estimado de a.
+print(hat_a)  # Mostramos el valor estimado de a
 
-# Varianza asintótica:
-# Calculamos la varianza asintótica del estimador. 
-# La fórmula es: var_asintotica = (hat_a + 1)^2 / n,
-# donde n es el tamaño de la muestra.
-n <- length(muestra)  # Tamaño de la muestra (n = 10 en este caso).
-var_asintotica <- (hat_a + 1)^2 / n  # Varianza asintótica.
+# La varianza asintotica del estimador ecuacion: var_as = (hat_a + 1)^2 / n,
+n <- length(muestra)  # n de la muestra
+var_asintotica <- (hat_a + 1)^2 / n
 
 # Intervalo de confianza al 90%:
 # Usamos la distribución normal estándar para calcular z_0.05 (z = 1.645).
