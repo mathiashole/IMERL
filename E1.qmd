@@ -3,7 +3,7 @@ title: "ENTREGA 1"
 date: today
 date-format: "DD MMMM, YYYY"
 author: 
-  Mathias
+  Mathias Mangino
 abstract:
     Métodos Estadísticos para la Regresión y la Clasificación
 abstractspacing: double
