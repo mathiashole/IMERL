@@ -25,3 +25,73 @@ format:
       number-sections: true
       colorlinks: true
 ---
+
+# Ejercicio 2: Análisis de Regresión para Predicción de Rendimiento de Papas
+
+## Datos de Entrenamiento
+
+| Lluvia (mm) | Rendimiento (ton/ha) |
+|--------------|----------------------|
+| 206          | 29                   |
+| 188          | 25                   |
+| 219          | 31                   |
+| 372          | 25                   |
+| 345          | 29                   |
+| 231          | 30                   |
+| 203          | 26                   |
+| 170          | 23                   |
+| 55           | 12                   |
+| 91           | 15                   |
+| 292          | 28                   |
+| 141          | 24                   |
+| 129          | 23                   |
+| 170          | 22                   |
+| 324          | 30                   |
+
+## Datos de Validación
+
+| Lluvia (mm) | Rendimiento (ton/ha) |
+|--------------|----------------------|
+| 213          | 30                   |
+| 80           | 16                   |
+| 391          | 25                   |
+| 250          | 26                   |
+| 57           | 9                    |
+| 303          | 28                   |
+| 263          | 28                   |
+| 157          | 25                   |
+| 72           | 13                   |
+| 157          | 23                   |
+| 188          | 26                   |
+| 216          | 25                   |
+| 362          | 28                   |
+| 283          | 33                   |
+| 308          | 30                   |
+
+## 1. Regresión Lineal para Predecir el Rendimiento
+
+La regresión lineal se modela mediante la siguiente ecuación:
+
+$$
+y = \beta_0 + \beta_1 \cdot x
+$$
+
+Donde:
+- \(y\) es el rendimiento (ton/ha).
+- \(x\) es la cantidad de lluvia (mm).
+- \(\beta_0\) es la intersección o término constante.
+- \(\beta_1\) es la pendiente de la recta.
+
+```{r}
+# Datos de entrenamiento
+train_data <- data.frame(
+  lluvia = c(206, 188, 219, 372, 345, 231, 203, 170, 55, 91, 292, 141, 129, 170, 324),
+  rendimiento = c(29, 25, 31, 25, 29, 30, 26, 23, 12, 15, 28, 24, 23, 22, 30)
+)
+
+# Modelo de regresión lineal
+modelo_lineal <- lm(rendimiento ~ lluvia, data = train_data)
+
+# Resumen del modelo
+summary(modelo_lineal)
+```
