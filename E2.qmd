@@ -30,7 +30,7 @@ format:
 
 ## Datos de Entrenamiento
 
-| Lluvia (mm) | Rendimiento (ton/ha) |
+| Lluvia (mm)  | Rendimiento (ton/ha) |
 |--------------|----------------------|
 | 206          | 29                   |
 | 188          | 25                   |
@@ -50,7 +50,7 @@ format:
 
 ## Datos de Validación
 
-| Lluvia (mm) | Rendimiento (ton/ha) |
+| Lluvia (mm)  | Rendimiento (ton/ha) |
 |--------------|----------------------|
 | 213          | 30                   |
 | 80           | 16                   |
