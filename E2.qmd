@@ -76,11 +76,7 @@ $$
 y = \beta_0 + \beta_1 \cdot x
 $$
 
-Donde:
-- \(y\) es el rendimiento (ton/ha).
-- \(x\) es la cantidad de lluvia (mm).
-- \(\beta_0\) es la intersección o término constante.
-- \(\beta_1\) es la pendiente de la recta.
+Donde $y$ es el rendimiento $(ton/ha)$, $x$ es la cantidad de lluvia $(mm)$, $beta_0$ es la intersección y $beta_1$ la pendiente de la recta.
 
 ```{r}
 # Datos de entrenamiento
