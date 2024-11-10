@@ -28,7 +28,7 @@ format:
 
 # Ejercicio 2: Análisis de Regresión para Predicción de Rendimiento de Papas
 
-## Datos de Entrenamiento
+Datos de Entrenamiento
 
 | Lluvia (mm)  | Rendimiento (ton/ha) |
 |--------------|----------------------|
@@ -48,7 +48,7 @@ format:
 | 170          | 22                   |
 | 324          | 30                   |
 
-## Datos de Validación
+Datos de Validación
 
 | Lluvia (mm)  | Rendimiento (ton/ha) |
 |--------------|----------------------|
