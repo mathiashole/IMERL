@@ -68,7 +68,7 @@ Datos de Validación
 | 283          | 33                   |
 | 308          | 30                   |
 
-## Regresión Lineal para Predecir el Rendimiento
+## Correr una regresión lineal para predecir el rendimiento y en función de la lluvia x
 
 La regresión lineal se modela mediante la siguiente ecuación:
 
@@ -92,7 +92,7 @@ modelo_lineal <- lm(rendimiento ~ lluvia, data = train_data)
 summary(modelo_lineal)
 ```
 
-## Comparación del MSE (Error Cuadrático Medio) en Entrenamiento y Validación
+## Comparar el MSE en entrenamiento, validación y CV
 
 El MSE se calcula como $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$, siendo $y_i$ valores observados y $hat{y}_i$ los valores predichos. Entonces 
 
@@ -122,4 +122,28 @@ cat("MSE en validación: ", mse_validacion, "\n")
 
 ```
 
-Dado los valores obtenidos con MSE de validación cercano al de entrenamiento, como en este caso, sugiere que el modelo tiene un rendimiento adecuado sin un sobreajuste
+Dado los valores obtenidos con MSE de validación cercano al de entrenamiento, como en este caso, sugiere que el modelo tiene un rendimiento adecuado sin un sobreajuste.
+
+## Determinar el grado óptimo en caso de aplicar una regresión polinomial.
+
+La regresión polinomial se ajusta con la siguiente ecuación $y = \beta_0 + \beta_1 \cdot x + \beta_2 \cdot x^2 + \dots + \beta_d \cdot x^d$. Utilizando la funcion lm() de R, podemos ajustar modelos polinomiales de diferentes grados y comparar el MSE.
+
+```{r}
+# Regresión polinomial para diferentes grados
+grados <- 1:5  # Probaremos con grados 1 a 5
+mse_polynomial <- numeric(length(grados))
+
+for (grado in grados) {
+  modelo_pol <- lm(rendimiento ~ poly(lluvia, grado), data = train_data)
+  predicciones_pol <- predict(modelo_pol, newdata = train_data)
+  mse_polynomial[grado] <- calcular_mse(train_data$rendimiento, predicciones_pol)
+}
+
+cat("MSE para diferentes grados: \n")
+print(mse_polynomial)
+
+```
+
+A medida que aumentas el grado, el MSE disminuye hasta que se estabiliza en alrededor de 2.79 para grados 3, 4 y 5. Esto sugiere que un polinomio de grado 3 es probablemente el más adecuado, ya que logra un MSE bajo sin agregar demasiada complejidad adicional al modelo.
+
+Usar un grado mayor (como 4 o 5) no mejora significativamente el MSE en comparación con el grado 3, por lo que sería innecesario añadir esa complejidad extra al modelo.
