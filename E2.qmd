@@ -147,3 +147,50 @@ print(mse_polynomial)
 A medida que aumentas el grado, el MSE disminuye hasta que se estabiliza en alrededor de 2.79 para grados 3, 4 y 5. Esto sugiere que un polinomio de grado 3 es probablemente el más adecuado, ya que logra un MSE bajo sin agregar demasiada complejidad adicional al modelo.
 
 Usar un grado mayor (como 4 o 5) no mejora significativamente el MSE en comparación con el grado 3, por lo que sería innecesario añadir esa complejidad extra al modelo.
+
+## Hallar el valor de $\lambda$ óptimo para la regresión polinomial de grado 5 con regularización.
+
+En la regresión polinomial con regularización, aplicamos el valor de λλ para controlar la penalización sobre los coeficientes. La fórmula de Ridge es
+
+$$
+\text{Minimizar} \left( \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{d} \beta_j^2 \right)
+$$
+
+Donde:
+
+    yiyi​ son los valores observados.
+    y^iy^​i​ son los valores predichos.
+    λλ es el parámetro de regularización.
+
+```{r}
+# Cargar la biblioteca glmnet
+library(glmnet)
+
+# Crear matriz de características para el polinomio de grado 5 en los datos de entrenamiento
+x_train <- as.matrix(poly(train_data$lluvia, 5, raw = TRUE))
+y_train <- train_data$rendimiento                 # Variable dependiente
+
+# Crear matriz de características para los datos de validación
+x_validacion <- as.matrix(poly(validacion_data$lluvia, 5, raw = TRUE))
+
+# Ajustar el modelo de Ridge (regresión L2) para un polinomio de grado 5
+modelo_ridge <- glmnet(x_train, y_train, alpha = 0, lambda = 0.1)
+
+# Predicciones en los datos de validación
+predicciones_ridge <- predict(modelo_ridge, newx = x_validacion)
+
+# Calcular el MSE para Ridge
+mse_ridge <- calcular_mse(validacion_data$rendimiento, predicciones_ridge)
+
+# Imprimir el MSE para Ridge
+cat("MSE para Ridge con lambda = 0.1: ", mse_ridge, "\n")
+
+
+
+```
+
+El MSE de 5.724188 refleja el desempeño del modelo en el conjunto de validación. Es una medida que captura tanto el ajuste del modelo a los datos de entrenamiento como su capacidad para generalizar a nuevos datos. Un MSE más bajo generalmente indica que el modelo está prediciendo mejor los resultados en el conjunto de validación.
+
+Este MSE es útil para comparar la calidad de diferentes modelos o configuraciones, pero por sí solo no dice si el modelo está funcionando "bien" o "mal". Dependerá del contexto de tu problema y de si este MSE es satisfactorio para el uso que se le quiere dar al modelo.
+
+MSE de 5.724188 te da una idea de la precisión del modelo con un polinomio de grado 5 y te permite tomar decisiones informadas sobre si el modelo necesita ajustes o si es adecuado para el propósito de tu análisis.
