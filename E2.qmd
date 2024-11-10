@@ -68,7 +68,7 @@ Datos de Validación
 | 283          | 33                   |
 | 308          | 30                   |
 
-## 1. Regresión Lineal para Predecir el Rendimiento
+## Regresión Lineal para Predecir el Rendimiento
 
 La regresión lineal se modela mediante la siguiente ecuación:
 
@@ -91,3 +91,35 @@ modelo_lineal <- lm(rendimiento ~ lluvia, data = train_data)
 # Resumen del modelo
 summary(modelo_lineal)
 ```
+
+## Comparación del MSE (Error Cuadrático Medio) en Entrenamiento y Validación
+
+El MSE se calcula como $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$, siendo $y_i$ valores observados y $hat{y}_i$ los valores predichos. Entonces 
+
+```{r}
+
+# Datos de validación
+validacion_data <- data.frame(
+  lluvia = c(213, 80, 391, 250, 57, 303, 263, 157, 72, 157, 188, 216, 362, 283, 308),
+  rendimiento = c(30, 16, 25, 26, 9, 28, 28, 25, 13, 23, 26, 25, 28, 33, 30)
+)
+
+# Función para calcular el MSE
+calcular_mse <- function(observado, predicho) {
+  mean((observado - predicho)^2)
+}
+
+# Predicciones en el conjunto de entrenamiento y validación
+predicciones_train <- predict(modelo_lineal, newdata = train_data)
+predicciones_validacion <- predict(modelo_lineal, newdata = validacion_data)
+
+# MSE en entrenamiento y validación
+mse_train <- calcular_mse(train_data$rendimiento, predicciones_train)
+mse_validacion <- calcular_mse(validacion_data$rendimiento, predicciones_validacion)
+
+cat("MSE en entrenamiento: ", mse_train, "\n")
+cat("MSE en validación: ", mse_validacion, "\n")
+
+```
+
+Dado los valores obtenidos con MSE de validación cercano al de entrenamiento, como en este caso, sugiere que el modelo tiene un rendimiento adecuado sin un sobreajuste
