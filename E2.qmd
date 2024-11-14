@@ -202,6 +202,7 @@ MSE de 5.724188 te da una idea de la precisión del modelo con un polinomio de g
 | Alto 	 |     55      |	 30	  |  25    |
 | Bajo	 |     35	     |   15	  |  20    |
 
+
 | Dulzor  | No. tomates | Cherry	| Perita |
 |---------|-------------|---------|--------|
 | Pequeño |     60      |	 40	    |  20    |
