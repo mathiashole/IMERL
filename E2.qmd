@@ -194,3 +194,15 @@ El MSE de 5.724188 refleja el desempeño del modelo en el conjunto de validació
 Este MSE es útil para comparar la calidad de diferentes modelos o configuraciones, pero por sí solo no dice si el modelo está funcionando "bien" o "mal". Dependerá del contexto de tu problema y de si este MSE es satisfactorio para el uso que se le quiere dar al modelo.
 
 MSE de 5.724188 te da una idea de la precisión del modelo con un polinomio de grado 5 y te permite tomar decisiones informadas sobre si el modelo necesita ajustes o si es adecuado para el propósito de tu análisis.
+
+# Ejercicio 6: Árbol de decisión para clasificar variedades de tomates
+
+| Dulzor | No. tomates | Cherry	| Perita |
+|--------|-------------|--------|--------|
+| Alto 	 |     55      |	 30	  |  25    |
+| Bajo	 |     35	     |   15	  |  20    |
+
+| Dulzor  | No. tomates | Cherry	| Perita |
+|---------|-------------|---------|--------|
+| Pequeño |     60      |	 40	    |  20    |
+| Grande	|     30	    |   5	    |  25    |
