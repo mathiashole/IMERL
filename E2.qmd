@@ -207,3 +207,19 @@ MSE de 5.724188 te da una idea de la precisión del modelo con un polinomio de g
 |---------|-------------|---------|--------|
 | Pequeño |     60      |	 40	    |  20    |
 | Grande	|     30	    |   5	    |  25    |
+
+
+## Calcule la impureza de Gini esperada para cada una de las divisiones
+
+La impureza de Gini esperada para una división se calcula como:
+
+$$
+\frac{N(t_L)}{N(t)}\times H(y;S_L)+\frac{N(t_R)}{N(t)}\times H(y;S_R)
+$$
+
+donde:
+
+    $N(t_L)$ es el número de observaciones en el nodo izquierdo
+    $N(t_R)$ es el número de observaciones en el nodo derecho
+    $H(y; S_L)$ y $H(y; S_R)$ son las impurezas de Gini de los nodos izquierdo y derecho, respectivamente.
+
