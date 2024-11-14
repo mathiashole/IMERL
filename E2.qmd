@@ -217,9 +217,7 @@ $$
 \frac{N(t_L)}{N(t)}\times H(y;S_L)+\frac{N(t_R)}{N(t)}\times H(y;S_R)
 $$
 
-donde:
-
-    $N(t_L)$ es el número de observaciones en el nodo izquierdo
+donde $N(t_L)$ es el número de observaciones en el nodo izquierdo
     $N(t_R)$ es el número de observaciones en el nodo derecho
     $H(y; S_L)$ y $H(y; S_R)$ son las impurezas de Gini de los nodos izquierdo y derecho, respectivamente.
 
