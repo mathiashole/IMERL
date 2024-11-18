@@ -257,6 +257,7 @@ Gini_Tamano
 ```
 
 
+## ARBOL
 ```{r}
 library(dplyr)
 library(rpart)       # Para construir árboles de decisión
@@ -281,5 +282,71 @@ tamano_tree <- rpart(Clase ~ Atributo, data = datos %>% filter(Atributo %in% c("
 # Graficar el árbol de decisión para Tamaño
 rpart.plot(tamano_tree, type = 4, extra = 101, main = "Árbol de decisión basado en Tamaño")
 
+```
+
+```{r}
+# Datos para árbol de decisión basado en Tamaño
+datos_tamano <- data.frame(
+  Tamano = c("Pequeño", "Pequeño", "Grande", "Grande"),
+  Clase = c("Cherry", "Perita", "Cherry", "Perita"),
+  Count = c(40, 20, 5, 25)
+)
+
+# Crear y graficar árbol
+tamano_tree <- rpart(Clase ~ Tamano, data = datos_tamano, weights = Count, method = "class")
+rpart.plot(tamano_tree, type = 4, extra = 101, main = "Árbol de decisión: Tamaño")
+
+```
+
+## ¿Qué pregunta elegiría en el nodo raíz? Justificar en base a las partes anteriores
+
+Dado que:
+
+    Gini esperado para Dulzor: GiniDulzor=0.4935GiniDulzor​=0.4935
+    Gini esperado para Tamaño: GiniTaman˜o=0.3889GiniTaman˜o​=0.3889
+
+Elección de la pregunta en el nodo raíz:
+
+La mejor pregunta en el nodo raíz es:
+"¿El tamaño es pequeño o grande?"
+Justificación:
+
+    Menor impureza:
+    La impureza esperada GiniTaman˜oGiniTaman˜o​ es menor que GiniDulzorGiniDulzor​, lo que indica que el atributo Tamaño produce una división más pura y, por lo tanto, mejor separa las clases (Cherry y Perita).
+
+    Distribución más pura en los nodos hijos:
+        División por Tamaño:
+            Pequeño: 60 tomates (40 Cherry, 20 Perita). Predicción: Cherry.
+            Grande: 30 tomates (5 Cherry, 25 Perita). Predicción: Perita.
+        División por Dulzor:
+            Alto: 55 tomates (30 Cherry, 25 Perita). Mezcla significativa.
+            Bajo: 35 tomates (15 Cherry, 20 Perita). Mezcla significativa.
+
+    Observamos que la división por Tamaño resulta en nodos hijos más homogéneos.
+
+    Optimización de la clasificación:
+    Elegir Tamaño como el atributo para dividir maximiza la pureza en los nodos y minimiza la incertidumbre de la clasificación, conforme al criterio de Gini.
+
+## Para el árbol elegido en la parte anterior, calcular el error
+
+Cálculo del error para el árbol seleccionado
+
+El error se calcula como la fracción de observaciones mal clasificadas en el conjunto de entrenamiento.
+
+```{r}
+# Supongamos que elegimos Dulzor:
+# Nodo Alto: predicción Cherry
+# Nodo Bajo: predicción Perita
+
+# Observaciones mal clasificadas
+error_dulzor <- (25 + 15) / N_root
+error_dulzor
+
+# Para Tamaño:
+# Nodo Pequeño: predicción Cherry
+# Nodo Grande: predicción Perita
+
+error_tamano <- (20 + 5) / N_root
+error_tamano
 
 ```
