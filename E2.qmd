@@ -262,6 +262,7 @@ Gini_Tamano
 library(dplyr)
 library(rpart)       # Para construir árboles de decisión
 library(rpart.plot)  # Para graficar árboles de decisión
+library(rattle)
 
 # Crear un dataframe con los datos
 datos <- data.frame(
@@ -269,6 +270,25 @@ datos <- data.frame(
   Clase = c("Cherry", "Perita", "Cherry", "Perita", "Cherry", "Perita", "Cherry", "Perita"),
   Count = c(30, 25, 15, 20, 40, 20, 5, 25)
 )
+
+datos$Atributo <- factor(datos$Atributo)
+datos$Clase <- factor(datos$Clase)
+
+# Entrenar el árbol de decisión utilizando el argumento 'weights' con la columna Count
+arbol <- rpart(
+  formula = Clase ~ Atributo,
+  data = datos %>% filter(Atributo %in% c("Dulzor_Alto", "Dulzor_Bajo")),
+  method = 'class',
+  weights = Count,
+  control = rpart.control(minsplit = 2, 
+                          minbucket = 1, 
+                          cp = 0.05)
+)
+
+# Graficar el árbol utilizando fancyRpartPlot
+png("tree_plot.png", width = 800, height = 600)
+fancyRpartPlot(arbol)
+dev.off()
 
 # Datos para árbol de decisión con Dulzor
 dulzor_tree <- rpart(Clase ~ Atributo, data = datos %>% filter(Atributo %in% c("Dulzor_Alto", "Dulzor_Bajo")), weights = Count, method = "class")
