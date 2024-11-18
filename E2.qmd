@@ -221,3 +221,65 @@ donde $N(t_L)$ es el número de observaciones en el nodo izquierdo
     $N(t_R)$ es el número de observaciones en el nodo derecho
     $H(y; S_L)$ y $H(y; S_R)$ son las impurezas de Gini de los nodos izquierdo y derecho, respectivamente.
 
+Calculamos la impureza de Gini esperada para cada division. El Gini esperado para la division de Dulzor es
+
+```{r}
+# Tamaño de cada nodo
+N_root <- 90
+N_Alto <- 55
+N_Bajo <- 35
+
+# Calcular impurezas de Gini para cada nodo hoja
+Gini_Alto <- 1 - ((30 / 55)^2 + (25 / 55)^2)
+Gini_Bajo <- 1 - ((15 / 35)^2 + (20 / 35)^2)
+
+# Gini esperado para la división por Dulzor
+Gini_Dulzor <- (N_Alto / N_root) * Gini_Alto + (N_Bajo / N_root) * Gini_Bajo
+Gini_Dulzor
+
+```
+
+El Gini esperado para la division de tamaño es
+
+```{r}
+# Tamaño de cada nodo
+N_Pequeno <- 60
+N_Grande <- 30
+
+# Calcular impurezas de Gini para cada nodo hoja
+Gini_Pequeno <- 1 - ((40 / 60)^2 + (20 / 60)^2)
+Gini_Grande <- 1 - ((5 / 30)^2 + (25 / 30)^2)
+
+# Gini esperado para la división por Tamaño
+Gini_Tamano <- (N_Pequeno / N_root) * Gini_Pequeno + (N_Grande / N_root) * Gini_Grande
+Gini_Tamano
+
+```
+
+
+```{r}
+library(dplyr)
+library(rpart)       # Para construir árboles de decisión
+library(rpart.plot)  # Para graficar árboles de decisión
+
+# Crear un dataframe con los datos
+datos <- data.frame(
+  Atributo = rep(c("Dulzor_Alto", "Dulzor_Bajo", "Tamano_Pequeno", "Tamano_Grande"), each = 2),
+  Clase = c("Cherry", "Perita", "Cherry", "Perita", "Cherry", "Perita", "Cherry", "Perita"),
+  Count = c(30, 25, 15, 20, 40, 20, 5, 25)
+)
+
+# Datos para árbol de decisión con Dulzor
+dulzor_tree <- rpart(Clase ~ Atributo, data = datos %>% filter(Atributo %in% c("Dulzor_Alto", "Dulzor_Bajo")), weights = Count, method = "class")
+
+# Graficar el árbol de decisión para Dulzor
+rpart.plot(dulzor_tree, type = 4, extra = 101, main = "Árbol de decisión basado en Dulzor")
+
+# Datos para árbol de decisión con Tamaño
+tamano_tree <- rpart(Clase ~ Atributo, data = datos %>% filter(Atributo %in% c("Tamano_Pequeno", "Tamano_Grande")), weights = Count, method = "class")
+
+# Graficar el árbol de decisión para Tamaño
+rpart.plot(tamano_tree, type = 4, extra = 101, main = "Árbol de decisión basado en Tamaño")
+
+
+```
