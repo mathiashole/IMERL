@@ -96,7 +96,7 @@ El coeficiente de la variable lluvia es $\beta_1 = 0.04345$, siendo en promedio 
 
 ## Comparar el MSE en entrenamiento, validación y CV.
 
-El MSE se calcula como $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$, siendo $y_i$ valores observados y $hat{y}_i$ los valores predichos. Entonces 
+El MSE mide la calidad del ajuste del modelo, usando la medai del error cuadratico entre lo predicho y lo observado. Se calcula como $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$, siendo $y_i$ valores observados y $hat{y}_i$ los valores predichos. Entonces 
 
 ```{r}
 
@@ -124,7 +124,7 @@ cat("MSE en validación: ", mse_validacion, "\n")
 
 ```
 
-Dado los valores obtenidos con MSE de validación cercano al de entrenamiento, como en este caso, sugiere que el modelo tiene un rendimiento adecuado sin un sobreajuste.
+El MSE en el entrenamiento es menor que el MSE en validacion, puede estar ocurriendo un sobreajuste del modelo. Este problema podria abordarse de varias formas como aplicar tecnicas de regularizacion, mas datos de entrenamiento y cross-validation, de esta forma se reduciria el sobreajuste y el modelo tendria generalizaria mejor.
 
 ## Determinar el grado óptimo en caso de aplicar una regresión polinomial.
 
