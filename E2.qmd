@@ -146,9 +146,8 @@ print(mse_polynomial)
 
 ```
 
-A medida que aumentas el grado, el MSE disminuye hasta que se estabiliza en alrededor de 2.79 para grados 3, 4 y 5. Esto sugiere que un polinomio de grado 3 es probablemente el más adecuado, ya que logra un MSE bajo sin agregar demasiada complejidad adicional al modelo.
+A medida que se aumenta el grado, el MSE disminuye hasta que se estabiliza para grados 3, 4 y 5. Esto sugiere que un polinomio de grado 3 sea el mas adecuado, ya que logra un MSE bajo sin agregar complejidad al modelo.
 
-Usar un grado mayor (como 4 o 5) no mejora significativamente el MSE en comparación con el grado 3, por lo que sería innecesario añadir esa complejidad extra al modelo.
 
 ## Hallar el valor de $\lambda$ óptimo para la regresión polinomial de grado 5 con regularización.
 
