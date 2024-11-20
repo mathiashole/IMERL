@@ -290,19 +290,10 @@ png("tree_plot.png", width = 800, height = 600)
 fancyRpartPlot(arbol)
 dev.off()
 
-# Datos para árbol de decisión con Dulzor
-dulzor_tree <- rpart(Clase ~ Atributo, data = datos %>% filter(Atributo %in% c("Dulzor_Alto", "Dulzor_Bajo")), weights = Count, method = "class")
-
-# Graficar el árbol de decisión para Dulzor
-rpart.plot(dulzor_tree, type = 4, extra = 101, main = "Árbol de decisión basado en Dulzor")
-
-# Datos para árbol de decisión con Tamaño
-tamano_tree <- rpart(Clase ~ Atributo, data = datos %>% filter(Atributo %in% c("Tamano_Pequeno", "Tamano_Grande")), weights = Count, method = "class")
-
-# Graficar el árbol de decisión para Tamaño
-rpart.plot(tamano_tree, type = 4, extra = 101, main = "Árbol de decisión basado en Tamaño")
-
 ```
+
+![Arbol de decision dulzor](tree_plot.png)
+
 
 ```{r}
 # Datos para árbol de decisión basado en Tamaño
