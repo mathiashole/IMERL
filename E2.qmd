@@ -26,7 +26,7 @@ format:
       colorlinks: true
 ---
 
-# Ejercicio 2: Análisis de Regresión para Predicción de Rendimiento de Papas
+# Ejercicio 2
 
 Datos de Entrenamiento
 
@@ -68,9 +68,9 @@ Datos de Validación
 | 283          | 33                   |
 | 308          | 30                   |
 
-## Correr una regresión lineal para predecir el rendimiento y en función de la lluvia x
+## Correr una regresión lineal para predecir el rendimiento y en función de la lluvia $x$.
 
-La regresión lineal se modela mediante la siguiente ecuación:
+La regresión lineal se modela mediante la siguiente ecuación
 
 $$
 y = \beta_0 + \beta_1 \cdot x
@@ -92,7 +92,9 @@ modelo_lineal <- lm(rendimiento ~ lluvia, data = train_data)
 summary(modelo_lineal)
 ```
 
-## Comparar el MSE en entrenamiento, validación y CV
+El coeficiente de la variable lluvia es $\beta_1 = 0.04345$, siendo en promedio que por cada milimetro de lluvia, se espera un aumento en el rendimiento de $0.04345$ toneladas por hectarea. La intersección $\beta_0 = 15.71595$, en el caso de que la lluvia acumulada sea 0, el modelo predice 15.72 toneladas por hectárea. Asimismo, el $\text{p-value}$ indicando que hay una relacion significativa entre la lluvia y el rendimiento.
+
+## Comparar el MSE en entrenamiento, validación y CV.
 
 El MSE se calcula como $\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$, siendo $y_i$ valores observados y $hat{y}_i$ los valores predichos. Entonces 
 
