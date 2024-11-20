@@ -131,11 +131,11 @@ El MSE en el entrenamiento es menor que el MSE en validacion, puede estar ocurri
 La regresión polinomial se ajusta con la siguiente ecuación $y = \beta_0 + \beta_1 \cdot x + \beta_2 \cdot x^2 + \dots + \beta_d \cdot x^d$. Utilizando la funcion lm() de R, podemos ajustar modelos polinomiales de diferentes grados y comparar el MSE.
 
 ```{r}
-# Regresión polinomial para diferentes grados
+# Regresion polinomial para diferentes grados
 grados <- 1:5  # Probaremos con grados 1 a 5
 mse_polynomial <- numeric(length(grados))
 
-for (grado in grados) {
+for (grado in grados) { # Recorro loop con cada uno de los grados aplicando lm() y calculando MSE
   modelo_pol <- lm(rendimiento ~ poly(lluvia, grado), data = train_data)
   predicciones_pol <- predict(modelo_pol, newdata = train_data)
   mse_polynomial[grado] <- calcular_mse(train_data$rendimiento, predicciones_pol)
@@ -157,44 +157,35 @@ $$
 \text{Minimizar} \left( \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{d} \beta_j^2 \right)
 $$
 
-Donde:
-
-    yiyi​ son los valores observados.
-    y^iy^​i​ son los valores predichos.
-    λλ es el parámetro de regularización.
+Siendo $y_i$ valores observados, $\hat{y}_i$ valores predichos y $\lambda$ el parametro de regularizacion.
 
 ```{r}
-# Cargar la biblioteca glmnet
+#Cargar la biblioteca glmnet
 library(glmnet)
 
-# Crear matriz de características para el polinomio de grado 5 en los datos de entrenamiento
+#crear matriz de caracteristicas para el polinomio de grado 5 en los datos de entrenamiento
 x_train <- as.matrix(poly(train_data$lluvia, 5, raw = TRUE))
-y_train <- train_data$rendimiento                 # Variable dependiente
+y_train <- train_data$rendimiento                 # variable dependiente
 
-# Crear matriz de características para los datos de validación
+# crear matriz de caracteristicas para los datos de validacioon
 x_validacion <- as.matrix(poly(validacion_data$lluvia, 5, raw = TRUE))
 
-# Ajustar el modelo de Ridge (regresión L2) para un polinomio de grado 5
+#ajusto modelo de Ridge (regresion_L2) para un polinomio de grado 5
 modelo_ridge <- glmnet(x_train, y_train, alpha = 0, lambda = 0.1)
 
-# Predicciones en los datos de validación
+#Predicciones en los datos de validacion
 predicciones_ridge <- predict(modelo_ridge, newx = x_validacion)
 
-# Calcular el MSE para Ridge
+#Se calcula el MSE para Ridge
 mse_ridge <- calcular_mse(validacion_data$rendimiento, predicciones_ridge)
 
-# Imprimir el MSE para Ridge
+#imprimir resultado del MSE para Ridge
 cat("MSE para Ridge con lambda = 0.1: ", mse_ridge, "\n")
-
-
 
 ```
 
-El MSE de 5.724188 refleja el desempeño del modelo en el conjunto de validación. Es una medida que captura tanto el ajuste del modelo a los datos de entrenamiento como su capacidad para generalizar a nuevos datos. Un MSE más bajo generalmente indica que el modelo está prediciendo mejor los resultados en el conjunto de validación.
+El MSE de 5.7 refleja el desempeño del modelo en el conjunto de validación. Un MSE más bajo indica una mejor prediccion del modelo en los datos de validacion. La regularizacion reduce la posibilidad de sobreajuste, como en modelos complejos, perdiendo precision.
 
-Este MSE es útil para comparar la calidad de diferentes modelos o configuraciones, pero por sí solo no dice si el modelo está funcionando "bien" o "mal". Dependerá del contexto de tu problema y de si este MSE es satisfactorio para el uso que se le quiere dar al modelo.
-
-MSE de 5.724188 te da una idea de la precisión del modelo con un polinomio de grado 5 y te permite tomar decisiones informadas sobre si el modelo necesita ajustes o si es adecuado para el propósito de tu análisis.
 
 # Ejercicio 6: Árbol de decisión para clasificar variedades de tomates
 
