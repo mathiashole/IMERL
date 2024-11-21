@@ -364,6 +364,11 @@ En este ejercicio, se realiza un análisis de componentes principales (PCA) sobr
 Primero, cargamos los datos en R y realizamos el análisis de componentes principales utilizando la función `prcomp`. Esta función nos permite obtener los componentes principales y evaluar la importancia de cada uno.
 
 ```{r}
+# Cargar librerías necesarias
+library(ggplot2)
+library(FactoMineR)
+library(factoextra)
+
 # Datos de las notas de los estudiantes
 datos <- data.frame(
   Matemática = c(12, 16, 12, 29, 28, 22, 11, 26, 18),
