@@ -366,7 +366,7 @@ Primero, cargamos los datos en R y realizamos el análisis de componentes princi
 ```{r}
 # Cargar librerías necesarias
 library(ggplot2)
-library(FactoMineR)
+#library(FactoMineR)
 library(factoextra)
 
 # Datos de las notas de los estudiantes
@@ -383,6 +383,23 @@ pca <- prcomp(datos, scale. = TRUE)
 
 # Mostrar el resumen del PCA
 summary(pca)
+
+# Gráfico de la varianza explicada
+fviz_eig(pca, addlabels = TRUE, barfill = "steelblue", barcolor = "steelblue", linecolor = "red")
+
+```
+
+La primer componente principal explica el 57.2%, captura más de la mitad de la variacion en los datos originales. La segunda componente principal explica el 23%, añadiendo casi un cuarto adicional de explicación a la varianza de los datos. Esta escribe relaciones en los datos que no son tomados en cuenta por la primer componente.
+
+Las dos componentes principales juntos explican el 80.2% de la varianza $(57.2% + 23%)$. Dado que estas dos primeras componentes explican la mayor parte de la varianza podemos reducir la matriz orginal a estas dos componentes.
+
+En los siguientes graficos de barra se puede ver el peso que tiene cada asignatura en cada componente principal.
+
+```{r}
+# Visualización de las contribuciones de las variables
+fviz_contrib(pca, choice = "var", axes = 1, top = 5)  # Contribución al CP1
+fviz_contrib(pca, choice = "var", axes = 2, top = 5)  # Contribución al CP2
+
 ```
 
 Calidades de cada componente
@@ -400,7 +417,11 @@ Las contribuciones de cada variable a los componentes principales se pueden obte
 ```{r}
 # Cargas (loadings) de los componentes
 pca$rotation
+
+
+
 ```
+
 
 Calidades y contribuciones de los individuos
 
