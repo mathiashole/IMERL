@@ -384,9 +384,6 @@ pca <- prcomp(datos, scale. = TRUE)
 # Mostrar el resumen del PCA
 summary(pca)
 
-# Gráfico de la varianza explicada
-fviz_eig(pca, addlabels = TRUE, barfill = "steelblue", barcolor = "steelblue", linecolor = "red")
-
 ```
 
 La primer componente principal explica el 57.2%, captura más de la mitad de la variacion en los datos originales. La segunda componente principal explica el 23%, añadiendo casi un cuarto adicional de explicación a la varianza de los datos. Esta escribe relaciones en los datos que no son tomados en cuenta por la primer componente.
@@ -403,6 +400,28 @@ fviz_contrib(pca, choice = "var", axes = 2, top = 5)  #contribucion al PC2
 ```
 
 Calidades de cada componente
+
+La calidad se mide a traves de la proporción de la varianza total explicada por dicho componente. Pudiendose calcular con los valores propios (eigenvalues). La proporción de varianza explicada por el componente $i$ se calcula como
+
+$$
+Varianza explicada = \frac{\lambda_i}{\sum_{j=1}^{p}\lambda_i}
+$$
+
+Donde $\lambda_i$ es el eigenvalue del componente $i$ y $\sum_{j=1}^{p}\lambda_i$​ es la sumatoria de los eigenvalues.
+
+```{r}
+# Obtener los eigenvalues
+eigenvalues <- pca$sdev^2
+
+# Proporción de varianza explicada
+varianza_explicada <- eigenvalues / sum(eigenvalues)
+
+varianza_explicada
+
+# Gráfico de la varianza explicada
+fviz_eig(pca, addlabels = TRUE, barfill = "steelblue", barcolor = "steelblue", linecolor = "red")
+
+```
 
 La "calidad" de cada componente principal se refiere a la varianza explicada por ese componente. La función summary() nos muestra cuánta varianza es explicada por cada uno de los componentes principales.
 
