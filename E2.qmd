@@ -295,13 +295,13 @@ datos_tamano <- data.frame(
   Count = c(40, 20, 5, 25)
 )
 
-datos_tamano$Tamano <- factor(datos$Tamano)
-datos_tamano$Clase <- factor(datos$Clase)
+datos_tamano$Tamano <- factor(datos_tamano$Tamano)
+datos_tamano$Clase <- factor(datos_tamano$Clase)
 
 # Entrenar el árbol de decisión utilizando el argumento 'weights' con la columna Count
 arbol_tamano <- rpart(
   formula = Clase ~ Tamano,
-  data = datos %>% filter(Tamano %in% c("Grande", "Pequeño")),
+  data = datos_tamano %>% filter(Tamano %in% c("Grande", "Pequeño")),
   method = 'class',
   weights = Count,
   control = rpart.control(minsplit = 2, 
@@ -320,10 +320,7 @@ dev.off()
 
 ## ¿Qué pregunta elegiría en el nodo raíz? Justificar en base a las partes anteriores
 
-Dado que:
-
-    Gini esperado para Dulzor: GiniDulzor=0.4935GiniDulzor​=0.4935
-    Gini esperado para Tamaño: GiniTaman˜o=0.3889GiniTaman˜o​=0.3889
+Dado que Gini esperado para dulzor $(0.494)$ y el Gini esperado para tamaño es $(0.389)$, esta ultima presenta menor impureza de Gini esperada. Indicando que la division tamaño separa mejor las clases Cherry y Perita.
 
 Elección de la pregunta en el nodo raíz:
 
