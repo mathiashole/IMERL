@@ -458,7 +458,3 @@ fviz_pca_biplot(pca, repel = TRUE,
   scale_x_discrete(labels = names_students)
 
 ```
-
-Conclusiones
-
-El análisis de componentes principales nos permite reducir la dimensionalidad del conjunto de datos, extrayendo los componentes que explican la mayor parte de la varianza. En este caso, los componentes principales nos muestran cómo se distribuyen los estudiantes según sus calificaciones en las distintas asignaturas, ayudándonos a identificar patrones o grupos dentro del conjunto de datos.
