@@ -423,20 +423,31 @@ fviz_eig(pca, addlabels = TRUE, barfill = "steelblue", barcolor = "steelblue", l
 
 ```
 
-
-Las contribuciones de cada variable a los componentes principales se pueden obtener examinando las cargas (loadings) de los componentes, que indican qué tan influyente es cada variable en cada componente.
+Las contribuciones de cada variable se pueden obtener de losloadings de los componentes, indicando el peso de cada variable en cada componente. Siendo los valores mas alejados de 0 son las variables originales que contribuyen mas a ese componente principal.
 ```{r}
-# Cargas (loadings) de los componentes
+#loadings de los componentes
 pca$rotation
 
 ```
 
+Contribuciones de los individuos
 
-Calidades y contribuciones de los individuos
+| Estudiante | n individuos | 
+|------------|--------------|
+| Juan       | 1            |
+| Alina      | 2            |
+| Ana        | 3            |
+| Mónica     | 4            |
+| Daniel     | 5            |
+| Andrés     | 6            |
+| Pedro      | 7            |
+| Valentina  | 8            |
+| Sandra     | 9            |
 
-Finalmente, las coordenadas de cada individuo en el espacio de los componentes principales nos indican en qué medida cada estudiante contribuye a los componentes principales. Estas coordenadas se obtienen multiplicando la matriz de datos centrados y escalados por las cargas de los componentes.
+Finalmente, las coordenadas de cada individuo en el espacio de los componentes principales indican como cada estudiante contribuye a los componentes principales.
+
 ```{r}
-# Coordenadas de los individuos en los componentes principales
+# coordenadas de los individuos en los PCA
 pca$x
 ```
 
@@ -454,6 +465,20 @@ ggplot(pca_data, aes(x = PC1, y = PC2, label = Estudiante)) +
   geom_point() +
   geom_text(vjust = 1.5, hjust = 1.5) +
   labs(title = "PCA: Primeros dos Componentes Principales", x = "Componente Principal 1", y = "Componente Principal 2")
+
+# Contribuciones de los estudiantes al CP1 y CP2
+fviz_contrib(pca, choice = "ind", axes = 1, top = 5)
+fviz_contrib(pca, choice = "ind", axes = 2, top = 5)
+
+fviz_pca_biplot(pca, repel = TRUE, 
+                col.var = "steelblue", # Variables
+                col.ind = "darkgreen") # Individuos
+
+# Visualizar las filas específicas
+head(datos)   # Primeras filas del dataset original
+datos[1:5, ]  # Mostrar las primeras 5 filas
+
+
 ```
 
 Conclusiones
