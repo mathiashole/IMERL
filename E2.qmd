@@ -423,14 +423,6 @@ fviz_eig(pca, addlabels = TRUE, barfill = "steelblue", barcolor = "steelblue", l
 
 ```
 
-La "calidad" de cada componente principal se refiere a la varianza explicada por ese componente. La función summary() nos muestra cuánta varianza es explicada por cada uno de los componentes principales.
-
-La varianza explicada por el componente ii se calcula como:
-Varianza explicada del componente i=λi∑j=1pλj
-Varianza explicada del componente i=∑j=1p​λj​λi​​
-
-donde λiλi​ es el valor propio (eigenvalue) del componente ii y pp es el número total de componentes.
-Contribuciones de cada variable
 
 Las contribuciones de cada variable a los componentes principales se pueden obtener examinando las cargas (loadings) de los componentes, que indican qué tan influyente es cada variable en cada componente.
 ```{r}
