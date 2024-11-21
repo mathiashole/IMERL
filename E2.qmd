@@ -265,7 +265,7 @@ datos <- data.frame(
   Count = c(30, 25, 15, 20, 40, 20, 5, 25)
 )
 
-datos$Atributo <- factor(datos$Atributo)
+datos$Atributo <- factor(datos$Atributo) # cambiar a factor
 datos$Clase <- factor(datos$Clase)
 
 # Entrenar el árbol de decisión utilizando el argumento 'weights' con la columna Count
