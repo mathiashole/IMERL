@@ -327,27 +327,19 @@ Por lo tanto elegimos la pregunta ¿El tamaño es pequeño o grande? en el nodo 
 
 ## Para el árbol elegido en la parte anterior, calcular el error
 
-Cálculo del error para el árbol seleccionado
+El error del arbol se calcula como la proporcion de observaciones mal clasificadas en cada hoja. Para el árbol basado en tamaño tenemos que el nodo pequeño predice Cherry (40 Cherry, 20 Perita), clasificando mal 20 Perita. Para el nodo grande se predice Perita (5 Cherry, 25 Perita), donde se clasificaron mal 5 Cherry.
 
-El error se calcula como la fracción de observaciones mal clasificadas en el conjunto de entrenamiento.
+$$
+\text{Error} = \frac{20 + 5}{90} = 0.278 \ (\text{27.8%})
+$$
 
-```{r}
-# Supongamos que elegimos Dulzor:
-# Nodo Alto: predicción Cherry
-# Nodo Bajo: predicción Perita
+Para el árbol basado en dulzor el nodo alto predice Cherry (30 Cherry, 25 Perita), siendo 25 Perita mal clasificados. El nodo bajo predice Perita (15 Cherry, 20 Perita) con 15 Cherry mal clasificado.
 
-# Observaciones mal clasificadas
-error_dulzor <- (25 + 15) / N_root
-error_dulzor
+$$
+\text{Error} = \frac{25 + 15}{90} = 0.444 \ (\text{44.4%})
+$$
 
-# Para Tamaño:
-# Nodo Pequeño: predicción Cherry
-# Nodo Grande: predicción Perita
 
-error_tamano <- (20 + 5) / N_root
-error_tamano
-
-```
 
 # Ejercicio 3: Análisis de Componentes Principales
 
