@@ -200,6 +200,8 @@ El MSE de 5.7 refleja el desempeño del modelo en el conjunto de validación. Un
 | Pequeño |     60      |	 40	    |  20    |
 | Grande	|     30	    |   5	    |  25    |
 
+## Dibujar los dos árboles de decisión posibles, resultantes de dividir el nodo raíz por uno de los dos atributos
+
 
 ## Calcule la impureza de Gini esperada para cada una de las divisiones
 
