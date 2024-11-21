@@ -203,15 +203,13 @@ El MSE de 5.7 refleja el desempeño del modelo en el conjunto de validación. Un
 
 ## Calcule la impureza de Gini esperada para cada una de las divisiones
 
-La impureza de Gini esperada para una división se calcula como:
+La impureza de Gini esperada para una división se calcula con la siguiente ecuacion
 
 $$
 \frac{N(t_L)}{N(t)}\times H(y;S_L)+\frac{N(t_R)}{N(t)}\times H(y;S_R)
 $$
 
-donde $N(t_L)$ es el número de observaciones en el nodo izquierdo
-    $N(t_R)$ es el número de observaciones en el nodo derecho
-    $H(y; S_L)$ y $H(y; S_R)$ son las impurezas de Gini de los nodos izquierdo y derecho, respectivamente.
+donde $N(t_L)$ es el número de observaciones en el nodo izquierdo, $N(t_R)$ es el numero de observaciones en el nodo derecho, $H(y; S_L)$ y $H(y; S_R)$ son las impurezas de Gini de los nodos izquierdo y derecho.
 
 Calculamos la impureza de Gini esperada para cada division. El Gini esperado para la division de Dulzor es
 
@@ -225,11 +223,13 @@ N_Bajo <- 35
 Gini_Alto <- 1 - ((30 / 55)^2 + (25 / 55)^2)
 Gini_Bajo <- 1 - ((15 / 35)^2 + (20 / 35)^2)
 
-# Gini esperado para la división por Dulzor
-Gini_Dulzor <- (N_Alto / N_root) * Gini_Alto + (N_Bajo / N_root) * Gini_Bajo
-Gini_Dulzor
-
 ```
+
+El Gini esperado para el dulzor es 
+$$
+\text{Gini Dulzor} = \frac{55}{90} \times 0.496 + \frac{35}{90} \times 0.489 = 0.494
+$$
+
 
 El Gini esperado para la division de tamaño es
 
@@ -295,11 +295,28 @@ datos_tamano <- data.frame(
   Count = c(40, 20, 5, 25)
 )
 
-# Crear y graficar árbol
-tamano_tree <- rpart(Clase ~ Tamano, data = datos_tamano, weights = Count, method = "class")
-rpart.plot(tamano_tree, type = 4, extra = 101, main = "Árbol de decisión: Tamaño")
+datos_tamano$Tamano <- factor(datos$Tamano)
+datos_tamano$Clase <- factor(datos$Clase)
+
+# Entrenar el árbol de decisión utilizando el argumento 'weights' con la columna Count
+arbol_tamano <- rpart(
+  formula = Clase ~ Tamano,
+  data = datos %>% filter(Tamano %in% c("Grande", "Pequeño")),
+  method = 'class',
+  weights = Count,
+  control = rpart.control(minsplit = 2, 
+                          minbucket = 1, 
+                          cp = 0.05)
+)
+
+# Graficar el árbol utilizando fancyRpartPlot
+png("tree_tamano_plot.png", width = 800, height = 600)
+fancyRpartPlot(arbol_tamano)
+dev.off()
 
 ```
+
+![Arbol de decision tamaño](tree_tamano_plot.png)
 
 ## ¿Qué pregunta elegiría en el nodo raíz? Justificar en base a las partes anteriores
 
