@@ -3,7 +3,7 @@ title: "ENTREGA 2"
 date: today
 date-format: "DD MMMM, YYYY"
 author: 
-  Mathias
+  Mathias Mangino
 abstract:
     Métodos Estadísticos para la Regresión y la Clasificación
 abstractspacing: double
@@ -202,6 +202,34 @@ El MSE de 5.7 refleja el desempeño del modelo en el conjunto de validación. Un
 
 ## Dibujar los dos árboles de decisión posibles, resultantes de dividir el nodo raíz por uno de los dos atributos
 
+Nodo raiz Dulzor 
+$Cherry = 30+15=45$
+$Perita = 25+20=45$
+
+$Total: 45+45=90$
+
+Hoja izquierda $(Yes: Pequeño)$
+$Observaciones = 30+25 = 55$
+
+Hoja derecha $(No: Pequeño)$
+$Observaciones = 15+20=35$
+
+![Arbol de decision dulzor](tree_plot.png)
+
+Nodo raiz Tamaño
+$Cherry = 40+5=45$
+$Perita = 25+20=45$
+
+$Total: 45+45=90$
+
+Hoja izquierda $(Yes: Tamaño_Pequeño)$
+$Observaciones = 40+20 = 60$
+
+Hoja derecha $(No: Tamaño_grande)$
+$Observaciones = 25+5=30$
+
+![Arbol de decision tamaño](tree_tamano_plot.png)
+
 
 ## Calcule la impureza de Gini esperada para cada una de las divisiones
 
@@ -251,74 +279,6 @@ $$
 \text{Gini Dulzor} = \frac{60}{90} \times 0.444 + \frac{30}{90} \times 0.278 = 0.389
 $$
 
-## ARBOL
-```{r}
-library(dplyr)
-library(rpart)       #para construir arboles de decision
-library(rpart.plot)  # para graficar arboles de decisión
-library(rattle)
-
-# Crear un dataframe con los datos
-datos <- data.frame(
-  Atributo = rep(c("Dulzor_Alto", "Dulzor_Bajo", "Tamano_Pequeno", "Tamano_Grande"), each = 2),
-  Clase = c("Cherry", "Perita", "Cherry", "Perita", "Cherry", "Perita", "Cherry", "Perita"),
-  Count = c(30, 25, 15, 20, 40, 20, 5, 25)
-)
-
-datos$Atributo <- factor(datos$Atributo) # cambiar a factor
-datos$Clase <- factor(datos$Clase)
-
-# Entrenar el árbol de decisión utilizando el argumento 'weights' con la columna Count
-arbol <- rpart(
-  formula = Clase ~ Atributo,
-  data = datos %>% filter(Atributo %in% c("Dulzor_Alto", "Dulzor_Bajo")),
-  method = 'class',
-  weights = Count,
-  control = rpart.control(minsplit = 2, 
-                          minbucket = 1, 
-                          cp = 0.05)
-)
-
-# Graficar el árbol utilizando fancyRpartPlot
-png("tree_plot.png", width = 800, height = 600)
-fancyRpartPlot(arbol)
-dev.off()
-
-```
-
-![Arbol de decision dulzor](tree_plot.png)
-
-
-```{r}
-# Datos para árbol de decisión basado en Tamaño
-datos_tamano <- data.frame(
-  Tamano = c("Pequeño", "Pequeño", "Grande", "Grande"),
-  Clase = c("Cherry", "Perita", "Cherry", "Perita"),
-  Count = c(40, 20, 5, 25)
-)
-
-datos_tamano$Tamano <- factor(datos_tamano$Tamano)
-datos_tamano$Clase <- factor(datos_tamano$Clase)
-
-# Entrenar el árbol de decisión utilizando el argumento 'weights' con la columna Count
-arbol_tamano <- rpart(
-  formula = Clase ~ Tamano,
-  data = datos_tamano %>% filter(Tamano %in% c("Grande", "Pequeño")),
-  method = 'class',
-  weights = Count,
-  control = rpart.control(minsplit = 2, 
-                          minbucket = 1, 
-                          cp = 0.05)
-)
-
-# Graficar el árbol utilizando fancyRpartPlot
-png("tree_tamano_plot.png", width = 800, height = 600)
-fancyRpartPlot(arbol_tamano)
-dev.off()
-
-```
-
-![Arbol de decision tamaño](tree_tamano_plot.png)
 
 ## ¿Qué pregunta elegiría en el nodo raíz? Justificar en base a las partes anteriores
 
@@ -332,13 +292,13 @@ Por lo tanto elegimos la pregunta ¿El tamaño es pequeño o grande? en el nodo 
 El error del arbol se calcula como la proporcion de observaciones mal clasificadas en cada hoja. Para el árbol basado en tamaño tenemos que el nodo pequeño predice Cherry (40 Cherry, 20 Perita), clasificando mal 20 Perita. Para el nodo grande se predice Perita (5 Cherry, 25 Perita), donde se clasificaron mal 5 Cherry.
 
 $$
-\text{Error} = \frac{20 + 5}{90} = 0.278 \ (\text{27.8%})
+\text{Error} = \frac{20 + 5}{90} = 0.278 \ \text{27.8} %
 $$
 
 Para el árbol basado en dulzor el nodo alto predice Cherry (30 Cherry, 25 Perita), siendo 25 Perita mal clasificados. El nodo bajo predice Perita (15 Cherry, 20 Perita) con 15 Cherry mal clasificado.
 
 $$
-\text{Error} = \frac{25 + 15}{90} = 0.444 \ (\text{44.4%})
+\text{Error} = \frac{25 + 15}{90} = 0.444 \ \text{44.4} %
 $$
 
 
@@ -388,7 +348,7 @@ summary(pca)
 
 La primer componente principal explica el 57.2%, captura más de la mitad de la variacion en los datos originales. La segunda componente principal explica el 23%, añadiendo casi un cuarto adicional de explicación a la varianza de los datos. Esta escribe relaciones en los datos que no son tomados en cuenta por la primer componente.
 
-Las dos componentes principales juntos explican el 80.2% de la varianza $(57.2% + 23%)$. Dado que estas dos primeras componentes explican la mayor parte de la varianza podemos reducir la matriz orginal a estas dos componentes.
+Las dos componentes principales juntos explican el 80.2% de la varianza 57.2 % + 23 %. Dado que estas dos primeras componentes explican la mayor parte de la varianza podemos reducir la matriz orginal a estas dos componentes.
 
 En los siguientes graficos de barra se puede ver el peso que tiene cada asignatura en cada componente principal.
 
