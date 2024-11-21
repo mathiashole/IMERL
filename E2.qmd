@@ -451,33 +451,23 @@ Finalmente, las coordenadas de cada individuo en el espacio de los componentes p
 pca$x
 ```
 
-Los valores obtenidos nos permiten visualizar la distribución de los estudiantes en el espacio de los componentes principales, mostrando qué tan lejos o cerca están de los ejes principales.
-Visualización de los resultados
+Estos valores nos permiten visualizar la distribución de los estudiantes en el espacio de los componentes principales. Esta visualizacion se hace con un grafico de dispersion y barplot.
 
-Podemos visualizar los primeros dos componentes principales utilizando un gráfico de dispersión.
 ```{r}
-# Graficar los primeros dos componentes principales
-library(ggplot2)
-pca_data <- as.data.frame(pca$x)
-pca_data$Estudiante <- c("Juan", "Alina", "Ana", "Mónica", "Daniel", "Andrés", "Pedro", "Valentina", "Sandra")
-
-ggplot(pca_data, aes(x = PC1, y = PC2, label = Estudiante)) +
-  geom_point() +
-  geom_text(vjust = 1.5, hjust = 1.5) +
-  labs(title = "PCA: Primeros dos Componentes Principales", x = "Componente Principal 1", y = "Componente Principal 2")
+names_students <- c("Juan", "Alina", "Ana", "Mónica", "Daniel", "Andrés", "Pedro", "Valentina", "Sandra")
 
 # Contribuciones de los estudiantes al CP1 y CP2
-fviz_contrib(pca, choice = "ind", axes = 1, top = 5)
-fviz_contrib(pca, choice = "ind", axes = 2, top = 5)
+fviz_contrib(pca, choice = "ind", axes = 1, top = 9)+
+  scale_x_discrete(labels = names_students)
+fviz_contrib(pca, choice = "ind", axes = 2, top = 9)+
+  scale_x_discrete(labels = names_students)
+
+rownames(pca$x) <- names_students
 
 fviz_pca_biplot(pca, repel = TRUE, 
                 col.var = "steelblue", # Variables
-                col.ind = "darkgreen") # Individuos
-
-# Visualizar las filas específicas
-head(datos)   # Primeras filas del dataset original
-datos[1:5, ]  # Mostrar las primeras 5 filas
-
+                col.ind = "darkgreen") + #individuos
+  scale_x_discrete(labels = names_students)
 
 ```
 
