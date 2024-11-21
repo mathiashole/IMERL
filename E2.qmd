@@ -254,8 +254,8 @@ $$
 ## ARBOL
 ```{r}
 library(dplyr)
-library(rpart)       # Para construir árboles de decisión
-library(rpart.plot)  # Para graficar árboles de decisión
+library(rpart)       #para construir arboles de decision
+library(rpart.plot)  # para graficar arboles de decisión
 library(rattle)
 
 # Crear un dataframe con los datos
