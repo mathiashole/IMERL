@@ -211,7 +211,7 @@ $$
 
 donde $N(t_L)$ es el número de observaciones en el nodo izquierdo, $N(t_R)$ es el numero de observaciones en el nodo derecho, $H(y; S_L)$ y $H(y; S_R)$ son las impurezas de Gini de los nodos izquierdo y derecho.
 
-Calculamos la impureza de Gini esperada para cada division. El Gini esperado para la division de Dulzor es
+Calculamos la impureza de Gini esperada para cada division.
 
 ```{r}
 # Tamaño de cada nodo
@@ -227,7 +227,7 @@ Gini_Bajo <- 1 - ((15 / 35)^2 + (20 / 35)^2)
 
 El Gini esperado para el dulzor es 
 $$
-\text{Gini Dulzor} = \frac{55}{90} \times 0.496 + \frac{35}{90} \times 0.489 = 0.494
+\text{Gini Dulzor} = \frac{55}{90} \times 0.496 + \frac{35}{90} \times 0.49 = 0.494
 $$
 
 
