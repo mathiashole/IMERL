@@ -396,9 +396,9 @@ Las dos componentes principales juntos explican el 80.2% de la varianza $(57.2% 
 En los siguientes graficos de barra se puede ver el peso que tiene cada asignatura en cada componente principal.
 
 ```{r}
-# Visualización de las contribuciones de las variables
-fviz_contrib(pca, choice = "var", axes = 1, top = 5)  # Contribución al CP1
-fviz_contrib(pca, choice = "var", axes = 2, top = 5)  # Contribución al CP2
+#visualizacion de las contribuciones de las variables
+fviz_contrib(pca, choice = "var", axes = 1, top = 5)  #contribucion al PC1
+fviz_contrib(pca, choice = "var", axes = 2, top = 5)  #contribucion al PC2
 
 ```
 
@@ -417,8 +417,6 @@ Las contribuciones de cada variable a los componentes principales se pueden obte
 ```{r}
 # Cargas (loadings) de los componentes
 pca$rotation
-
-
 
 ```
 
