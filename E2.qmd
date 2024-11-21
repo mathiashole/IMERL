@@ -231,7 +231,7 @@ $$
 $$
 
 
-El Gini esperado para la division de tamaño es
+Calculamos el Gini esperado para la division de tamaño
 
 ```{r}
 # Tamaño de cada nodo
@@ -242,12 +242,12 @@ N_Grande <- 30
 Gini_Pequeno <- 1 - ((40 / 60)^2 + (20 / 60)^2)
 Gini_Grande <- 1 - ((5 / 30)^2 + (25 / 30)^2)
 
-# Gini esperado para la división por Tamaño
-Gini_Tamano <- (N_Pequeno / N_root) * Gini_Pequeno + (N_Grande / N_root) * Gini_Grande
-Gini_Tamano
-
 ```
 
+El Gini esperado para el tamaño es 
+$$
+\text{Gini Dulzor} = \frac{60}{90} \times 0.444 + \frac{30}{90} \times 0.278 = 0.389
+$$
 
 ## ARBOL
 ```{r}
