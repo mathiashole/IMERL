@@ -432,18 +432,6 @@ pca$rotation
 
 Contribuciones de los individuos
 
-| Estudiante | n individuos | 
-|------------|--------------|
-| Juan       | 1            |
-| Alina      | 2            |
-| Ana        | 3            |
-| Mónica     | 4            |
-| Daniel     | 5            |
-| Andrés     | 6            |
-| Pedro      | 7            |
-| Valentina  | 8            |
-| Sandra     | 9            |
-
 Finalmente, las coordenadas de cada individuo en el espacio de los componentes principales indican como cada estudiante contribuye a los componentes principales.
 
 ```{r}
