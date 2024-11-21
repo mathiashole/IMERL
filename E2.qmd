@@ -79,16 +79,16 @@ $$
 Donde $y$ es el rendimiento $(ton/ha)$, $x$ es la cantidad de lluvia $(mm)$, $beta_0$ es la intersección y $beta_1$ la pendiente de la recta.
 
 ```{r}
-# Datos de entrenamiento
+#Datos entrenamiento
 train_data <- data.frame(
   lluvia = c(206, 188, 219, 372, 345, 231, 203, 170, 55, 91, 292, 141, 129, 170, 324),
   rendimiento = c(29, 25, 31, 25, 29, 30, 26, 23, 12, 15, 28, 24, 23, 22, 30)
 )
 
-# Modelo de regresión lineal
+# modelo de regresion lineal
 modelo_lineal <- lm(rendimiento ~ lluvia, data = train_data)
 
-# Resumen del modelo
+# resumen del modelo
 summary(modelo_lineal)
 ```
 
@@ -100,22 +100,22 @@ El MSE mide la calidad del ajuste del modelo, usando la medai del error cuadrati
 
 ```{r}
 
-# Datos de validación
+#datos de validacion
 validacion_data <- data.frame(
   lluvia = c(213, 80, 391, 250, 57, 303, 263, 157, 72, 157, 188, 216, 362, 283, 308),
   rendimiento = c(30, 16, 25, 26, 9, 28, 28, 25, 13, 23, 26, 25, 28, 33, 30)
 )
 
-# Función para calcular el MSE
+#funcion MSE
 calcular_mse <- function(observado, predicho) {
   mean((observado - predicho)^2)
 }
 
-# Predicciones en el conjunto de entrenamiento y validación
+#predicciones en el conjunto de entrenamiento y validación
 predicciones_train <- predict(modelo_lineal, newdata = train_data)
 predicciones_validacion <- predict(modelo_lineal, newdata = validacion_data)
 
-# MSE en entrenamiento y validación
+# MSE entrenamiento y validacion
 mse_train <- calcular_mse(train_data$rendimiento, predicciones_train)
 mse_validacion <- calcular_mse(validacion_data$rendimiento, predicciones_validacion)
 
@@ -131,7 +131,7 @@ El MSE en el entrenamiento es menor que el MSE en validacion, puede estar ocurri
 La regresión polinomial se ajusta con la siguiente ecuación $y = \beta_0 + \beta_1 \cdot x + \beta_2 \cdot x^2 + \dots + \beta_d \cdot x^d$. Utilizando la funcion lm() de R, podemos ajustar modelos polinomiales de diferentes grados y comparar el MSE.
 
 ```{r}
-# Regresion polinomial para diferentes grados
+# polinomios diferentes grados
 grados <- 1:5  # Probaremos con grados 1 a 5
 mse_polynomial <- numeric(length(grados))
 
@@ -173,10 +173,10 @@ x_validacion <- as.matrix(poly(validacion_data$lluvia, 5, raw = TRUE))
 #ajusto modelo de Ridge (regresion_L2) para un polinomio de grado 5
 modelo_ridge <- glmnet(x_train, y_train, alpha = 0, lambda = 0.1)
 
-#Predicciones en los datos de validacion
+#-redicciones en los datos de validacion
 predicciones_ridge <- predict(modelo_ridge, newx = x_validacion)
 
-#Se calcula el MSE para Ridge
+#MSE para Ridge
 mse_ridge <- calcular_mse(validacion_data$rendimiento, predicciones_ridge)
 
 #imprimir resultado del MSE para Ridge
@@ -249,7 +249,7 @@ N_root <- 90
 N_Alto <- 55
 N_Bajo <- 35
 
-# Calcular impurezas de Gini para cada nodo hoja
+#impurezas de Gini para cada nodo hoja
 Gini_Alto <- 1 - ((30 / 55)^2 + (25 / 55)^2)
 Gini_Bajo <- 1 - ((15 / 35)^2 + (20 / 35)^2)
 
@@ -268,7 +268,7 @@ Calculamos el Gini esperado para la division de tamaño
 N_Pequeno <- 60
 N_Grande <- 30
 
-# Calcular impurezas de Gini para cada nodo hoja
+# impurezas de Gini para cada nodo hoja
 Gini_Pequeno <- 1 - ((40 / 60)^2 + (20 / 60)^2)
 Gini_Grande <- 1 - ((5 / 30)^2 + (25 / 30)^2)
 
@@ -324,9 +324,8 @@ En este ejercicio, se realiza un análisis de componentes principales (PCA) sobr
 Primero, cargamos los datos en R y realizamos el análisis de componentes principales utilizando la función `prcomp`. Esta función nos permite obtener los componentes principales y evaluar la importancia de cada uno.
 
 ```{r}
-# Cargar librerías necesarias
+# Cargar librerias
 library(ggplot2)
-#library(FactoMineR)
 library(factoextra)
 
 # Datos de las notas de los estudiantes
@@ -338,10 +337,10 @@ datos <- data.frame(
   `Id. Español` = c(16, 18, 22, 16, 20, 26, 20, 24, 36)
 )
 
-# Realizar PCA
+# PCA
 pca <- prcomp(datos, scale. = TRUE)
 
-# Mostrar el resumen del PCA
+# Mostrar resumen PCA
 summary(pca)
 
 ```
