@@ -1,0 +1,71 @@
+---
+title: "Examen de Genómica"
+date: today
+date-format: "DD MMMM, YYYY"
+author: 
+  Mathias
+abstract:
+    Proyecto de genomica
+abstractspacing: double
+appendix: false
+fontfamily: libertine
+monofont: inconsolata
+monofontoptions: scaled=.95
+fontsize: 12pt
+geometry: 
+  - top=2cm
+  - bottom=2cm
+  - left=2cm
+  - right=2cm
+urlcolor: darkblue
+highlight-style: arrow
+format: 
+    pdf:
+      toc: true
+      number-sections: true
+      colorlinks: true
+---
+
+# Ejercicio 2
+
+Datos de Entrenamiento
+
+| Lluvia (mm)  | Rendimiento (ton/ha) |
+|--------------|----------------------|
+| 206          | 29                   |
+| 188          | 25                   |
+| 219          | 31                   |
+| 372          | 25                   |
+| 345          | 29                   |
+| 231          | 30                   |
+| 203          | 26                   |
+| 170          | 23                   |
+| 55           | 12                   |
+| 91           | 15                   |
+| 292          | 28                   |
+| 141          | 24                   |
+| 129          | 23                   |
+| 170          | 22                   |
+| 324          | 30                   |
+
+Datos de Validación
+
+| Lluvia (mm)  | Rendimiento (ton/ha) |
+|--------------|----------------------|
+| 213          | 30                   |
+| 80           | 16                   |
+| 391          | 25                   |
+| 250          | 26                   |
+| 57           | 9                    |
+| 303          | 28                   |
+| 263          | 28                   |
+| 157          | 25                   |
+| 72           | 13                   |
+| 157          | 23                   |
+| 188          | 26                   |
+| 216          | 25                   |
+| 362          | 28                   |
+| 283          | 33                   |
+| 308          | 30                   |
+
+## Correr una regresión lineal para predecir el rendimiento y en función de la lluvia $x$.
