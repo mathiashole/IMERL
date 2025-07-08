@@ -74,4 +74,3 @@ Datos de Validación
 | 283          | 33                   |
 | 308          | 30                   |
 
-## Correr una regresión lineal para predecir el rendimiento y en función de la lluvia $x$.
