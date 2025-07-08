@@ -26,7 +26,13 @@ format:
       colorlinks: true
 ---
 
-# Introduccion
+# Introducción
+
+# Objetivos
+
+# Materiales y Métodos
+
+# Resultados Esperados
 
 Datos de Entrenamiento
 
