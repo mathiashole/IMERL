@@ -28,6 +28,8 @@ format:
 
 # Introducción
 
+Las proteinas de gran tamano (PGT) son actualmente poco estudiadas en diferentes organismos
+
 # Objetivos
 
 # Materiales y Métodos
