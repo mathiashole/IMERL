@@ -28,7 +28,19 @@ format:
 
 # Introducción
 
-Las proteinas de gran tamano (PGT) son actualmente poco estudiadas en diferentes organismos
+Los kinetoplástidos (Kinetoplastea), un grupo diverso de protistas flagelados que incluye patógenos humanos como Trypanosoma y Leishmania, presentan genomas compactos y una notable plasticidad genómica. Sin embargo, un aspecto poco explorado de su biología es la presencia de proteínas gigantes (HPs, >5000 aminoácidos), estructuras moleculares colosales que desafían los paradigmas convencionales sobre la síntesis, plegamiento y función proteica en eucariontes.
+
+Aunque los euglenozoos (el filo que engloba a kinetoplástidos y Euglena) han sido estudiados por su maquinaria de edición de ARN y sus mitogenomas enredados, la existencia de HPs en este grupo ha pasado casi desapercibida. Esto contrasta con hallazgos recientes en otros eucariontes, donde proteínas titánicas como la titina (musculatura) o la nesprina-1 (núcleo celular) desempeñan roles estructurales y reguladores esenciales. En bacterias, las HPs suelen asociarse a la síntesis de metabolitos secundarios (ej: NRPS/PKS) o a la adhesión a superficies, pero en eucariontes su diversidad funcional sigue siendo un enigma.
+
+En kinetoplástidos, la posible presencia de HPs plantea preguntas fundamentales:
+
+    Origen evolutivo: ¿Son el resultado de fusiones génicas recientes, expansiones de dominios repetidos o transferencia horizontal desde bacterias simbiontes?
+
+    Función biológica: ¿Podrían estar implicadas en la invasión de hospedadores, la resistencia a estrés oxidativo o la organización de estructuras subcelulares únicas (como el cinetoplasto)?
+
+    Implicaciones biomédicas: En parásitos como T. cruzi, ¿algunas HPs actuarían como antígenos inusuales o dianas para quimioterapia?
+
+Este proyecto busca llenar este vacío de conocimiento mediante un análisis sistemático de HPs en kinetoplástidos, combinando bioinformática avanzada, comparaciones evolutivas y, donde sea posible, validación experimental. Los resultados no solo enriquecerán nuestra comprensión de la biología de estos organismos, sino que también podrían revelar estrategias innovadoras para combatir las enfermedades que causan.
 
 # Objetivos
 
