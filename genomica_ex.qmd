@@ -44,6 +44,24 @@ Este proyecto busca llenar este vacío de conocimiento mediante un análisis sis
 
 # Objetivos
 
+Objetivos
+
+    Censo de HPs en kinetoplástidos:
+
+        Identificar y clasificar todas las proteínas >5000 aa en genomas secuenciados, discriminando entre artefactos de predicción y HPs genuinas.
+
+    Caracterización molecular detallada:
+
+        Anotar dominios (Pfam, INTERPRO), predecir estructuras modulares (AlphaFold2) y analizar su grado de desorden intrínseco (IUPred).
+
+    Relación estructura-función:
+
+        Correlacionar dominios específicos con procesos celulares (ej: si contienen motivos de adhesión, podrían mediar interacción parásito-hospedador).
+
+    Perspectiva evolutiva:
+
+        Reconstruir la historia filogenética de HPs clave para discernir si son innovaciones kinetoplástidas o rasgos ancestrales en euglenozoos.
+
 # Materiales y Métodos
 
 # Resultados Esperados
