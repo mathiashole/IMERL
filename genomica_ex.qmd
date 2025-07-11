@@ -102,7 +102,7 @@ La detección de eventos de pseudogenización en PGs, particularmente aquellas p
 
 La clasificación funcional de PGs mediante anotación de dominios (InterProScan) y agrupamiento por ortología (PSI-BLAST, HMMER), lo que permitirá inferir posibles roles estructurales, enzimáticos o reguladores.
 
-La reconstrucción del repertorio ancestral de PGs y su evolución a lo largo del árbol filogenético de los kinetoplástidos, a partir del patrón de presencia/ausencia, conservación de dominios y pseudogenización de algunas PGs.
+La reconstrucción del repertorio ancestral de PGs y su evolución a lo largo del árbol filogenético de los kinetoplástidos, a partir del patrón de presencia-ausencia, conservación de dominios y pseudogenización de algunas PGs.
 
 En casos seleccionados, se espera obtener ensamblados de mayor calidad y anotaciones más completas para especies con genomas fragmentados, permitiendo recuperar PGs que pudieran haber sido truncadas o no anotadas previamente.
 
