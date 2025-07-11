@@ -48,9 +48,9 @@ Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y espe
 
 Evaluar la conservación de dominios funcionales y arquitecturas modulares mediante anotación funcional y predicción estructural.
 
-Inferir posibles funciones biológicas mediante análisis de homología, expresión y localización subcelular.
+Inferir posibles funciones biológicas basado en el análisis de homología.
 
-Proponer hipótesis sobre el rol de las HPs en la transición hacia el parasitismo y su posible valor biomédico.
+Proponer una hipótesis sobre el rol de las PGs en la transición hacia la perdida de vida libre.
 
 # Materiales y Métodos
 
