@@ -85,6 +85,10 @@ Las secuencias codificantes (CDSs) fueron extraídas a partir de los archivos GF
 La anotación funcional de las PGs fue realizada con InterProScan empleando el total de las bases de datos integradas y un umbral de e-valor de 0.001. Se utilizó el modo por lotes para procesar conjuntos completos de proteínas por especie. Las salidas se parsearon en formato TSV y se estructuraron para asociar dominios, repeticiones y motivos con sus respectivas posiciones dentro de la proteína.
 La arquitectura de dominios (orden y repetición de dominios dentro de una proteína) fue codificada y utilizada para agrupar PGs en clases funcionales recurrentes, facilitando el análisis de su conservación o pérdida en distintos linajes.
 
+## Comparación evolutiva y detección de ortólogos
+Para evaluar la conservación evolutiva de las PGs, se realizó una búsqueda recíproca entre especies mediante PSI-BLAST (tres iteraciones, e-valor 1e-5, cobertura mínima del 50%). Se establecieron ortólogos cuando existía reciprocidad entre hits principales (reciprocal best hits, RBH). Una vez establecida la relación de homología entre las diferentes PGs y las especies, las nuevas PGs ancestrales obtenidas pasaron a hacerse alineamientos múltiples generados con MAFFT. Posteriormente, se construyeron perfiles de HMM con hmmbuild a partir de estos alineamientos de las PGs ancestrales. Para buscar homología remota de las nuevas PGs ancestrales fueron analizadas con hmmsearch. Este enfoque combinado permitió identificar tanto homologías cercanas como relaciones más distantes entre PGs, especialmente en casos con alto número de repeticiones internas o baja identidad global.
+
+
 # Resultados Esperados
 
 
