@@ -44,7 +44,7 @@ Caracterizar la diversidad, conservación y evolución de proteínas gigantes (>
 ## Objetivos específicos:
 1. Identificar y filtrar proteínas de más de 3000 aminoácidos en un conjunto representativo de genomas de kinetoplástidos.
 
-2. Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (Trypanosoma, Leishmania, etc.).
+2. Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (*Trypanosoma*, *Leishmania*, etc.).
 
 3. Evaluar la conservación de dominios funcionales y arquitecturas modulares mediante anotación funcional y predicción estructural.
 
