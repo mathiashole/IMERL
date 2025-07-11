@@ -42,7 +42,7 @@ Objetivos
 
     Censo de HPs en kinetoplástidos:
 
-        Identificar y clasificar todas las proteínas >5000 aa en genomas secuenciados, discriminando entre artefactos de predicción y HPs genuinas.
+        Identificar y clasificar todas las proteínas >3000 aa en genomas secuenciados, discriminando entre artefactos de predicción y HPs genuinas.
 
     Caracterización molecular detallada:
 
