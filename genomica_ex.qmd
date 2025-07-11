@@ -54,6 +54,35 @@ Objetivos
 
 # Materiales y Métodos
 
+Herramientas y entorno de trabajo
+ Todos los análisis de filtrado, búsqueda, anotación y visualización fueron realizados en un entorno Linux utilizando Python 3.10 y Bash scripting. Se utilizaron las siguientes herramientas y librerías:
+Seqkit (v1.81) para manipulación de secuencias FASTA y GFF.
+
+
+dplyr (v1.5.3), tidyverse (v1.23.5) y ggplot2 (v3.7.1) para el procesamiento y visualización de datos.
+
+
+InterProScan (v5.59-91.0) para anotación funcional y de dominios.
+
+
+BLAST+ (v2.13.0), específicamente PSI-BLAST, para detección de homologías entre proteínas.
+
+
+HMMER (v3.3.2), particularmente hmmbuild y hmmsearch, para detección sensible de homologías distantes.
+
+
+MAFFT (v7.515) para alineamientos múltiples.
+
+
+ETE3 (v3.1.2) para visualización y análisis filogenético.
+
+
+QUAST (v5.2.0) para evaluación de ensamblajes genómicos.
+
+
+BUSCO (v5.4.4) para evaluación de la completitud genómica basada en genes ortólogos universales.
+
+
 # Resultados Esperados
 
 
