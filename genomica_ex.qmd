@@ -38,23 +38,20 @@ En kinetoplástidos, sin embargo, el origen, función y evolución de estas prot
 
 # Objetivos
 
-Objetivos
+Objetivo general:
+Caracterizar la diversidad, conservación y evolución de proteínas gigantes (>3000 aa) en los kinetoplástidos.
 
-    Censo de HPs en kinetoplástidos:
+Objetivos específicos:
+Identificar y filtrar proteínas de más de 3000 aminoácidos en un conjunto representativo de genomas de kinetoplástidos.
 
-        Identificar y clasificar todas las proteínas >3000 aa en genomas secuenciados, discriminando entre artefactos de predicción y HPs genuinas.
+Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (Trypanosoma, Leishmania, etc.).
 
-    Caracterización molecular detallada:
+Evaluar la conservación de dominios funcionales y arquitecturas modulares mediante anotación funcional y predicción estructural.
 
-        Anotar dominios (Pfam, INTERPRO), predecir estructuras modulares (AlphaFold2) y analizar su grado de desorden intrínseco (IUPred).
+Inferir posibles funciones biológicas mediante análisis de homología, expresión y localización subcelular.
 
-    Relación estructura-función:
+Proponer hipótesis sobre el rol de las HPs en la transición hacia el parasitismo y su posible valor biomédico.
 
-        Correlacionar dominios específicos con procesos celulares (ej: si contienen motivos de adhesión, podrían mediar interacción parásito-hospedador).
-
-    Perspectiva evolutiva:
-
-        Reconstruir la historia filogenética de HPs clave para discernir si son innovaciones kinetoplástidas o rasgos ancestrales en euglenozoos.
 
 # Materiales y Métodos
 
