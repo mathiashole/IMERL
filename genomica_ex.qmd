@@ -56,7 +56,7 @@ Proponer hipótesis sobre el rol de las HPs en la transición hacia el parasitis
 # Materiales y Métodos
 
 ## Herramientas y entorno de trabajo
- Todos los análisis de filtrado, búsqueda, anotación y visualización fueron realizados en un entorno Linux utilizando R 4.5.1 y Bash scripting. Se utilizaron las siguientes herramientas y librerías:
+Todos los análisis de filtrado, búsqueda, anotación y visualización fueron realizados en un entorno Linux utilizando R 4.5.1 y Bash scripting. Se utilizaron las siguientes herramientas y librerías:
 Seqkit (v1.81) para manipulación de secuencias FASTA y GFF.
 
 dplyr (v1.5.3), tidyverse (v1.23.5) y ggplot2 (v3.7.1) para el procesamiento y visualización de datos.
