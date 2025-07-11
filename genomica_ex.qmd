@@ -52,7 +52,6 @@ Inferir posibles funciones biológicas mediante análisis de homología, expresi
 
 Proponer hipótesis sobre el rol de las HPs en la transición hacia el parasitismo y su posible valor biomédico.
 
-
 # Materiales y Métodos
 
 ## Herramientas y entorno de trabajo
