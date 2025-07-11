@@ -42,15 +42,15 @@ En kinetoplástidos, sin embargo, el origen, función y evolución de estas prot
 Caracterizar la diversidad, conservación y evolución de proteínas gigantes (>3000 aa) en los kinetoplástidos.
 
 ## Objetivos específicos:
-(@) Identificar y filtrar proteínas de más de 3000 aminoácidos en un conjunto representativo de genomas de kinetoplástidos.
+1. Identificar y filtrar proteínas de más de 3000 aminoácidos en un conjunto representativo de genomas de kinetoplástidos.
 
-(@) Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (Trypanosoma, Leishmania, etc.).
+2. Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (Trypanosoma, Leishmania, etc.).
 
-(@) Evaluar la conservación de dominios funcionales y arquitecturas modulares mediante anotación funcional y predicción estructural.
+3. Evaluar la conservación de dominios funcionales y arquitecturas modulares mediante anotación funcional y predicción estructural.
 
-(@) Inferir posibles funciones biológicas basado en el análisis de homología.
+4. Inferir posibles funciones biológicas basado en el análisis de homología.
 
-(@) Proponer una hipótesis sobre el rol de las PGs en la transición hacia la perdida de vida libre.
+5. Proponer una hipótesis sobre el rol de las PGs en la transición hacia la perdida de vida libre.
 
 # Materiales y Métodos
 
