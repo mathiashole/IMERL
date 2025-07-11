@@ -28,7 +28,7 @@ format:
 
 # Introducción
 
-Los kinetoplástidos (clase Kinetoplastea) conforman un grupo diverso de protistas flagelados dentro del filo Euglenozoa, caracterizados por la presencia de un ADN mitocondrial de una organización compleja, conocido como cinetoplasto [1]. Este linaje incluye especies de vida libre como Bodo saltans, Neobodo, así como patógenos obligados de vertebrados e invertebrados, tales como Trypanosoma cruzi, T. brucei y Leishmania spp., responsables de enfermedades como la enfermedad de Chagas, la tripanosomiasis africana y la leishmaniasis, respectivamente.
+Los kinetoplástidos (clase Kinetoplastea) conforman un grupo diverso de protistas flagelados dentro del filo Euglenozoa, caracterizados por la presencia de un ADN mitocondrial de una organización compleja, conocido como cinetoplasto [1]. Este linaje incluye especies de vida libre como *Bodo saltans*, *Neobodo*, así como patógenos obligados de vertebrados e invertebrados, tales como *Trypanosoma cruzi*, *T. brucei* y *Leishmania* spp., responsables de enfermedades como la enfermedad de Chagas, la tripanosomiasis africana y la leishmaniasis, respectivamente.
 
 Una observación recurrente en los genomas de estos organismos es la presencia de proteínas de longitud excepcional, que superan los 3000 aminoácidos. Aunque la mayoría de las proteínas eucariotas tienen una longitud entre 100 y 500 aminoácidos [2], Estas proteínas gigantes o PGs (Proteinas Gigantes) representan una categoría particular y poco estudiada, cuya presencia desafía concepciones tradicionales sobre la estructura, función y la conservación evolutiva de las proteínas. En otros sistemas, se ha observado que proteínas gigantes como la titina (en vertebrados) cumplen funciones estructurales críticas [3], mientras que en bacterias, HPs están asociadas con adhesión o la síntesis de metabolitos secundarios [4].
 
@@ -76,7 +76,7 @@ QUAST (v5.3.0) para evaluación de ensamblajes genómicos.
 BUSCO (v5.4.4) para evaluación de la completitud genómica basada en genes ortólogos universales.
 
 ## Datasets y filtrado inicial
-Se utilizaron genomas anotados completos de especies representativas de Kinetoplastea, descargados de TriTrypDB (versión 60) y NCBI. En total se analizaron genomas de especies de vida libre (Bodo saltans) y especies parásitas de los géneros Trypanosoma, Leishmania, Endotrypanum, Angomonas y Strigomonas, entre otros.
+Se utilizaron genomas anotados completos de especies representativas de Kinetoplastea, descargados de TriTrypDB (versión 60) y NCBI. En total se analizaron genomas de especies de vida libre *Bodo saltans* y especies parásitas de los géneros Trypanosoma, Leishmania, Endotrypanum, Angomonas y Strigomonas, entre otros.
 Para garantizar la calidad y confiabilidad del análisis, se realizó una evaluación del estado de los ensamblajes genómicos utilizando QUAST, obteniendo métricas como el número de contigs y el N50. Complementariamente, se evaluó la completitud genómica mediante BUSCO con el conjunto de genes ortólogos específicos para euglenozoos. Se excluyeron del análisis aquellos ensamblajes con números altos de contigs, con un N50 muy chicos, un L50 muy alto y con menos del 80 % de genes BUSCO completos, a fin de evitar la inclusión de genomas fragmentados que pudieran afectar la detección y anotación correcta de proteínas gigantes.
 Las secuencias codificantes (CDSs) fueron extraídas a partir de los archivos GFF/GFF3 provistos por las respectivas bases de datos, y filtradas para obtener aquellas cuya traducción produce proteínas de más de 3000 aminoácidos, definidas aquí como Proteínas Gigantes (PGs). La extracción inicial se limitó a secuencias codificantes anotadas como "completas".
 
@@ -91,12 +91,12 @@ Para evaluar la conservación evolutiva de las PGs, se realizó una búsqueda re
 Se visualizó la distribución de longitud, número de dominios por PG, barplot acumulado de dominios por especie, y distribución por especie fueron visualizados mediante gráficos de densidad y diagramas de violín. Se utilizaron árboles filogenéticos de especies para mapear la presencia/ausencia de familias de PGs a lo largo de la evolución de los kinetoplástidos así como la distribución cromosómica de las mismas. Las arquitecturas de dominios se codificaron como cadenas alfanuméricas para facilitar su agrupamiento, y se representaron visualmente en matrices de presencia/ausencia a lo largo de las especies.
 
 # Resultados Esperados
-Se espera obtener un repertorio completo y comparativo de proteínas gigantes (PGs, >= 3000 aminoácidos) codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es Bodo saltans y diversos parásitos como Trypanosoma cruzi, T. brucei y especies del género Leishmania. A partir de este análisis, se espera:
+Se espera obtener un repertorio completo y comparativo de proteínas gigantes (PGs, >= 3000 aminoácidos) codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es Bodo saltans y diversos parásitos como *Trypanosoma cruzi*, *T. brucei* y especies del género *Leishmania*. A partir de este análisis, se espera:
 La identificación de PGs conservadas en todo el clado, lo que indicaría funciones ancestrales y esenciales compartidas independientemente del estilo de vida.
 
 La detección de PGs presentes únicamente en parásitos, que podrían estar implicadas en procesos adaptativos como evasión inmune, interacción con el hospedador o estructuración de organelos especializados.
 
-La caracterización de PGs exclusivas de Bodo saltans, lo que sugeriría la pérdida secundaria de funciones asociadas a la vida libre en los linajes parasitarios.
+La caracterización de PGs exclusivas de *Bodo saltans*, lo que sugeriría la pérdida secundaria de funciones asociadas a la vida libre en los linajes parasitarios.
 
 La detección de eventos de pseudogenización en PGs, particularmente aquellas presentes como genes completos en Bodo saltans pero truncadas, fragmentadas o mutadas en especies parásitas. Esto permitiría inferir que dichas proteínas estaban originalmente relacionadas con funciones de vida libre, y que perdieron su función bajo menor presión selectiva en el contexto parasitario.
 
