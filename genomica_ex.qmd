@@ -76,6 +76,11 @@ QUAST (v5.3.0) para evaluación de ensamblajes genómicos.
 
 BUSCO (v5.4.4) para evaluación de la completitud genómica basada en genes ortólogos universales.
 
+## Datasets y filtrado inicial
+Se utilizaron genomas anotados completos de especies representativas de Kinetoplastea, descargados de TriTrypDB (versión 60) y NCBI. En total se analizaron genomas de especies de vida libre (Bodo saltans) y especies parásitas de los géneros Trypanosoma, Leishmania, Endotrypanum, Angomonas y Strigomonas, entre otros.
+Para garantizar la calidad y confiabilidad del análisis, se realizó una evaluación del estado de los ensamblajes genómicos utilizando QUAST, obteniendo métricas como el número de contigs y el N50. Complementariamente, se evaluó la completitud genómica mediante BUSCO con el conjunto de genes ortólogos específicos para euglenozoos. Se excluyeron del análisis aquellos ensamblajes con números altos de contigs, con un N50 muy chicos, un L50 muy alto y con menos del 80 % de genes BUSCO completos, a fin de evitar la inclusión de genomas fragmentados que pudieran afectar la detección y anotación correcta de proteínas gigantes.
+Las secuencias codificantes (CDSs) fueron extraídas a partir de los archivos GFF/GFF3 provistos por las respectivas bases de datos, y filtradas para obtener aquellas cuya traducción produce proteínas de más de 3000 aminoácidos, definidas aquí como Proteínas Gigantes (PGs). La extracción inicial se limitó a secuencias codificantes anotadas como "completas".
+
 # Resultados Esperados
 
 
