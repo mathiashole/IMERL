@@ -91,7 +91,7 @@ Para evaluar la conservación evolutiva de las PGs, se realizó una búsqueda re
 Se visualizó la distribución de longitud, número de dominios por PG, barplot acumulado de dominios por especie, y distribución por especie fueron visualizados mediante gráficos de densidad y diagramas de violín. Se utilizaron árboles filogenéticos de especies para mapear la presencia/ausencia de familias de PGs a lo largo de la evolución de los kinetoplástidos así como la distribución cromosómica de las mismas. Las arquitecturas de dominios se codificaron como cadenas alfanuméricas para facilitar su agrupamiento, y se representaron visualmente en matrices de presencia/ausencia a lo largo de las especies.
 
 # Resultados Esperados
-Se espera obtener un repertorio completo y comparativo de proteínas gigantes (PGs, >= 3000 aminoácidos) codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es Bodo saltans y diversos parásitos como *Trypanosoma cruzi*, *T. brucei* y especies del género *Leishmania*. A partir de este análisis, se espera:
+Se espera obtener un repertorio completo y caractarizado de las proteínas gigantes (PGs, >= 3000 aminoácidos) codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es *Bodo saltans* y diversos parásitos como *Trypanosoma cruzi*, *T. brucei* y especies del género *Leishmania*. A partir de este análisis, se espera:
 La identificación de PGs conservadas en todo el clado, lo que indicaría funciones ancestrales y esenciales compartidas independientemente del estilo de vida.
 
 La detección de PGs presentes únicamente en parásitos, que podrían estar implicadas en procesos adaptativos como evasión inmune, interacción con el hospedador o estructuración de organelos especializados.
