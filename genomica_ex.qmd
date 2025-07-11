@@ -91,6 +91,21 @@ Para evaluar la conservación evolutiva de las PGs, se realizó una búsqueda re
 Se visualizó la distribución de longitud, número de dominios por PG, barplot acumulado de dominios por especie, y distribución por especie fueron visualizados mediante gráficos de densidad y diagramas de violín. Se utilizaron árboles filogenéticos de especies para mapear la presencia/ausencia de familias de PGs a lo largo de la evolución de los kinetoplástidos así como la distribución cromosómica de las mismas. Las arquitecturas de dominios se codificaron como cadenas alfanuméricas para facilitar su agrupamiento, y se representaron visualmente en matrices de presencia/ausencia a lo largo de las especies.
 
 # Resultados Esperados
+Se espera obtener un repertorio completo y comparativo de proteínas gigantes (PGs, >= 3000 aminoácidos) codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es Bodo saltans y diversos parásitos como Trypanosoma cruzi, T. brucei y especies del género Leishmania. A partir de este análisis, se espera:
+La identificación de PGs conservadas en todo el clado, lo que indicaría funciones ancestrales y esenciales compartidas independientemente del estilo de vida.
 
+La detección de PGs presentes únicamente en parásitos, que podrían estar implicadas en procesos adaptativos como evasión inmune, interacción con el hospedador o estructuración de organelos especializados.
+
+La caracterización de PGs exclusivas de Bodo saltans, lo que sugeriría la pérdida secundaria de funciones asociadas a la vida libre en los linajes parasitarios.
+
+La detección de eventos de pseudogenización en PGs, particularmente aquellas presentes como genes completos en Bodo saltans pero truncadas, fragmentadas o mutadas en especies parásitas. Esto permitiría inferir que dichas proteínas estaban originalmente relacionadas con funciones de vida libre, y que perdieron su función bajo menor presión selectiva en el contexto parasitario.
+
+La clasificación funcional de PGs mediante anotación de dominios (InterProScan) y agrupamiento por ortología (PSI-BLAST, HMMER), lo que permitirá inferir posibles roles estructurales, enzimáticos o reguladores.
+
+La reconstrucción del repertorio ancestral de PGs y su evolución a lo largo del árbol filogenético de los kinetoplástidos, a partir del patrón de presencia/ausencia, conservación de dominios y pseudogenización de algunas PGs.
+
+En casos seleccionados, se espera obtener ensamblados de mayor calidad y anotaciones más completas para especies con genomas fragmentados, permitiendo recuperar PGs que pudieran haber sido truncadas o no anotadas previamente.
+
+En conjunto, los resultados permitirán delinear cómo se ha modificado el repertorio de proteínas gigantes a lo largo de la evolución de los kinetoplástidos, considerando no solo la conservación o pérdida total, sino también la pérdida parcial o progresiva de función a través de pseudogenización. Esto ofrecerá un punto de partida para investigar sus funciones celulares específicas y su potencial relevancia biomédica.
 
 
