@@ -38,10 +38,10 @@ En kinetoplástidos, sin embargo, el origen, función y evolución de estas prot
 
 # Objetivos
 
-Objetivo general:
+### Objetivo general:
 Caracterizar la diversidad, conservación y evolución de proteínas gigantes (>3000 aa) en los kinetoplástidos.
 
-Objetivos específicos:
+### Objetivos específicos:
 Identificar y filtrar proteínas de más de 3000 aminoácidos en un conjunto representativo de genomas de kinetoplástidos.
 
 Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (Trypanosoma, Leishmania, etc.).
