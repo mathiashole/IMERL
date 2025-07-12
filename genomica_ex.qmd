@@ -39,8 +39,6 @@ En kinetoplástidos, sin embargo, el origen, función y evolución de estas PGs 
 A pesar del creciente acceso a genomas completos de kinetoplástidos, las PGs han sido poco consideradas en los análisis dado su tamaño atípico [6]. No obstante, su presencia reiterada sugiere que son componentes relevantes del proteoma kinetoplástido.
 Un estudio sistemático de las PGs permite abordar aspectos poco explorados de la biología de los kinetoplástidos. En particular, la comparación entre especies de vida libre, como *Bodo saltans*, y especies parásitas ofrece un marco evolutivo para investigar cómo se ha transformado el repertorio de PGs durante la transición al parasitismo. Este enfoque puede revelar tanto pérdidas como innovaciones funcionales, permitiendo identificar proteínas conservadas con funciones esenciales, así como casos de pérdida secundaria o pseudogenización vinculados a la reducción de capacidades asociadas a un estilo de vida libre.
 
-
-
 # Objetivos
 
 ## Objetivo general:
