@@ -47,13 +47,13 @@ En este trabajo nos proponemos caracterizar la diversidad, conservación y evolu
 ## Objetivos específicos:
 1. Identificar y filtrar proteínas de más de 3000 aminoácidos en un conjunto representativo de genomas de kinetoplástidos.
 
-2. Comparar el repertorio de HPs entre especies de vida libre (Bodo saltans) y especies parásitas (*Trypanosoma*, *Leishmania*, etc.).
+2. Comparar el repertorio de HPs entre especies de vida libre *Bodo saltans* y especies parásitas (*Trypanosoma*, *Leishmania*, etc.).
 
-3. Evaluar la conservación de dominios funcionales y arquitecturas modulares mediante anotación funcional y predicción estructural.
+3. Evaluar la conservación de dominios funcionales y arquitectura mediante anotación funcional.
 
 4. Inferir posibles funciones biológicas basado en el análisis de homología.
 
-5. Proponer una hipótesis sobre el rol de las PGs en la transición hacia la perdida de vida libre.
+5. Proponer una hipótesis sobre el rol de las PGs en la transición hacia el parasitismo.
 
 # Materiales y Métodos
 
