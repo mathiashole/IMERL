@@ -60,21 +60,13 @@ En este trabajo nos proponemos caracterizar la diversidad, conservación y evolu
 Todos los análisis de filtrado, búsqueda, anotación y visualización fueron realizados en un entorno Linux utilizando R 4.5.1 y Bash scripting. Se utilizaron las siguientes herramientas y librerías:
 
 Seqkit (v1.31) para manipulación de secuencias FASTA y GFF.
-
-dplyr (v1.1.4), tidyverse (v2.0.0) y ggplot2 (v3.5.2) para el procesamiento y visualización de datos.
-
+Dplyr (v1.1.4), tidyverse (v2.0.0) y ggplot2 (v3.5.2) para el procesamiento y visualización de datos.
 InterProScan (v5.75-106.0) para anotación funcional y de dominios.
-
 BLAST+ (v2.13.0), específicamente PSI-BLAST, para detección de homologías entre proteínas.
-
 HMMER (v3.3.2), particularmente hmmbuild y hmmsearch, para detección sensible de homologías distantes.
-
 MAFFT (v7.513) y TrimAl (v7.515) para alineamientos múltiples y el recorte del alineamiento.
-
 iTOl (v7) para visualización y IQ-TREE (v2.4.0) análisis filogenético.
-
 QUAST (v5.3.0) para evaluación de ensamblajes genómicos.
-
 BUSCO (v5.4.4) para evaluación de la completitud genómica basada en genes ortólogos universales.
 
 ## Datasets y filtrado inicial
