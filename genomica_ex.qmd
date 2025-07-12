@@ -93,14 +93,13 @@ Para evaluar la conservación evolutiva de las PGs, se realizó una búsqueda re
 Se visualizó la distribución de longitud, número de dominios por PG, barplot acumulado de dominios por especie, y distribución por especie fueron visualizados mediante gráficos de densidad y diagramas de violín. Se utilizaron árboles filogenéticos de especies para mapear la presencia/ausencia de familias de PGs a lo largo de la evolución de los kinetoplástidos así como la distribución cromosómica de las mismas. Las arquitecturas de dominios se codificaron como cadenas alfanuméricas para facilitar su agrupamiento, y se representaron visualmente en matrices de presencia/ausencia a lo largo de las especies.
 
 # Resultados Esperados
-Se espera obtener un repertorio completo y caractarizado de las PGs codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es *Bodo saltans* y diversos parásitos como *Trypanosoma cruzi*, *T. brucei* y especies del género *Leishmania*. A partir de este análisis, se espera:
-La identificación de PGs conservadas en todo el clado, lo que indicaría funciones ancestrales y esenciales compartidas independientemente del estilo de vida.
+Se espera obtener un repertorio completo y caracterizado de las PGs codificadas en genomas de kinetoplástidos,  incluyendo especies de vida libre como es *Bodo saltans* y diversos parásitos como *Trypanosoma cruzi*, *T. brucei* y especies del género *Leishmania*. A partir de este análisis, se prevé la identificación de PGs conservadas en todo el clado, lo que sugeriría funciones ancestrales esenciales, mantenidas independientemente del estilo de vida.
 
-La detección de PGs presentes únicamente en parásitos, que podrían estar implicadas en procesos adaptativos como evasión inmune, interacción con el hospedador o estructuración de organelos especializados.
+Asimismo, se espera identificar PGs específicas de los linajes parásitos, posiblemente implicadas en procesos adaptativos como la evasión de la respuesta inmune, la interacción con el hospedador o la organización de estructuras celulares especializadas vinculadas al parasitismo.
 
-La caracterización de PGs exclusivas de *Bodo saltans*, lo que sugeriría la pérdida secundaria de funciones asociadas a la vida libre en los linajes parasitarios.
+Por otra parte, se anticipa la detección de un subconjunto de PGs exclusivas de Bodo saltans, lo que podría indicar que estas proteínas están asociadas a funciones propias del estilo de vida libre, y que su ausencia en parásitos refleje una pérdida secundaria vinculada a la simplificación funcional asociada a la transición al parasitismo.
 
-La detección de eventos de pseudogenización en PGs, particularmente aquellas presentes como genes completos en Bodo saltans pero truncadas, fragmentadas o mutadas en especies parásitas. Esto permitiría inferir que dichas proteínas estaban originalmente relacionadas con funciones de vida libre, y que perdieron su función bajo menor presión selectiva en el contexto parasitario.
+Se espera el reconocimiento de posibles eventos de pseudogenización en PGs, particularmente en aquellos casos donde las proteínas aparecen como genes completos en *Bodo saltans* pero se encuentran truncadas, fragmentadas o interrumpidas en especies parásitas. Este patrón podría interpretarse como una pérdida funcional secundaria, vinculada a la relajación de la presión selectiva sobre funciones asociadas al estilo de vida libre.
 
 La clasificación funcional de PGs mediante anotación de dominios (InterProScan) y agrupamiento por ortología (PSI-BLAST, HMMER), lo que permitirá inferir posibles roles estructurales, enzimáticos o reguladores.
 
