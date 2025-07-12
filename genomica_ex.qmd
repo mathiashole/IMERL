@@ -107,6 +107,4 @@ La reconstrucción del repertorio ancestral de PGs y su evolución a lo largo de
 
 En casos seleccionados, se espera obtener ensamblados de mayor calidad y anotaciones más completas para especies con genomas fragmentados, permitiendo recuperar PGs que pudieran haber sido truncadas o no anotadas previamente.
 
-En conjunto, los resultados permitirán delinear cómo se ha modificado el repertorio de proteínas gigantes a lo largo de la evolución de los kinetoplástidos, considerando no solo la conservación o pérdida total, sino también la pérdida parcial o progresiva de función a través de pseudogenización. Esto ofrecerá un punto de partida para investigar sus funciones celulares específicas y su potencial relevancia biomédica.
-
-
+En conjunto, los resultados permitirán contextualizar cómo se ha modificado el repertorio de PGs a lo largo de la evolución de los kinetoplástidos, considerando tanto su conservación como su pérdida total o parcial (pseudogenización). Finalmente, se evaluará si las PGs comparten arquitecturas estructurales diferenciadas según el estilo de vida, lo que permitiría identificar posibles correlaciones funcionales entre dominios conservados y contextos ecológicos específicos.
