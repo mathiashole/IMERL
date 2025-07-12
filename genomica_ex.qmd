@@ -101,7 +101,7 @@ Por otra parte, se anticipa la detección de un subconjunto de PGs exclusivas de
 
 Se espera el reconocimiento de posibles eventos de pseudogenización en PGs, particularmente en aquellos casos donde las proteínas aparecen como genes completos en *Bodo saltans* pero se encuentran truncadas, fragmentadas o interrumpidas en especies parásitas. Este patrón podría interpretarse como una pérdida funcional secundaria, vinculada a la relajación de la presión selectiva sobre funciones asociadas al estilo de vida libre.
 
-La clasificación funcional de PGs mediante anotación de dominios (InterProScan) y agrupamiento por ortología (PSI-BLAST, HMMER), lo que permitirá inferir posibles roles estructurales, enzimáticos o reguladores.
+Se obtendra una clasificación funcional de las PGs mediante anotación de dominios (InterProScan) y agrupamiento por ortología (PSI-BLAST, HMMER), lo que permitirá inferir posibles roles estructurales, enzimáticos o reguladores.
 
 La reconstrucción del repertorio ancestral de PGs y su evolución a lo largo del árbol filogenético de los kinetoplástidos, a partir del patrón de presencia-ausencia, conservación de dominios y pseudogenización de algunas PGs.
 
