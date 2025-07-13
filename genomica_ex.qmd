@@ -36,7 +36,6 @@ format:
       linkcolor: black
       urlcolor: blue
       citecolor: black
-      keep-tex: true
       fig-cap-location: top
 
 
