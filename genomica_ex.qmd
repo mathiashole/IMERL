@@ -4,7 +4,8 @@ date: today
 date-format: "DD MMMM, YYYY"
 author: 
   Mathias
-abstract:
+institute: "Facultad de Ciencias, Universidad de la República"
+abstract: |
     Proyecto de genomica
 abstractspacing: double
 appendix: false
@@ -22,12 +23,21 @@ highlight-style: arrow
 csl: /home/mathias/Descargas/apa.csl
 bibliography: /home/mathias/Descargas/Kinetoplastidos.bib
 reference-section-title: "Referencias"
+keywords: [genómica, NGS, pseudogenes, Kinetoplastida]
+lang: es
 
 format: 
     pdf:
       toc: true
+      toc-depth: 2
       number-sections: true
       colorlinks: true
+      link-citations: true
+      linkcolor: black
+      urlcolor: blue
+      citecolor: black
+      keep-tex: true
+      fig-cap-location: top
 
 
 ---
@@ -42,7 +52,7 @@ A pesar de estas caracteristicas, existen ejemplos bien caracterizados de PGs en
 
 En kinetoplástidos, sin embargo, el origen, función y evolución de estas PGs permanecen en gran medida poco estudiadas. La comparación entre *Bodo saltans*, que representa un linaje basal de vida libre [@jacksonKinetoplastidPhylogenomicsReveals2016], y los parásitos derivados, proporciona un marco evolutivo ideal para investigar los cambios en el repertorio de PGs asociados a la transición hacia el parasitismo. Esta transición implica tanto ganancia como pérdida de funciones. Las PGs conservadas en *Bodo* pero ausentes en los parásitos podrían reflejar una pérdida secundaria de proteínas necesarias para funciones propias de la vida libre, como la respuesta al ambiente o la competencia por recursos. Por otro lado, las PGs que aparecen exclusivamente en los parásitos podrían estar vinculadas a adaptaciones parasitarias. Por ejemplo, proteínas de superficie implicadas en la evasión inmune o en la interacción prolongada con el hospedador [@jacksonKinetoplastidPhylogenomicsReveals2016]. Finalmente, las PGs conservadas entre ambos estilos de vida probablemente representen funciones celulares esenciales y ancestrales para el linaje *kinetoplástido*, como la organización del citoesqueleto, el mantenimiento mitocondrial o la regulación postranscripcional.
 
-Un estudio sistemático de las PGs permitira abordar la comparación entre especies de vida libre, como *Bodo saltans*, y especies parásitas ofrece un marco evolutivo para investigar cómo se ha transformado el repertorio de PGs durante la transición al parasitismo. Este enfoque puede revelar tanto pérdidas como innovaciones funcionales, permitiendo identificar proteínas conservadas con funciones esenciales, así como casos de pérdida secundaria o pseudogenización vinculados a la reducción de capacidades asociadas a un estilo de vida libre.
+Un estudio sistemático de las PGs permitira abordar la comparación entre especies de vida libre, como *Bodo saltans*, y especies parásitas ofreciendo un marco evolutivo para investigar cómo se ha transformado el repertorio de PGs durante la transición al parasitismo. Este enfoque puede revelar tanto pérdidas como innovaciones funcionales, permitiendo identificar proteínas conservadas con funciones esenciales, así como casos de pérdida secundaria o pseudogenización vinculados a la reducción de capacidades asociadas a un estilo de vida libre.
 
 # Objetivos
 
@@ -78,7 +88,7 @@ BUSCO (v5.4.4) para evaluación de la completitud genómica basada en genes ort�
 ## Datasets y filtrado inicial
 Se utilizará genomas anotados de especies representativas de *Kinetoplastea*, descargados de TriTrypDB y NCBI. En total se analizaran genomas de especies de vida libre *Bodo saltans* y especies parásitas de los géneros *Trypanosoma* y *Leishmania* entre otros.
 Para garantizar la calidad y confiabilidad del análisis, se realizará una evaluación del estado de los ensamblajes genómicos utilizando QUAST, obteniendo métricas como el número de contigs, el N50 y el L50. Complementariamente, se evaluará la completitud genómica mediante BUSCO con el conjunto de genes. Se excluirán del análisis aquellos ensamblajes con números altos de contigs, con un N50 muy chicos, un L50 muy alto y con prcentajes bajos de genes BUSCO completos, a fin de evitar la inclusión de genomas fragmentados que pudieran afectar la detección y anotación correcta de PGs.
-Las secuencias codificantes (CDSs) van a ser extraídas a partir de los archivos GFF/GFF3 provistos por las respectivas bases de datos, y filtradas para obtener aquellas cuya traducción produce proteínas de más de 3000 aminoácidos, definidas aquí como PGs. La extracción inicial se limitará a secuencias codificantes anotadas como "completas".
+Las secuencias codificantes (CDSs) van a ser extraídas a partir de los archivos GFF/GFF3 provistos por las respectivas bases de datos, y filtradas para obtener aquellas cuya traducción produce PGs. La extracción inicial se limitará a secuencias codificantes anotadas.
 
 ## Análisis de dominios
 La anotación funcional de las PGs se realizará con InterProScan, utilizando el conjunto completo de bases de datos integradas (Pfam, SMART, Panther, TIGRFAM, ProSite, entre otras) y un umbral de e-value de 0.001. Las salidas se generaran en formato TSV y fueron procesadas para asociar, en cada PG, los dominios conservados, repeticiones y motivos funcionales, junto con su posición relativa dentro de la proteína.
@@ -86,7 +96,7 @@ La anotación funcional de las PGs se realizará con InterProScan, utilizando el
 Además de los dominios funcionales, se utilizara las predicciones integradas de regiones transmembrana (TMHMM) y péptidos señal (SignalP, Phobius), también provistas por InterProScan, para inferir la topología de las proteínas.
 
 ## Comparación evolutiva y detección de ortólogos
-Para evaluar la conservación evolutiva de las PGs, se realizará una búsqueda entre especies utilizando PSI-BLAST (tres iteraciones, e-valor 1e-5, cobertura mínima del 30%). A partir de las relaciones de homología identificadas, se seleccionaron conjuntos de PGs conservadas para construir alineamientos múltiples con MAFFT. Estos alineamientos fueron utilizados para generar perfiles HMM mediante hmmbuild. Posteriormente, se aplicara hmmsearch para detectar homologías remotas entre las PGs. Este enfoque combinado permitira identificar tanto homólogos cercanos como relaciones evolutivas más distantes, proporcionando un escenario más completo de la diversidad y conservación de estas proteínas en *kinetoplástidos*.
+Para evaluar la conservación evolutiva de las PGs, se realizará una búsqueda entre especies utilizando PSI-BLAST (tres iteraciones, e-valor 1e-5, cobertura mínima del 30%). A partir de las relaciones de homología identificadas, se seleccionaron conjuntos de PGs conservadas para construir alineamientos múltiples con MAFFT. Estos alineamientos fueron utilizados para generar perfiles HMM mediante hmmbuild. Posteriormente, se aplicara hmmsearch para detectar homologías remotas entre las PGs. Este enfoque combinado permitira identificar tanto homólogos cercanos como relaciones evolutivas más distantes, proporcionando un escenario más completo de la diversidad y conservación de estas proteínas en kinetoplástidos.
 
 ## Visualización y agrupamiento
 Se visualizarán la distribución de longitudes de las PGs, el número de dominios por proteína y la abundancia de dominios por especie mediante gráficos de densidad, diagramas de violín y gráficos de barras acumulativos. Además, se utilizarán árboles filogenéticos de especies para mapear la presencia o ausencia de familias de PGs a lo largo de la evolución de los kinetoplástidos, así como la distribucion cromosómica.
@@ -94,7 +104,7 @@ Se visualizarán la distribución de longitudes de las PGs, el número de domini
 # Resultados Esperados
 Se espera obtener un repertorio completo y caracterizado de las PGs codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es *Bodo saltans* y diversos parásitos como *Trypanosoma (T. cruzi, T. brucei)* y especies del género *Leishmania* entre otros. A partir de este análisis, se prevé la identificación de PGs conservadas en todo el clado, lo que sugeriría funciones ancestrales esenciales, mantenidas independientemente del estilo de vida.
 
-Como paso previo, se aplicarán criterios de calidad basados en métricas de ensamblado y completitud genómica, con el fin de seleccionar únicamente genomas de alta calidad. Este filtrado permitirá trabajar con conjuntos confiables de secuencias codificantes, minimizando errores derivados de ensamblados fragmentados o anotaciones incompletas, y asegurando la calidad de las PGs.
+Como paso previo, se aplicarán criterios de calidad basados en métricas de ensamblado y anotacion genómica, con el fin de seleccionar únicamente genomas de alta calidad. Este filtrado permitirá trabajar con conjuntos confiables de secuencias codificantes, minimizando errores derivados de ensamblados fragmentados o anotaciones incompletas, y asegurando la calidad de las PGs.
 
 Asimismo, se espera identificar PGs específicas de los linajes parásitos, potencialmente implicadas en procesos adaptativos como la evasión de la respuesta inmune, la interacción con el hospedador o la organización de estructuras celulares especializadas vinculadas al parasitismo.
 
