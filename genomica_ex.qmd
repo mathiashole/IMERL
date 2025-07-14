@@ -3,7 +3,7 @@ title: "Examen de Genómica"
 date: today
 date-format: "DD MMMM, YYYY"
 author: 
-  Mathias Mangino
+  Mathias
 institute: "Facultad de Ciencias, Universidad de la República"
 abstract: |
     Proyecto de genómica
