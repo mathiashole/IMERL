@@ -3,10 +3,10 @@ title: "Examen de Genómica"
 date: today
 date-format: "DD MMMM, YYYY"
 author: 
-  Mathias
+  Mathias Mangino
 institute: "Facultad de Ciencias, Universidad de la República"
 abstract: |
-    Proyecto de genomica
+    Proyecto de genómica
 abstractspacing: double
 appendix: false
 fontfamily: libertine
@@ -43,11 +43,11 @@ format:
 
 # Introducción
 
-Los kinetoplástidos (clase *Kinetoplastea*) conforman un grupo diverso de protistas flagelados dentro del filo *Euglenozoa*, caracterizados por la presencia de un ADN mitocondrial de una organización compleja, conocido como cinetoplasto [@lukesKinetoplastDNANetwork2002]. Este linaje incluye especies de vida libre como *Bodo saltans*, así como patógenos obligados de vertebrados e invertebrados, tales como *Trypanosoma cruzi*, *T. brucei* y *Leishmania* spp., responsables de enfermedades como el mal de Chagas, la tripanosomiasis africana y la leishmaniasis [@cosentinoPhasedGenomeAssembly2021; @el-sayedGenomeSequenceTrypanosoma2005; @steverdingHistoryLeishmaniasis2017].
+Los kinetoplástidos (clase *Kinetoplastea*) forman un grupo con gran diversidad de protistas flagelados dentro del filo *Euglenozoa*. Estos se caracterizados por la presencia de un ADN mitocondrial con una organización compleja, conocido como cinetoplasto [@lukesKinetoplastDNANetwork2002]. Este grupo variado incluye especies de vida libre como *Bodo saltans*, así como patógenos obligados de vertebrados e invertebrados, tales como *Trypanosoma cruzi*, *T. brucei* y *Leishmania*, responsables de enfermedades como el mal de Chagas, la tripanosomiasis africana y la leishmaniasis [@cosentinoPhasedGenomeAssembly2021; @el-sayedGenomeSequenceTrypanosoma2005; @steverdingHistoryLeishmaniasis2017].
 
-Una observación recurrente en los genomas de kinetoplástidos es la presencia de proteínas de longitud grandes, que superan los 3000 aminoácidos. Aunque la mayoría de las proteínas eucariotas tienen entre 100 y 500 aminoácidos [@neversProteinLengthDistribution2023], las proteínas gigantes (PGs, ≥ 3000 aa) han sido poco estudiadas y plantean un desafío evolutivo, dado el alto costo energético que implica su sintesis, plegamientos y otros procesos [@amaralNeglectedGiantsUncovering2024]. El tamaño de estas PGs sugiere una conservación bajo presion selectiva, lo que la convierte en elementos interesantes para explorar aspectos estructurales, funcionales y evolutivos.
+En los genomas de kinetoplástidos se observa la presencia de proteínas de longitud de gran tamaño, superando los 3000 aminoácidos. Aunque la mayoría de las proteínas eucariotas tienen entre 100 y 500 aminoácidos [@neversProteinLengthDistribution2023]. Las proteínas gigantes (PGs, ≥ 3000 aa) han sido poco estudiadas y plantean un desafío evolutivo, dado el alto costo energético que implica su sintesis plegamientos y otros procesos [@amaralNeglectedGiantsUncovering2024]. El tamaño de estas PGs sugiere una conservación bajo presion selectiva, lo que la convierte en elementos interesantes para explorar aspectos estructurales, funcionales y evolutivos.
 
-A pesar de estas caracteristicas, existen ejemplos bien caracterizados de PGs en otros organismos. En vertebrados, la titina destaca como una de las proteínas más grandes conocidas, siendo fundamental para la arquitectura de los músculos esqueléticos y cardíacos, y representa la tercera proteína más abundante del músculo, después de la miosina y la actina [@wangTitinMajorMyofibrillar1979]. En bacterias, por su parte, las PGs suelen participar en funciones como la adhesión celular o la síntesis de metabolitos secundarios complejos [@amaralNeglectedGiantsUncovering2024].
+A pesar de estas caracteristicas, tambien se encuentran ejemplos bien estudiados de PGs en otros organismos. Por ejemplo en vertebrados, la titina destaca como una de las proteínas más grandes conocidas, siendo fundamental para la arquitectura de los músculos esqueléticos y cardíacos, y representa la tercera proteína más abundante del músculo, después de la miosina y la actina [@wangTitinMajorMyofibrillar1979]. En bacterias, por su parte, las PGs suelen participar en funciones como la adhesión celular o la síntesis de metabolitos secundarios complejos [@amaralNeglectedGiantsUncovering2024].
 
 En kinetoplástidos, sin embargo, el origen, función y evolución de estas PGs permanecen en gran medida poco estudiadas. La comparación entre *Bodo saltans*, que representa un linaje basal de vida libre [@jacksonKinetoplastidPhylogenomicsReveals2016], y los parásitos derivados, proporciona un marco evolutivo ideal para investigar los cambios en el repertorio de PGs asociados a la transición hacia el parasitismo. Esta transición implica tanto ganancia como pérdida de funciones. Las PGs conservadas en *Bodo* pero ausentes en los parásitos podrían reflejar una pérdida secundaria de proteínas necesarias para funciones propias de la vida libre, como la respuesta al ambiente o la competencia por recursos. Por otro lado, las PGs que aparecen exclusivamente en los parásitos podrían estar vinculadas a adaptaciones parasitarias. Por ejemplo, proteínas de superficie implicadas en la evasión inmune o en la interacción prolongada con el hospedador [@jacksonKinetoplastidPhylogenomicsReveals2016]. Finalmente, las PGs conservadas entre ambos estilos de vida probablemente representen funciones celulares esenciales y ancestrales para el linaje *kinetoplástido*, como la organización del citoesqueleto, el mantenimiento mitocondrial o la regulación postranscripcional.
 
@@ -101,18 +101,18 @@ Para evaluar la conservación evolutiva de las PGs, se realizará una búsqueda 
 Se visualizarán la distribución de longitudes de las PGs, el número de dominios por proteína y la abundancia de dominios por especie mediante gráficos de densidad, diagramas de violín y gráficos de barras acumulativos. Además, se utilizarán árboles filogenéticos de especies para mapear la presencia o ausencia de familias de PGs a lo largo de la evolución de los kinetoplástidos, así como la distribucion cromosómica.
 
 # Resultados Esperados
-Se espera obtener un repertorio completo y caracterizado de las PGs codificadas en genomas de kinetoplástidos, incluyendo especies de vida libre como es *Bodo saltans* y diversos parásitos como *Trypanosoma (T. cruzi, T. brucei)* y especies del género *Leishmania* entre otros. A partir de este análisis, se prevé la identificación de PGs conservadas en todo el clado, lo que sugeriría funciones ancestrales esenciales, mantenidas independientemente del estilo de vida.
+Esperamos obtener un repertorio de gran variadad y caracterizado de las PGs codificadas en genomas de kinetoplástidos. A partir de este análisis, se prevé la identificación de PGs conservadas en todo el clado, lo que sugeriría funciones ancestrales esenciales, mantenidas independientemente del estilo de vida.
 
 Como paso previo, se aplicarán criterios de calidad basados en métricas de ensamblado y anotacion genómica, con el fin de seleccionar únicamente genomas de alta calidad. Este filtrado permitirá trabajar con conjuntos confiables de secuencias codificantes, minimizando errores derivados de ensamblados fragmentados o anotaciones incompletas, y asegurando la calidad de las PGs.
 
-Asimismo, se espera identificar PGs específicas de los linajes parásitos, potencialmente implicadas en procesos adaptativos como la evasión de la respuesta inmune, la interacción con el hospedador o la organización de estructuras celulares especializadas vinculadas al parasitismo.
+Asimismo, esperamos identificar PGs específicas de los linajes parásitos, potencialmente implicadas en procesos adaptativos como la evasión de la respuesta inmune, la interacción con el hospedador o la organización de estructuras celulares especializadas vinculadas al parasitismo.
 
-Por otra lado, se anticipa la detección de un subconjunto de PGs exclusivas de *Bodo saltans*, lo que podría reflejar que estas proteínas están asociadas a funciones propias del estilo de vida libre. Su ausencia en especies parásitas sugiere una pérdida secundaria asociada a la simplificación funcional que caracteriza a la transición al parasitismo.
+Por otra lado, esperamos la detección de un subconjunto de PGs exclusivas de *Bodo saltans*, lo que podría reflejar que estas proteínas están asociadas a funciones propias del estilo de vida libre. Su ausencia en especies parásitas sugiere una pérdida secundaria asociada a la simplificación funcional que caracteriza a la transición al parasitismo.
 
 Tambien se espera el reconocimiento de posibles eventos de pseudogenización en PGs, particularmente aquellos que aparecen como genes completos en *Bodo saltans* pero se encuentran truncadas, fragmentadas o interrumpidas en parásitos. Este patrón podría interpretarse como una pérdida funcional, vinculada a la relajación de la presión selectiva sobre funciones no esenciales en contextos parasitarios.
 
 La clasificación funcional de las PGs se realizará mediante anotación de dominios (InterProScan) y agrupamiento por ortología (PSI-BLAST, HMMER), lo que permitirá inferir posibles roles estructurales, enzimáticos o reguladores.
 
-A partir del análisis de presencia o ausencia, conservación de dominios y eventos de pseudogenización, se buscará reconstruir el repertorio ancestral de PGs y su historia evolutiva a lo largo de la filogenenia de los kinetoplástidos.
+A partir de los análisis de presencia o ausencia, conservación de dominios y eventos de pseudogenización, se buscará reconstruir el repertorio ancestral de PGs y su historia evolutiva a lo largo de la filogenenia de los kinetoplástidos.
 
 A partir de estos análisis, se podra contextualizar cómo se ha modificado el repertorio de PGs a lo largo de la evolución de los kinetoplástidos, considerando tanto su conservación como su pérdida total o parcial (pseudogenización). Finalmente, se evaluará si las PGs comparten arquitecturas estructurales diferenciadas según el estilo de vida, lo que permitiría identificar posibles correlaciones funcionales entre dominios conservados y contextos ecológicos específicos.
