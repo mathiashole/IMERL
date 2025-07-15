@@ -23,7 +23,12 @@ highlight-style: arrow
 csl: /home/mathias/Descargas/apa.csl
 bibliography: /home/mathias/Descargas/Kinetoplastidos.bib
 reference-section-title: "Referencias"
-keywords: [genómica, NGS, pseudogenes, Kinetoplastida]
+keywords: 
+  - Proteínas gigantes
+  - Kinetoplástidos
+  - Parasitismo
+  - Filogenia
+  - Anotación funcional
 lang: es
 
 format: 
