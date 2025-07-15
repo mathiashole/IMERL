@@ -6,7 +6,7 @@ author:
   Mathias
 institute: "Facultad de Ciencias, Universidad de la República"
 abstract: |
-    Proyecto de genómica
+    Las proteínas gigantes (PGs), definidas como aquellas con más de 3000 aminoácidos, constituyen un componente poco explorado del repertorio genómico de los kinetoplástidos. En este estudio se caracteriza su diversidad, conservación y evolución mediante un análisis comparativo entre especies de vida libre y parásitas. El análisis integró herramientas de anotación funcional, búsqueda de ortólogos y evaluación filogenética, identificando PGs conservadas, pérdidas específicas y potenciales eventos de pseudogenización vinculados al estilo de vida. Estos resultados proporcionan un marco para entender la evolución funcional del proteoma de los kinetoplástidos.
 abstractspacing: double
 appendix: false
 fontfamily: libertine
